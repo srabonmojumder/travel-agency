@@ -1,0 +1,235 @@
+/*------HEADER SEARCH BAR START------*/
+
+.search-input {
+  width: 0;
+  padding: 0;
+  transition: width 0.1s ease-in-out;
+}
+
+.search-input.active {
+  width: 300px;
+  padding: 6px 1.5rem;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  display: none;
+}
+
+/*------HEADER SEARCH BAR END------*/
+
+/* -------HEADER DROPDOWN MENU START----- */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  opacity: 0;
+  position: absolute;
+  z-index: 1000;
+}
+
+.dropdown:hover .dropdown-content {
+  opacity: 1;
+}
+
+.dropdown li a img{
+transition: all ease 0.3s;
+}
+
+.dropdown li:hover a img{
+transform: rotate(90deg);
+transition: all ease 0.3s;
+}
+
+.usd-button svg{
+transition: all ease 0.3s;
+}
+
+.usd-button:hover svg{
+transform: rotate(180deg);
+}
+
+.language-selacted svg{
+transition: all ease 0.3s;
+}
+
+.language-selacted:hover svg{
+transform: rotate(180deg);
+}
+
+/* -------HEADER DROPDOWN MENU END----- */
+
+
+
+/* -----Best Tour Packages START---- */
+
+.nav-bar-left-arrow.slick-arrow:hover {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.nav-bar-left-arrow.slick-arrow {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  background-color: #E2E2E2;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: #616161;
+  cursor: pointer;
+  left: 10px;
+  z-index: 9;
+}
+
+.nav-bar-right-arrow.slick-arrow:hover {
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.nav-bar-right-arrow.slick-arrow {
+  height: 40px;
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  background-color: #E2E2E2;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 5px;
+  color: #616161;
+  cursor: pointer;
+  right: 10px;
+}
+
+/* ---Best Tour Packages END--- */
+
+
+/* ----Special Packages Start--- */
+.left-nav-bar.slick-arrow{
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  left: 20px;
+  background-color: #E2E2E2;
+  color: #B0B0B0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+
+.left-nav-bar.slick-arrow:hover{
+  background-color: #FFEED5;
+}
+
+.right-nav-bar.slick-arrow{
+  position: absolute;
+  z-index: 9;
+  top: 50%;
+  right: 20px;
+  background-color: #E2E2E2;
+  color: #B0B0B0;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.right-nav-bar.slick-arrow:hover{
+  background-color: #FFEED5;
+}
+
+/* ----Special Packages End--- */
+
+
+/* -------DOTS START---------- */
+
+.slick-dots li button:before{
+  font-size: 60px;
+  transition: all ease 0.3s;
+}
+
+.slick-dots li.slick-active button:before{
+  color: #E2941F;
+  transform: scale(1.4);
+}
+
+.slick-dots li button:hover:before, .slick-dots li button:focus:before{
+  color: #E2941F;
+  transform: scale(1.4);
+}
+
+.main-slider .slick-dots{
+  bottom: -45px;
+}
+
+/* -------DOTS END---------- */
+
+
+
+/* -----TESTIMONIAL What Clients Saying Start---- */
+
+.testimonial-slider .slick-dots{
+  bottom: -100px;
+}
+
+/* -----TESTIMONIAL What Clients Saying End---- */
+
+
+
+/* 
+.blog-details{
+  position: absolute;
+  top: 412px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  z-index: 9;
+  max-width: 472px;
+  padding: 12px;
+  transition: all .3s;
+  transform : translateY(35px);
+}
+
+
+.news-blog-image-two:hover .blog-details{
+  background-color: rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  transform : translateY(10px);
+}
+
+.news-blog-image-two.relative:hover .blog-content{
+  color: white;
+}
+
+.read-more-button:hover{
+  color: #E2941F !important;
+}
+
+.inner-news-blog-image-two{
+  position: absolute;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  height: 585px;
+}
+.news-blog-image-two.relative{
+  padding: 10px;
+}
+
+.inner-news-blog-image-two img{
+  height: 100%;
+  object-fit: cover;
+  transform : translateY(10px);
+}
+
+.our-latest-news-blog-two .slick-list.draggable{
+  height: 600px;
+} */
+
+ 
