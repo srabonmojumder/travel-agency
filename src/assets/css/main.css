@@ -1,3 +1,8 @@
+.container{
+  max-width: 1400px !important;
+}
+
+
 /*------HEADER SEARCH BAR START------*/
 
 .search-input {
@@ -7,7 +12,7 @@
 }
 
 .search-input.active {
-  width: 300px;
+  width: 250px;
   padding: 6px 1.5rem;
 }
 
@@ -25,59 +30,55 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .dropdown-content {
   opacity: 0;
+  visibility: hidden;
   position: absolute;
   z-index: 1000;
+  top: 80px;
+  transition: all ease 0.3s;
 }
 
 .dropdown:hover .dropdown-content {
   opacity: 1;
+  visibility: visible;
+  top: 45px;
 }
 
 .dropdown li a img{
-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+  transform: rotate(90deg);
+  height: 7px;
+  width: 3px;
 }
 
-.dropdown li:hover a img{
-transform: rotate(90deg);
-transition: all ease 0.3s;
-}
-
-.usd-button svg{
-transition: all ease 0.3s;
-}
-
-.usd-button:hover svg{
-transform: rotate(180deg);
-}
-
-.language-selacted svg{
-transition: all ease 0.3s;
-}
-
-.language-selacted:hover svg{
-transform: rotate(180deg);
-}
 
 /* -------HEADER DROPDOWN MENU END----- */
 
 
 
 /* -----Best Tour Packages START---- */
+.main-slider .slick-list.draggable{
+  height: 588px;
+}
+
+.main-slider .slider-item.item:hover{
+  /* box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
 
 .nav-bar-left-arrow.slick-arrow:hover {
-  background-color: white;
+  background-color: #ffeed5;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .nav-bar-left-arrow.slick-arrow {
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   width: 40px;
   background-color: #E2E2E2;
   line-height: 40px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #616161;
   cursor: pointer;
   left: 10px;
@@ -85,22 +86,22 @@ transform: rotate(180deg);
 }
 
 .nav-bar-right-arrow.slick-arrow:hover {
-  background-color: white;
+  background-color: #ffeed5;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .nav-bar-right-arrow.slick-arrow {
   height: 40px;
   position: absolute;
-  top: 50%;
+  top: 48%;
   width: 40px;
   background-color: #E2E2E2;
   line-height: 40px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 10px;
   color: #616161;
   cursor: pointer;
-  right: 10px;
+  right: 9px;
 }
 
 /* ---Best Tour Packages END--- */
@@ -141,7 +142,7 @@ transform: rotate(180deg);
 }
 
 .right-nav-bar.slick-arrow:hover{
-  background-color: #FFEED5;
+  background-color: #ffeed5;
 }
 
 /* ----Special Packages End--- */
@@ -150,12 +151,18 @@ transform: rotate(180deg);
 /* -------DOTS START---------- */
 
 .slick-dots li button:before{
-  font-size: 60px;
+  font-size: 50px;
   transition: all ease 0.3s;
+  color: #E2941F;
+  opacity: 0.3;
+}
+
+.slick-dots li{
+  margin: 0;
 }
 
 .slick-dots li.slick-active button:before{
-  color: #E2941F;
+  color: #e2941f;
   transform: scale(1.4);
 }
 
@@ -166,6 +173,9 @@ transform: rotate(180deg);
 
 .main-slider .slick-dots{
   bottom: -45px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
 }
 
 /* -------DOTS END---------- */
