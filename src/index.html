@@ -36,7 +36,7 @@
     <nav>
       <!-- <div class="container mx-auto"> -->
       <div class="border-b border-[#1B1B1B]">
-        <div class="container mx-auto flex justify-between pt-[40px] pb-[20px]">
+        <div class="container mx-auto flex justify-between pt-[20px] pb-[20px]">
           <div class="text-white flex flex-wrap gap-[30px] py-[4px]">
             <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
                 src="assets/image/mail-icon.svg" alt="">
@@ -64,7 +64,8 @@
             <!-- Navigation Menu Start-->
             <ul class="header-list-item flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold">
               <li class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                <a class="" href="#">Home</a></li>
+                <a class="" href="#">Home</a>
+              </li>
 
               <li class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
                 <a class="" href="#">About Us </a>
@@ -140,10 +141,12 @@
                 </div>
               </div>
               <li class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                <a href="#">Blog & News</a></li>
+                <a href="#">Blog & News</a>
+              </li>
 
               <li class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                <a href="#">Contact</a></li>
+                <a href="#">Contact</a>
+              </li>
 
             </ul>
             <!-- Navigation Menu End-->
@@ -237,8 +240,7 @@
   <!-- -------HERO SECTION START----- -->
   <section
     class="relative hero-section bg-image-container bg-cover bg-center bg-no-repeat bg-[url('../assets/image/hero-section.png')] h-[700px] w-[100%]">
-    <div
-      class="bg-gradient-to-r from-[#00000082] to-[#ffffff0d] via-[#00000061] h-[100%] w-[100%] absolute">
+    <div class="bg-gradient-to-r from-[#00000082] to-[#ffffff0d] via-[#00000061] h-[100%] w-[100%] absolute">
     </div>
     <div class="container mx-auto">
       <div class="inner-hero-section flex justify-center flex-col gap-[49px]  h-[600px]  max-w-[750px] p-5 relative">
@@ -269,10 +271,57 @@
 
   <!-- -------HERO SECTION END----- -->
 
+  <section class="relative  mx-[5px]">
+    <div class="container mx-auto p-8  flex items-center justify-center">
+      <form
+        class="bg-white rounded-[10px] shadow-md flex gap-[33px] py-[32px] px-[40px] absolute bottom-[-58px] flex-wrap">
+        <div class="flex gap-[138px] flex-wrap ">
+          <div class="mb-6">
+            <label for="location"
+              class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
+                class=" flex items-center gap-[7px]"><img class="w-[11.524px]  h-[14px]"
+                  src="assets/image/locatiion.svg" alt=""> Location </span><img
+                src="assets/image/vectore-image-icon.svg" alt=""></label>
+            <input type="text" id="location" name="location" placeholder="Where are you going"
+              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+          </div>
 
+          <div class="mb-6">
+            <label for="checkIn" class="block text-sm font-semibold text-gray-600 mb-2"><span
+                class="flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
+                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-in Date</span></label>
+            <input type="date" id="checkIn" name="checkIn"
+              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+          </div>
+
+          <div class="mb-6">
+            <label for="checkOut" class="block text-sm font-semibold text-gray-600 mb-2 "><span
+                class=" flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
+                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-out Date </span></label>
+            <input type="date" id="checkOut" name="checkOut"
+              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+          </div>
+
+          <div class="mb-6">
+            <label for="people"
+              class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
+                class="flex items-center gap-[7px]"><img class="w-[5.456px]  h-[12.3px]" src="assets/image/preson.svg"
+                  alt=""> Number of People </span><img src="assets/image/vectore-image-icon.svg" alt=""></label>
+            <input type="number" id="people" name="people" min="1" placeholder="1"
+              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center">
+          <button type="submit"
+            class="bg-[#E2941F] hover:bg-[#E2941F] text-white font-bold py-[12px] px-[38px] rounded-[5px] focus:outline-none focus:shadow-outline transition duration-300">Search</button>
+        </div>
+      </form>
+    </div>
+  </section>
 
   <!-------------Plan Your Trip Start--------------->
-  <section class="hidden toure-plan relative">
+  <section class="hidden toure-plan relative mx-[5px]">
     <div class="container mx-auto flex justify-center">
       <div class="inner-toure-plane-section absolute bottom-[-130px]">
         <div class="toure-plane-section-heading text-center mt-6 pb-8">
@@ -357,12 +406,13 @@
 
   <!-----Most Popular Destinations Start------>
 
-  <section class="propular-destinations mt-[300px]">
+  <section class="propular-destinations py-[130px] mx-[5px]">
     <div class="container mx-auto flex flex-col gap-[48px]">
       <div class="propular-destinations-heading text-center flex flex-col gap-[12px]">
         <span class="text-base font-medium font-inter text-[#E2941F]">EXPLORE NOW</span>
         <h2 class="text-[40px] font-bold font-Messiri">Most Popular Destinations</h2>
-        <p class="text-base text-[#434343] font-normal w-[800px] mx-auto font-inter max-w-[100%] leading-[25.6px]">Experience the allure of iconic
+        <p class="text-base text-[#434343] font-normal w-[800px] mx-auto font-inter max-w-[100%] leading-[25.6px]">
+          Experience the allure of iconic
           landmarks,
           where history and modernity seamlessly intertwine, creating an atmosphere of enchantment that captivates every
           traveler.</p>
@@ -370,23 +420,25 @@
 
       <div class="">
         <div class="">
-          <div class="flex flex-col gap-[10px]">
-            <div class="relative propular-destinations-list flex gap-[10px] justify-center">
-              <div class="wrapper-propular-destinations flex flex-col gap-[10px] items-center w-[100%]">
+          <div class="flex flex-col gap-[10px] md:flex-col">
+            <div class="relative propular-destinations-list flex gap-[10px] justify-center  md:flex-col">
+              <div class="wrapper-propular-destinations flex flex-col gap-[10px] items-center w-[100%] md:flex-col">
 
                 <div class="destination-thambel relative h-[563px] w-[100%]">
                   <a href="#">
-                    <img class="rounded-tl-[25px] w-[100%] h-[563px] object-cover" src="assets/image/image maldives (1).png"
-                      alt="">
-                    </a>
-                  <div class="maldives-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
+                    <img class="rounded-tl-[25px] w-[100%] h-[563px] object-cover md:rounded-tl-md md:rounded-md"
+                      src="assets/image/image-maldives.png" alt="">
+                  </a>
+                  <div
+                    class="maldives-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
                     <a href="#">Maldives</a>
                   </div>
                 </div>
 
                 <div class="destination-thambel relative h-[563px] w-[100%]">
                   <a href="#">
-                    <img class=" w-[100%] h-[563px] object-cover" src="assets/image/image indonesia.png" alt="">
+                    <img class=" w-[100%] h-[563px] object-cover  md:rounded-md" src="assets/image/image indonesia.png"
+                      alt="">
                   </a>
                   <div
                     class="indonesia-destinations-content absolute  bottom-[30px] left-[30px]  font-Messiri text-2xl	font-medium text-white">
@@ -397,11 +449,13 @@
 
               </div>
 
-              <div class="inner-propular-destinations flex flex-col gap-[10px] items-center w-[100%] max-w-[460px]">
+              <div
+                class="inner-propular-destinations flex flex-col gap-[10px] items-center w-[100%] max-w-[460px] md:max-w-none md:w-[100%]">
 
                 <div class="destination-thambel relative h-[372px]  w-[100%]">
                   <a href="#">
-                    <img class=" h-[372px] rounded-tr-[25px] w-[100%] object-cover" src="assets/image/india image (1).png" alt="">
+                    <img class=" h-[372px] rounded-tr-[25px] w-[100%] object-cover md:rounded-tr-md  md:rounded-md"
+                      src="assets/image/india image (1).png" alt="">
                   </a>
                   <div
                     class="malaysia-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
@@ -412,7 +466,8 @@
 
                 <div class="destination-thambel relative h-[372px]  w-[100%]">
                   <a href="#">
-                    <img class=" h-[372px]  w-[100%] object-cover" src="assets/image/india image (2).png" alt="">
+                    <img class=" h-[372px]  w-[100%] object-cover  md:rounded-md" src="assets/image/india image (2).png"
+                      alt="">
                   </a>
                   <div
                     class="australia-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
@@ -423,7 +478,8 @@
 
                 <div class="destination-thambel relative h-[372px]  w-[100%]">
                   <a href="#">
-                    <img class=" h-[372px]  w-[100%] object-cover" src="assets/image/india-image-switzerland.png" alt="">
+                    <img class=" h-[372px]  w-[100%] object-cover  md:rounded-md"
+                      src="assets/image/india-image-switzerland.png" alt="">
                   </a>
                   <div
                     class="switzerland-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
@@ -435,10 +491,11 @@
               </div>
             </div>
 
-            <div class="propular-destinations-bottom relative flex gap-[10px] items-center justify-center">
+            <div class="propular-destinations-bottom relative flex gap-[10px] items-center justify-center  md:flex-col">
               <div class="destination-thambel relative w-[100%] h-[332px]">
                 <a href="#">
-                  <img class="rounded-bl-[25px] w-[100%] h-[332px] object-cover" src="assets/image/china image.png" alt="">
+                  <img class="rounded-bl-[25px] w-[100%] h-[332px] object-cover md:rounded-bl-md  md:rounded-md"
+                    src="assets/image/china image.png" alt="">
                 </a>
                 <div
                   class="china-destinations-content absolute bottom-[30px] left-[30px] font-Messiri text-2xl	font-medium text-white">
@@ -449,7 +506,8 @@
 
               <div class="destination-thambel relative w-[100%] h-[332px]">
                 <a href="#">
-                  <img class=" w-[100%] h-[332px] object-cover" src="assets/image/india image (4).png" alt="">
+                  <img class=" w-[100%] h-[332px] object-cover  md:rounded-md" src="assets/image/india image (4).png"
+                    alt="">
                 </a>
 
                 <div
@@ -462,15 +520,20 @@
 
               <div class="destination-thambel relative w-[100%] h-[332px]">
                 <div class="mountEverest-card relative">
-                  <div class="absolute h-[332px] w-[100%] bg-gradient-to-r from-[rgba(0,0,0,0.50)] via-[rgba(0,0,0,0.50)] to-[rgba(0,0,0,0.50)] rounded-br-[32px]"></div>
+                  <div
+                    class="absolute h-[332px] w-[100%] bg-gradient-to-r from-[rgba(0,0,0,0.50)] via-[rgba(0,0,0,0.50)] to-[rgba(0,0,0,0.50)] rounded-br-[32px]  md:rounded-md">
+                  </div>
                   <a href="#">
-                    <img class="rounded-br-[35px] w-[100%] h-[332px] object-cover" src="assets/image/nepal image.png" alt="">
+                    <img class="rounded-br-[35px] w-[100%] h-[332px] object-cover md:rounded-br-md  md:rounded-md"
+                      src="assets/image/nepal image.png" alt="">
                   </a>
-                  <div class="seemore-button absolute top-[43%] left-[34%] flex items-center justify-center">
+                  <div
+                    class="seemore-button absolute top-[43%] left-[31%]  lg:right-[30%] flex items-center justify-center">
                     <button
-                      class="seemore-icon bg-[#e2941f] flex items-center gap-[9px] p-[20px] rounded-md text-white font-plus text-2xl font-semibold">See
+                      class="seemore-icon bg-[#e2941f] flex items-center gap-[9px] p-[20px] lg:p-[15px] rounded-md text-white font-inter text-2xl font-semibold">See
                       More
-                      <svg class="h-[14px] w-[13px]" xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                      <svg class="h-[14px] w-[13px]" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
+                        viewBox="0 0 14 15" fill="none">
                         <path
                           d="M0.5 14.5L5.5 7.5L0.5 0.5H2.95L7.95 7.5L2.95 14.5H0.5ZM6.45 14.5L11.45 7.5L6.45 0.5H8.9L13.9 7.5L8.9 14.5H6.45Z"
                           fill="white" />
@@ -499,13 +562,14 @@
   <!-------------Most Popular Destinations End--------------->
 
   <!-- ------------Best Tour Packages Start-------------- -->
-  <div class="py-[140px]">
+  <div class="py-[130px] mx-[5px]">
     <div class="container mx-auto flex flex-col gap-[48px]">
       <!-- -----Heading Start---- -->
-      <div class="best-tour-packages-area flex flex-col gap-[16px] m-[10px]">
-        <span class="text-[#E2941F] font-[16px] font-plus">FEATURED TOURS</span>
-        <h3 class="font-Messiri font-bold text-4xl text-[#2B2B2B]">Best Tour Packages</h3>
-        <p class="font-Quicksand text-base w-[700px] max-w-[100%]">Unwrap extraordinary journeys with our top tour
+      <div class="best-tour-packages-area flex flex-col gap-[16px] mx-[10px]">
+        <span class="text-[#E2941F] font-[16px] font-inter font-medium">FEATURED TOURS</span>
+        <h3 class="font-Messiri font-bold text-[40px] text-[#2B2B2B]">Best Tour Packages</h3>
+        <p class="font-inter text-base w-[700px] max-w-[100%] font-normal text-[#434343]">Unwrap extraordinary journeys
+          with our top tour
           packages,
           meticulously crafted for seamless adventures. Dive into diverse cultures, captivating landscapes, and
           hassle-free exploration, making every moment unforgettable.</p>
@@ -515,11 +579,11 @@
       <!----Start Slider----->
       <div class="main-slider">
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px bg-white shadow-md w-100% rounded-[21px]">
-          <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 5 (1).png" alt="">
+        <div class="slider-item item mx-[10px] h-290px bg-white shadow-md w-100% rounded-[21px]">
+          <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px] " src="assets/image/Rectangle 5 (1).png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-                <span class="text-[#E2941F] text-base font-plus font-medium">MALDIVES</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">MALDIVES</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Hurawalhi Island</h4>
               <div class="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -547,24 +611,25 @@
                 </svg>
 
               </div>
-              <p class="font-inter text-[#6C6C6C] font-medium text-sm">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-[#6C6C6C] font-medium text-sm">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
 
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
+        <div class="slider-item item mx-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
           <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 4.png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-              <span class="text-[#E2941F] text-base font-plus font-medium">CANADA</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">CANADA</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Niagara Falls</h4>
               <div class="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -572,44 +637,45 @@
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
               </div>
-              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
 
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
+        <div class="slider-item item mx-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
           <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 3.png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-              <span class="text-[#E2941F] text-base font-plus font-medium">ROME</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">ROME</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Colosseum</h4>
               <div class="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -617,44 +683,45 @@
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
               </div>
-              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
 
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
+        <div class="slider-item item mx-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
           <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 4.png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-              <span class="text-[#E2941F] text-base font-plus font-medium">MALDIVES</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">MALDIVES</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Hurawalhi Island</h4>
               <div class="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -662,90 +729,92 @@
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
               </div>
-              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
 
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
+        <div class="slider-item item mx-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
           <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 4.png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-              <span class="text-[#E2941F] text-base font-plus font-medium">MALDIVES</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">MALDIVES</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Hurawalhi Island</h4>
               <div class="flex gap-2">
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
               </div>
-              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
 
         <!-- ---Slider Item Start--- -->
-        <div class="slider-item item m-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
+        <div class="slider-item item mx-[10px] h-290px h-290px bg-white shadow-md w-100% rounded-[21px]">
           <img class="rounded-tl-[20px] w-[100%] rounded-tr-[20px]" src="assets/image/Rectangle 4.png" alt="">
           <div class="Packages-slider flex flex-col gap-[24px] py-[24px] px-[48px]">
             <div class="flex flex-col gap-[12px]">
-              <span class="text-[#E2941F] text-base font-plus font-medium">MALDIVES</span>
+              <span class="text-[#E2941F] text-base font-inter font-medium">MALDIVES</span>
               <h4 class="font-semibold text-3xl font-Messiri text-[#2B2B2B]">Hurawalhi Island</h4>
               <div class="flex gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
@@ -753,34 +822,35 @@
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
                   <path
                     d="M7.52772 0.358693C7.68337 -0.0890874 8.31663 -0.0890865 8.47228 0.358694L10.0018 4.7589C10.0705 4.95643 10.2548 5.09037 10.4639 5.09463L15.1214 5.18954C15.5953 5.1992 15.791 5.80147 15.4133 6.08787L11.7011 8.90226C11.5344 9.0286 11.464 9.24532 11.5246 9.44549L12.8735 13.9043C13.0108 14.3581 12.4985 14.7303 12.1094 14.4595L8.28559 11.7987C8.11393 11.6793 7.88607 11.6793 7.71441 11.7987L3.89064 14.4595C3.50152 14.7303 2.98919 14.3581 3.12647 13.9043L4.47544 9.44548C4.536 9.24532 4.46559 9.0286 4.29894 8.90226L0.586742 6.08787C0.208976 5.80147 0.404667 5.1992 0.878629 5.18954L5.53612 5.09463C5.7452 5.09037 5.92955 4.95643 5.99821 4.7589L7.52772 0.358693Z"
                     fill="#E2941F" />
                 </svg>
-  
+
               </div>
-              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and vibrant coral reefs in this
+              <p class="font-inter text-sm text-[#6C6C6C] font-medium">Discover pristine beaches, overwater luxury, and
+                vibrant coral reefs in this
                 idyllic retreat.</p>
             </div>
-              <div class="py-2 flex gap-4 border-t border-t-[#D8D8D8]">
-                <span class="text-[#E2941F] font-plus text-base font-semibold">$260.00</span>
-                <span class="border-l-2 h-5 border-[#D9D9D9]"></span>
-                <p class="text-base">Per Person</p>
-              </div>
+            <div class="py-[10px] flex gap-[12px] border-t border-t-[#D8D8D8] items-center">
+              <span class="text-[#E2941F] font-inter text-base font-extrabold">$260.00</span>
+              <span class="border-l-2 h-[18px] border-[#D9D9D9]"></span>
+              <p class="text-base text-[#6C6C6C] font-medium font-inter">Per Person</p>
+            </div>
           </div>
         </div>
         <!-- ---Slider Item End--- -->
@@ -797,22 +867,31 @@
   <!-- ------------Are You Ready To Travel? Remember Us Start-------------- -->
 
   <section
-    class="remember-us mb-[100px] mt-[100px] bg-image-container bg-cover bg-center bg-no-repeat bg-[url('../assets/image/featured-tours.png')] h-[500px] w-[100%]">
-    <div class="absolute bg-gradient-to-r from-[rgba(29,66,82,0.80)] via-[rgba(29,66,82,0.80)] to-[rgba(29,66,82,0.80)] h-[500px] w-[100%]"></div>
+    class="remember-us py-[130px] bg-image-container relative bg-cover bg-center bg-no-repeat bg-[url('../assets/image/featured-tours.png')] h-[100%] w-[100%]">
+    <div
+      class="absolute bottom-0 bg-gradient-to-r from-[rgba(29,66,82,0.80)] via-[rgba(29,66,82,0.80)] to-[rgba(29,66,82,0.80)] h-[100%] w-[100%]">
+    </div>
     <!-- Content -->
-    <div class="Remember-us-content w-[45%] h-[100%] flex flex-col justify-center items-center mx-auto gap-[17px] relative">
-      <span class="text-base text-[#e2941f] font-plus font-medium">START JOURNEY</span>
-      <h3 class=" text-5xl font-Messiri font-bold text-center text-white">Are You Ready To Travel?
-        Remember Us</h3>
-      <p class="font-Quicksand font-normal text-base text-white">Unwrap extraordinary journeys with our top tour
-        packages, meticulously crafted for seamless adventures. Dive into diverse cultures, captivating landscapes, and
-        hassle-free exploration, making every moment unforgettable.</p>
-      <div class="Remember-us-button mt-5 flex gap-6 ">
+    <div
+      class="Remember-us-content w-[100%] h-[100%] max-w-[800px] flex flex-col justify-center items-center mx-auto gap-[48px] relative">
+      <div class="text-center flex flex-col gap-[12px] ">
+        <span class="text-base text-[#e2941f] font-inter font-medium">START JOURNEY</span>
+        <h3 class=" text-[50px] font-Messiri font-bold text-center text-white leading-[52px]">Are You Ready To Travel?
+          <br>
+          Remember Us
+        </h3>
+        <p class="font-inter font-normal text-base text-white leading-[25.6px]">Unwrap extraordinary journeys with our
+          top tour
+          packages, meticulously crafted for seamless adventures. Dive into diverse cultures, captivating landscapes,
+          and
+          hassle-free exploration, making every moment unforgettable.</p>
+      </div>
+      <div class="Remember-us-button flex gap-6 ">
         <button
-          class="rounded-lg px-7 py-3 bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-Quicksand font-bold text-base">VIEW
+          class="rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-inter font-bold text-base">VIEW
           PACKAGES</button>
         <button
-          class="rounded-lg px-6 py-2 border-2 border-white text-white hover:bg-[#e2941f] hover:border-[#e2941f] hover:text-green-100 duration-300 font-Quicksand font-bold text-base">LEARN
+          class="rounded-lg px-6 py-2 border-2 border-white text-white hover:bg-[#e2941f] hover:border-[#e2941f] hover:text-green-100 duration-300 font-inter font-bold text-base">LEARN
           MORE</button>
       </div>
     </div>
@@ -823,207 +902,227 @@
 
   <!-- ---------------Special Packages slider Start-------------------- -->
 
-  <section class="Packages mb-[100px] mt-[100px]">
+  <section class="Packages py-[130px] mx-[5px]">
     <div class="container mx-auto">
-      <div class="text-center flex flex-col gap-[12px]">
-        <span class="text-[#E2941F] font-[16px] font-plus">OFFER & DEALS</span>
-        <h3 class="font-Messiri font-bold text-4xl text-[#2B2B2B] ">Special Packages</h3>
-        <p class="font-Quicksand text-base w-[900px] mx-auto max-w-[100%]">Unwrap extraordinary journeys with our top
-          tour packages,
-          meticulously crafted for seamless adventures. Dive into diverse cultures, captivating landscapes, and
-          hassle-free exploration, making every moment unforgettable.</p>
-      </div>
-
-      <div class="main-special-packages-slider flex gap-[30px] mt-5">
-        <!-- Add more slides as needed  Start-->
-        <div class="special-packages-slider item relative m-[20px]">
-          <img class="special-packages-image w-[100%] rounded-[15px]" src="assets/image/card1.png" alt="">
-          <div
-            class="inner-special-packages-slider py-[10px] px-[20px] bg-[#000000CC] rounded-lg absolute top-[40%] left-[10%] special-packages-deatailes flex flex-col justify-center gap-[16px] w-[360px]">
-            <div class=" flex gap-[10px]">
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <g clip-path="url(#clip0_562_185)">
-                    <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                      width="14" height="14">
-                      <path
-                        d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
-                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </mask>
-                    <g mask="url(#mask0_562_185)">
-                      <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
-                    </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_562_185">
-                      <rect width="14" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                5D/4N
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                  <path
-                    d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
-                    fill="#E2941F" />
-                </svg>
-                PAX: 10
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
-                  <path
-                    d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
-                    fill="#E2941F" />
-                </svg>
-                USA, FLORIDA
-              </span>
-            </div>
-            <h3 class="text-white text-xl font-bold font-Messiri">WEEKEND TO LONDON</h3>
-            <p class="text-[#B8B8B8] text-sm font-plus">Unveil the magic of London with our tailored special package
-              tour</p>
-            <span class="text-[#e2941f] font-extrabold text-lg flex gap-2">price: <span class="line-through">$1100
-              </span> $900</span>
-            <button
-              class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-Quicksand font-bold text-base">BOOK
-              NOW</button>
-          </div>
-          <div class="bg-[#E2941F] absolute top-[5%] right-[35px] pr-4 pl-4 pb-1 pt-1 rounded-[20px]">
-            <span class="text-white font-bold text-base font-Quicksand">UPTO 25% OFF</span>
-          </div>
+      <div class="flex flex-col gap-[48px]">
+        <div class="text-center flex flex-col gap-[12px]">
+          <span class="text-[#E2941F] font-[16px] font-inter">OFFER & DEALS</span>
+          <h3 class="font-Messiri font-bold text-4xl text-[#2B2B2B] ">Special Packages</h3>
+          <p class="font-inter text-base w-[900px] mx-auto max-w-[100%]">Unwrap extraordinary journeys with our top
+            tour packages,
+            meticulously crafted for seamless adventures. Dive into diverse cultures, captivating landscapes, and
+            hassle-free exploration, making every moment unforgettable.</p>
         </div>
-        <!-- Add more slides as needed  End-->
 
-        <!-- Add more slides as needed Start-->
-        <div class="special-packages-slider item relative m-[20px]">
-          <img class="special-packages-image  rounded-[15px] w-[100%]" src="assets/image/card2.png" alt="">
-          <div
-            class="inner-special-packages-slider py-[10px] px-[20px] bg-[#000000CC] rounded-lg absolute top-[40%] left-[10%] special-packages-deatailes flex flex-col justify-center gap-[16px] w-[360px]">
-            <div class=" flex gap-[10px]">
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <g clip-path="url(#clip0_562_185)">
-                    <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                      width="14" height="14">
-                      <path
-                        d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
-                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </mask>
-                    <g mask="url(#mask0_562_185)">
-                      <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
+        <div class="main-special-packages-slider flex gap-[30px]">
+          <!-- Add more slides as needed  Start-->
+          <div class="special-packages-slider item relative mx-[20px]">
+            <img class="special-packages-image h-[517px] w-[100%] rounded-[15px]" src="assets/image/card1.png" alt="">
+            <div
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              <div class=" flex gap-[12px] items-center">
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    viewBox="0 0 14 14" fill="none">
+                    <g clip-path="url(#clip0_562_185)">
+                      <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="14" height="14">
+                        <path
+                          d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
+                          fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </mask>
+                      <g mask="url(#mask0_562_185)">
+                        <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
+                      </g>
                     </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_562_185">
-                      <rect width="14" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                5D/4N
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                  <path
-                    d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
-                    fill="#E2941F" />
-                </svg>
-                PAX: 10
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
-                  <path
-                    d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
-                    fill="#E2941F" />
-                </svg>
-                USA, FLORIDA
-              </span>
+                    <defs>
+                      <clipPath id="clip0_562_185">
+                        <rect width="14" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  5D/4N
+                </span>
+                <span class="border-l border-white h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[15.105px]' xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
+                      fill="#E2941F" />
+                  </svg>
+                  PAX: 10
+                </span>
+                <span class="border-l border-white h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class="h-[14px] w-[10.5px]" xmlns="http://www.w3.org/2000/svg" width="11" height="14"
+                    viewBox="0 0 11 14" fill="none">
+                    <path
+                      d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
+                      fill="#E2941F" />
+                  </svg>
+                  USA, FLORIDA
+                </span>
+              </div>
+              <h3 class="text-white text-2xl font-bold font-Messiri leading-[28.8px]">WEEKEND TO LONDON</h3>
+              <p class="text-[#B8B8B8] text-sm font-inter font-medium	leading-[22.4px]">Unveil the magic of London with
+                our tailored special package
+                tour</p>
+              <span
+                class="text-[#e2941f] font-extrabold text-2xl leading-[38.4px] font-inter items-center tracking-[0.48px] flex gap-2 ">price:
+                <span class="line-through  font-inter tracking-[0.48px] font-extrabold text-2xl">$1100
+                </span> $900</span>
+              <button
+                class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-inter font-bold text-base">BOOK
+                NOW</button>
             </div>
-            <h3 class="text-white text-xl font-bold font-Messiri">TOUR TO EGYPT</h3>
-            <p class="text-[#B8B8B8] text-sm font-plus">Unveil the magic of London with our tailored special package
-              tour</p>
-            <span class="text-[#e2941f] font-extrabold text-lg flex gap-2">price: <span class="line-through">$1100
-              </span> $900</span>
-            <button
-              class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-Quicksand font-bold text-base">BOOK
-              NOW</button>
+            <div class="bg-[#E2941F] absolute top-[25px] right-[42px] px-[24px] py-[8px] rounded-[20px]">
+              <span class="text-white font-bold text-base font-inter">UPTO 25% OFF</span>
+            </div>
           </div>
-          <div class="bg-[#E2941F] absolute top-[5%] right-[35px] pr-4 pl-4 pb-1 pt-1 rounded-[20px]">
-            <span class="text-white font-bold text-base font-Quicksand">UPTO 25% OFF</span>
-          </div>
-        </div>
-        <!-- Add more slides as needed  End-->
+          <!-- Add more slides as needed  End-->
 
-        <!-- Add more slides as needed Start-->
-        <div class="special-packages-slider item relative m-[20px]">
-          <img class="special-packages-image w-[100%] rounded-[15px]" src="assets/image/card2.png" alt="">
-          <div
-            class="inner-special-packages-slider py-[10px] px-[20px] bg-[#000000CC] rounded-lg absolute top-[40%] left-[10%] special-packages-deatailes flex flex-col justify-center gap-[16px] w-[360px]">
-            <div class=" flex gap-[10px]">
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-                  <g clip-path="url(#clip0_562_185)">
-                    <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
-                      width="14" height="14">
-                      <path
-                        d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
-                        fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
-                      <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
-                        stroke-linecap="round" stroke-linejoin="round" />
-                    </mask>
-                    <g mask="url(#mask0_562_185)">
-                      <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
+          <!-- Add more slides as needed Start-->
+          <div class="special-packages-slider item relative mx-[20px]">
+            <img class="special-packages-image  rounded-[15px] h-[517px] w-[100%]" src="assets/image/card2.png" alt="">
+            <div
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              <div class=" flex gap-[12px] items-center">
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    viewBox="0 0 14 14" fill="none">
+                    <g clip-path="url(#clip0_562_185)">
+                      <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="14" height="14">
+                        <path
+                          d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
+                          fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </mask>
+                      <g mask="url(#mask0_562_185)">
+                        <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
+                      </g>
                     </g>
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_562_185">
-                      <rect width="14" height="14" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-                5D/4N
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none">
-                  <path
-                    d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
-                    fill="#E2941F" />
-                </svg>
-                PAX: 10
-              </span>
-              <span class="border-l-2 border-white h-5"></span>
-              <span class="flex gap-1 items-center text-[#B8B8B8] font-normal	text-sm font-plus">
-                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="14" viewBox="0 0 11 14" fill="none">
-                  <path
-                    d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
-                    fill="#E2941F" />
-                </svg>
-                USA, FLORIDA
-              </span>
+                    <defs>
+                      <clipPath id="clip0_562_185">
+                        <rect width="14" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  5D/4N
+                </span>
+                <span class="border-l border-white  h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[15.105px]' xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
+                      fill="#E2941F" />
+                  </svg>
+                  PAX: 10
+                </span>
+                <span class="border-l border-white  h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class="h-[14px] w-[10.5px]" xmlns="http://www.w3.org/2000/svg" width="11" height="14"
+                    viewBox="0 0 11 14" fill="none">
+                    <path
+                      d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
+                      fill="#E2941F" />
+                  </svg>
+                  USA, FLORIDA
+                </span>
+              </div>
+              <h3 class="text-white text-2xl font-bold font-Messiri leading-[28.8px]">TOUR TO EGYPT</h3>
+              <p class="text-[#B8B8B8] text-sm font-inter font-medium	leading-[22.4px]">Unveil the magic of London with
+                our tailored special package
+                tour</p>
+              <span
+                class="text-[#e2941f] font-extrabold text-2xl leading-[38.4px] font-inter items-center tracking-[0.48px] flex gap-2 ">price:
+                <span class="line-through  font-inter tracking-[0.48px] font-extrabold text-2xl">$1100
+                </span> $900</span>
+              <button
+                class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-inter font-bold text-base">BOOK
+                NOW</button>
             </div>
-            <h3 class="text-white text-xl font-bold font-Messiri">WEEKEND TO LONDON</h3>
-            <p class="text-[#B8B8B8] text-sm font-plus">Unveil the magic of London with our tailored special package
-              tour</p>
-            <span class="text-[#e2941f] font-extrabold text-lg flex gap-2">price: <span class="line-through">$1100
-              </span> $900</span>
-            <button
-              class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-Quicksand font-bold text-base">BOOK
-              NOW</button>
+            <div class="bg-[#E2941F] absolute top-[25px] right-[42px] px-[24px] py-[8px] rounded-[20px]">
+              <span class="text-white font-bold text-base font-inter">UPTO 25% OFF</span>
+            </div>
           </div>
-          <div class="bg-[#E2941F] absolute top-[5%] right-[35px] pr-4 pl-4 pb-1 pt-1 rounded-[20px]">
-            <span class="text-white font-bold text-base font-Quicksand">UPTO 25% OFF</span>
-          </div>
-        </div>
-        <!-- Add more slides as needed  End-->
+          <!-- Add more slides as needed  End-->
 
+          <!-- Add more slides as needed Start-->
+          <div class="special-packages-slider item relative mx-[20px]">
+            <img class="special-packages-image h-[517px] w-[100%] rounded-[15px]" src="assets/image/card2.png" alt="">
+            <div
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              <div class=" flex gap-[12px] items-center">
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                    viewBox="0 0 14 14" fill="none">
+                    <g clip-path="url(#clip0_562_185)">
+                      <mask id="mask0_562_185" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0"
+                        width="14" height="14">
+                        <path
+                          d="M7.00002 12.8332C10.2218 12.8332 12.8334 10.2216 12.8334 6.99984C12.8334 3.77809 10.2218 1.1665 7.00002 1.1665C3.77827 1.1665 1.16669 3.77809 1.16669 6.99984C1.16669 10.2216 3.77827 12.8332 7.00002 12.8332Z"
+                          fill="white" stroke="white" stroke-width="1.5" stroke-linejoin="round" />
+                        <path d="M7.00238 3.5V7.00292L9.47542 9.47625" stroke="black" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                      </mask>
+                      <g mask="url(#mask0_562_185)">
+                        <path d="M0 0H14V14H0V0Z" fill="#E2941F" />
+                      </g>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_562_185">
+                        <rect width="14" height="14" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  5D/4N
+                </span>
+                <span class="border-l border-white  h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class='h-[14px] w-[15.105px]' xmlns="http://www.w3.org/2000/svg" width="16" height="14"
+                    viewBox="0 0 16 14" fill="none">
+                    <path
+                      d="M4.2894 8.23502L4.83248 8.08701C5.24215 7.97759 5.66247 7.86514 6.00193 7.75663C5.73388 7.34225 5.50708 6.90259 5.32481 6.44395C5.20013 6.33399 5.08894 6.20963 4.99356 6.07346C4.80568 5.81001 4.67142 5.51218 4.59846 5.19692C4.55044 4.99559 4.52596 4.78936 4.52553 4.58237C4.52111 4.23965 4.59818 3.90078 4.75042 3.59369C4.78469 2.92226 4.96649 2.26664 5.28287 1.67345C4.91902 1.39927 4.4763 1.25003 4.02073 1.24795C2.79992 1.24947 1.80219 2.319 1.77666 3.649C1.6802 3.80867 1.63138 3.99257 1.63595 4.17906C1.63594 4.2829 1.64839 4.38637 1.67303 4.48725C1.70904 4.64467 1.77565 4.79348 1.86906 4.92521C1.92858 5.01154 2.00249 5.08699 2.08757 5.14829C2.24539 5.58116 2.47468 5.98451 2.76589 6.34154C2.76589 6.34518 2.76589 6.34882 2.76589 6.35216C2.76589 6.35551 2.76589 6.36919 2.76437 6.38074C2.68055 6.42905 2.59182 6.46827 2.49967 6.49775C2.25655 6.58589 1.92223 6.67647 1.56544 6.7713L1.22536 6.86247C0.68045 7.02295 0.0255285 7.55088 0 9.16445C0 9.18268 0 9.20153 0 9.21977L0.00274528 9.2769L0.0145982 9.50728L0.231272 9.58631L0.284768 9.60514C0.956001 9.84377 1.65118 10.0088 2.35805 10.0972C2.50861 9.65554 2.76238 9.25617 3.09829 8.93229C3.4342 8.60841 3.84255 8.36936 4.2894 8.23502ZM13.1797 8.77572C13.0007 8.72588 12.8244 8.67846 12.6539 8.63196C12.0993 8.48394 11.5756 8.34323 11.1903 8.20281C11.0488 8.15666 10.9127 8.09552 10.7843 8.02045C10.7843 8.0086 10.7843 7.99675 10.7827 7.98824C10.7812 7.97973 10.7827 7.96938 10.7827 7.95966C11.2375 7.40095 11.5965 6.77065 11.8449 6.09443C11.9754 5.99871 12.0893 5.88217 12.1819 5.74948C12.329 5.54137 12.434 5.30661 12.4913 5.05833C12.5285 4.90107 12.5474 4.74002 12.5475 4.57842C12.554 4.28748 12.4777 4.00068 12.3275 3.75143C12.2926 1.67953 10.7365 0.00212752 8.81826 0C6.91092 0.00212752 5.35187 1.67344 5.31114 3.75173C5.1604 4.00165 5.08407 4.28938 5.09111 4.58116C5.09133 4.74327 5.11081 4.90478 5.14915 5.06228C5.20572 5.30802 5.30978 5.54033 5.45549 5.74613C5.54891 5.88089 5.66415 5.99913 5.79648 6.09595C6.04418 6.77168 6.40252 7.4015 6.85683 7.95966C6.85714 7.96523 6.85714 7.97081 6.85683 7.97638C6.85683 7.98823 6.85531 8.00312 6.8544 8.02136C6.72335 8.09658 6.5847 8.15771 6.44077 8.20372C6.0624 8.34109 5.53786 8.48272 4.982 8.63165L4.45016 8.77602C3.59921 9.02707 2.57534 9.85102 2.53553 12.3734C2.53553 12.401 2.53553 12.4308 2.53553 12.4594L2.54009 12.5484L2.55801 12.9086L2.89627 13.0302L2.98045 13.0605C6.77301 14.3132 10.8678 14.3132 14.6603 13.0605L15.0974 12.9001L15.1031 12.5281L15.1053 12.4265V12.3475C15.0612 9.85194 14.0388 9.02799 13.1797 8.77572Z"
+                      fill="#E2941F" />
+                  </svg>
+                  PAX: 10
+                </span>
+                <span class="border-l border-white h-[14px] w-[1px]"></span>
+                <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
+                  <svg class="h-[14px] w-[10.5px]" xmlns="http://www.w3.org/2000/svg" width="11" height="14"
+                    viewBox="0 0 11 14" fill="none">
+                    <path
+                      d="M5.35522 0C2.45591 0 0.105225 2.35069 0.105225 5.25C0.105225 6.39166 0.479506 7.43925 1.10163 8.29719C1.11279 8.31775 1.11454 8.34072 1.12722 8.36041L4.62722 13.6104C4.78954 13.8539 5.06297 14 5.35522 14C5.64747 14 5.92091 13.8539 6.08322 13.6104L9.58322 8.36041C9.59613 8.34072 9.59766 8.31775 9.60882 8.29719C10.2309 7.43925 10.6052 6.39166 10.6052 5.25C10.6052 2.35069 8.25454 0 5.35522 0ZM5.35522 7C4.38879 7 3.60522 6.21644 3.60522 5.25C3.60522 4.28356 4.38879 3.5 5.35522 3.5C6.32166 3.5 7.10522 4.28356 7.10522 5.25C7.10522 6.21644 6.32166 7 5.35522 7Z"
+                      fill="#E2941F" />
+                  </svg>
+                  USA, FLORIDA
+                </span>
+              </div>
+              <h3 class="text-white text-2xl font-bold font-Messiri leading-[28.8px]">WEEKEND TO LONDON</h3>
+              <p class="text-[#B8B8B8] text-sm font-inter font-medium	leading-[22.4px]">Unveil the magic of London with
+                our tailored special package
+                tour</p>
+              <span
+                class="text-[#e2941f] font-extrabold text-2xl leading-[38.4px] font-inter items-center tracking-[0.48px] flex gap-2 ">price:
+                <span class="line-through  font-inter tracking-[0.48px] font-extrabold text-2xl">$1100
+                </span> $900</span>
+              <button
+                class="w-[50%] rounded-lg px-[32px] py-[16px] bg-[#e2941f] text-green-100 hover:[#e2941f] border-none font-inter font-bold text-base">BOOK
+                NOW</button>
+            </div>
+            <div class="bg-[#E2941F] absolute top-[5%] right-[35px] px-[24px] py-[8px] rounded-[20px]">
+              <span class="text-white font-bold text-base font-inter">UPTO 25% OFF</span>
+            </div>
+          </div>
+          <!-- Add more slides as needed  End-->
+
+        </div>
       </div>
     </div>
     <!--End Container -->
@@ -1035,8 +1134,8 @@
 
   <!-- ---------------  Instagram Feed Start-------------------- -->
 
-  <section class="instagram-feed mb-[100px] mt-[100px]">
-    <div class="">
+  <section class="instagram-feed py-[130px] mx-[5px]">
+    <div class="flex flex-col gap-[48px]">
       <div class="text-center flex flex-col gap-[12px]">
         <h3 class="font-Messiri font-bold text-4xl text-[#2B2B2B] flex pt-6 pb-6 gap-4 justify-center">
           <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -1051,24 +1150,31 @@
       <!--  Instagram Feed Slider Start-->
       <div class="instagram-slider">
         <!--  Instagram Feed Slider Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item  relative  group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 42.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px] inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%] " xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
             </svg>
           </span>
           <a href="#"></a>
+
         </div>
         <!--  Instagram Feed Slider Start-->
 
         <!--  Instagram Feed Slider item Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item relative group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 8.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px]  inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%]" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
@@ -1079,10 +1185,13 @@
         <!--  Instagram Feed Slider item Start-->
 
         <!--  Instagram Feed Slider item Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item relative group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 10.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px]  inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%]" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
@@ -1093,10 +1202,13 @@
         <!--  Instagram Feed Slider item End-->
 
         <!--  Instagram Feed Slider item Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item relative group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 11.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px]  inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%]" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
@@ -1107,10 +1219,13 @@
         <!--  Instagram Feed Slider item End-->
 
         <!--  Instagram Feed Slider item Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item relative group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 12.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px]  inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%]" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
@@ -1121,10 +1236,13 @@
         <!--  Instagram Feed Slider item end-->
 
         <!--  Instagram Feed Slider item Start-->
-        <div class="instagram-packages-slider item relative">
+        <div
+          class="instagram-packages-slider item relative group h-40 w-40 bg-none hover:bg-gray-300 transition duration-300 ease-in-out delay-0 overflow-hidden h-[100%]">
           <img class="instagram-packages-image h-[598px] w-[432px]" src="assets/image/Rectangle 5.png" alt="">
-          <span class="instagram-icon absolute top-[50%] left-[50%]">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+          <span
+            class="instagram-icon absolute h-[100%] w-[100%]  bg-gradient-to-r from-[#000000b0] to-[#000000b0] top-[0px]  inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100  transition-opacity duration-300 ease-in-out delay-0">
+            <svg class=" absolute top-[47%] left-[45%]" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+              viewBox="0 0 40 40" fill="none">
               <path
                 d="M20 0C14.5725 0 13.89 0.025 11.7575 0.12C9.625 0.22 8.1725 0.555 6.9 1.05C5.56524 1.55205 4.35623 2.33957 3.3575 3.3575C2.34019 4.35674 1.55277 5.5656 1.05 6.9C0.555 8.17 0.2175 9.625 0.12 11.75C0.025 13.8875 0 14.5675 0 20.0025C0 25.4325 0.025 26.1125 0.12 28.245C0.22 30.375 0.555 31.8275 1.05 33.1C1.5625 34.415 2.245 35.53 3.3575 36.6425C4.4675 37.755 5.5825 38.44 6.8975 38.95C8.1725 39.445 9.6225 39.7825 11.7525 39.88C13.8875 39.975 14.5675 40 20 40C25.4325 40 26.11 39.975 28.245 39.88C30.3725 39.78 31.83 39.445 33.1025 38.95C34.4364 38.4477 35.6445 37.6602 36.6425 36.6425C37.755 35.53 38.4375 34.415 38.95 33.1C39.4425 31.8275 39.78 30.375 39.88 28.245C39.975 26.1125 40 25.4325 40 20C40 14.5675 39.975 13.8875 39.88 11.7525C39.78 9.625 39.4425 8.17 38.95 6.9C38.4473 5.56556 37.6599 4.35669 36.6425 3.3575C35.6441 2.33919 34.435 1.55161 33.1 1.05C31.825 0.555 30.37 0.2175 28.2425 0.12C26.1075 0.025 25.43 0 19.995 0H20.0025H20ZM18.2075 3.605H20.0025C25.3425 3.605 25.975 3.6225 28.0825 3.72C30.0325 3.8075 31.0925 4.135 31.7975 4.4075C32.73 4.77 33.3975 5.205 34.0975 5.905C34.7975 6.605 35.23 7.27 35.5925 8.205C35.8675 8.9075 36.1925 9.9675 36.28 11.9175C36.3775 14.025 36.3975 14.6575 36.3975 19.995C36.3975 25.3325 36.3775 25.9675 36.28 28.075C36.1925 30.025 35.865 31.0825 35.5925 31.7875C35.2719 32.6559 34.7601 33.4411 34.095 34.085C33.395 34.785 32.73 35.2175 31.795 35.58C31.095 35.855 30.035 36.18 28.0825 36.27C25.975 36.365 25.3425 36.3875 20.0025 36.3875C14.6625 36.3875 14.0275 36.365 11.92 36.27C9.97 36.18 8.9125 35.855 8.2075 35.58C7.33875 35.2598 6.55281 34.7489 5.9075 34.085C5.24188 33.4401 4.72931 32.6541 4.4075 31.785C4.135 31.0825 3.8075 30.0225 3.72 28.0725C3.625 25.965 3.605 25.3325 3.605 19.99C3.605 14.65 3.625 14.02 3.72 11.9125C3.81 9.9625 4.135 8.9025 4.41 8.1975C4.7725 7.265 5.2075 6.5975 5.9075 5.8975C6.6075 5.1975 7.2725 4.765 8.2075 4.4025C8.9125 4.1275 9.97 3.8025 11.92 3.7125C13.765 3.6275 14.48 3.6025 18.2075 3.6V3.605ZM30.6775 6.925C30.3623 6.925 30.0502 6.98708 29.7591 7.10769C29.4679 7.2283 29.2033 7.40508 28.9804 7.62794C28.7576 7.8508 28.5808 8.11538 28.4602 8.40656C28.3396 8.69774 28.2775 9.00983 28.2775 9.325C28.2775 9.64017 28.3396 9.95226 28.4602 10.2434C28.5808 10.5346 28.7576 10.7992 28.9804 11.0221C29.2033 11.2449 29.4679 11.4217 29.7591 11.5423C30.0502 11.6629 30.3623 11.725 30.6775 11.725C31.314 11.725 31.9245 11.4721 32.3746 11.0221C32.8246 10.572 33.0775 9.96152 33.0775 9.325C33.0775 8.68848 32.8246 8.07803 32.3746 7.62794C31.9245 7.17786 31.314 6.925 30.6775 6.925ZM20.0025 9.73C18.6402 9.70875 17.2872 9.95871 16.0224 10.4654C14.7577 10.972 13.6063 11.7252 12.6354 12.6811C11.6645 13.6369 10.8934 14.7764 10.3671 16.0332C9.8408 17.2899 9.56975 18.6388 9.56975 20.0013C9.56975 21.3637 9.8408 22.7126 10.3671 23.9694C10.8934 25.2261 11.6645 26.3656 12.6354 27.3214C13.6063 28.2773 14.7577 29.0305 16.0224 29.5371C17.2872 30.0438 18.6402 30.2938 20.0025 30.2725C22.6989 30.2304 25.2705 29.1298 27.1624 27.2081C29.0544 25.2865 30.1148 22.6979 30.1148 20.0013C30.1148 17.3046 29.0544 14.716 27.1624 12.7944C25.2705 10.8727 22.6989 9.77207 20.0025 9.73ZM20.0025 13.3325C21.7708 13.3325 23.4667 14.035 24.7171 15.2854C25.9675 16.5358 26.67 18.2317 26.67 20C26.67 21.7683 25.9675 23.4642 24.7171 24.7146C23.4667 25.965 21.7708 26.6675 20.0025 26.6675C18.2342 26.6675 16.5383 25.965 15.2879 24.7146C14.0375 23.4642 13.335 21.7683 13.335 20C13.335 18.2317 14.0375 16.5358 15.2879 15.2854C16.5383 14.035 18.2342 13.3325 20.0025 13.3325Z"
                 fill="#E2941F" />
@@ -1143,25 +1261,28 @@
 
   <!-- ---------------Our Trusted Partners Start-------------------- -->
 
-  <section class="">
-    <h2 class="text-center font-Messiri text-4xl font-bold mb-[32px]">Our Trusted Partners</h2>
-    <div class="bg-[#F4F8F9] ">
-      <div class="container mx-auto">
-        <div class="Partners-brand-logo flex gap-[24px] justify-center items-center flex-wrap">
-          <img class="h-[80px] w-[100px]" src="assets/image/1 7.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/images 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/3 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/unnamed 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/6 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/images 2.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/4 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/Singapore-Airlines-Logo-1972 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/5 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/7f68842e0e190eb85008269a65f4740c 1.png" alt="">
-          <img class="h-[80px] w-[100px]" src="assets/image/image 1.png" alt="">
+  <section class="py-[140px] mx-[5px]">
+    <div class="flex flex-col gap-[48px]">
+      <h2 class="text-center font-Messiri text-[40px] leading-[48px] font-bold">Our Trusted Partners</h2>
+      <div class="bg-[#F4F8F9] ">
+        <div class="container mx-auto">
+          <div class="Partners-brand-logo flex gap-[10px] py-[40px] justify-center items-center flex-wrap">
+            <img class="h-[90px] w-[117px] object-cover" src="assets/image/1 7.png" alt="">
+            <img class="h-[90px] w-[107.069px] object-cover" src="assets/image/images 1.png" alt="">
+            <img class="h-[90px] w-[117px] object-cover" src="assets/image/3 1.png" alt="">
+            <img class="h-[90px] w-[90px] object-cover" src="assets/image/unnamed 1.png" alt="">
+            <img class="h-[90px] w-[117px] object-cover" src="assets/image/6 1.png" alt="">
+            <img class="h-[90px] w-[114px] object-cover" src="assets/image/images 2.png" alt="">
+            <img class="h-[90px] w-[116px] object-cover" src="assets/image/4 1.png" alt="">
+            <img class="h-[90px] w-[135px] object-cover" src="assets/image/Singapore-Airlines-Logo-1972 1.png" alt="">
+            <img class="h-[90px] w-[117px] object-cover" src="assets/image/5 1.png" alt="">
+            <img class="h-[90px] w-[135.135px] object-cover" src="assets/image/7f68842e0e190eb85008269a65f4740c 1.png"
+              alt="">
+            <img class="h-[90px] w-[117px] object-cover" src="assets/image/image 1.png" alt="">
+          </div>
         </div>
+        <!--end container-->
       </div>
-      <!--end container-->
     </div>
   </section>
   <!--end section-->
@@ -1170,7 +1291,7 @@
 
   <!-- --------------- TESTIMONIAL What Clients Saying start-------------------- -->
 
-  <section class="mt-[100px]">
+  <section class="py-[130px] mx-[5px]">
     <div class="container mx-auto flex flex-col gap-[32px]">
 
       <!-- <div class="text-center flex- flex-col gap-[16px]">
@@ -1178,17 +1299,18 @@
         <h2 class="text-4xl font-bold font-Messiri">What Clients Saying</h2>
       </div> -->
 
-      <div class="relative grid grid-cols-1 gap-[180px]  md:grid-cols-2">
-        <div>
-          <img class="rounded-[25px] w-[600px] h-[690px]" src="assets/image/Rectangle34.png" alt="">
-          <div class="testimonial-inner-image absolute top-[60%] left-[24%]">
+      <div class="relative grid grid-cols-2 gap-[155px]  lg:grid-cols-1">
+        <div class=" ">
+          <img class="rounded-[25px] max-w-[600px] h-[690px] w-[100%]" src="assets/image/Rectangle34.png" alt="">
+          <div
+            class="testimonial-inner-image absolute bottom-[-34px] left-[351px] lg:bottom-[370px] max-w-[310px] h-[330px]">
             <img class="rounded-[25px] border-2 border-white" src="assets/image/Rectangle35.png" alt="">
           </div>
         </div>
 
         <div class="flex flex-col gap-[40px]">
           <div class="text-center flex- flex-col gap-[16px]">
-            <span class="font-plus font-medium text-base text-[#E2941F]">TESTIMONIAL</span>
+            <span class="font-inter font-medium text-base text-[#E2941F]">TESTIMONIAL</span>
             <h2 class="text-4xl font-bold font-Messiri">What Clients Saying</h2>
           </div>
           <!--  Testimonial Slider Start-->
@@ -1268,8 +1390,7 @@
           <!--  Testimonial Slider Start-->
         </div>
       </div>
-    </div>
-    <!--end container-->
+      <!--end container-->
   </section>
   <!--end section-->
 
@@ -1278,13 +1399,15 @@
 
   <!-- --------------- Our Latest News and Blogs Start-------------------- -->
 
-  <section class="mb-[100px] mt-[150px]">
+
+
+  <section class="py-[130px]  mx-[5px]">
     <div class="container mx-auto">
 
       <div class="flex  flex-col justify-center gap-[15px] text-center">
-        <span class="text-base font-plus font-medium text-[#E2941F]">NEWS & BLOGS</span>
+        <span class="text-base font-inter font-medium text-[#E2941F]">NEWS & BLOGS</span>
         <h2 class="font-Messiri text-4xl font-bold">Our Latest News and Blogs</h2>
-        <p class="w-[900px] max-w-[100%] mx-auto font-Quicksand text-base">Unwrap extraordinary journeys with our top
+        <p class="w-[900px] max-w-[100%] mx-auto font-inter text-base">Unwrap extraordinary journeys with our top
           tour packages, meticulously crafted for seamless adventures. Dive into diverse cultures, captivating
           landscapes, and hassle-free exploration, making every moment unforgettable.</p>
       </div>
@@ -1294,26 +1417,58 @@
           <div class="our-latest-news-blog flex gap-[40px] justify-center mt-5">
 
             <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image m-[15px] relative">
+            <div class="news-blog-image m-[15px] relative group">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
+                <img class="w-[100%] h-[583px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 AUG</span>
+                <span class="text-sm font-inter font-medium">16 AUG</span>
+              </div>
+              <div class="flex flex-col gap-[25px] absolute bottom-[29px] w-[100%] p-[20px]">
+                <div class="flex items-center gap-[24px]">
+                  <div class="flex items-center gap-2">
+                    <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                    <span class="text-sm font-medium text-[#E2941F] font-inter">Tour</span>
+                  </div>
+                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                  <span class="text-[#6C6C6C] text-sm font-inter font-medium">2 Comments</span>
+                </div>
+                <h3 class="font-bold font-Messiri text-xl">Journey is Measured in New Friends</h3>
+                <span
+                  class="font-inter text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
+                  More
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </div>
+            </div>
+            <!--  News Blog Slider Item End-->
+
+            <!--  News Blog Slider Item Start-->
+            <div class="news-blog-image m-[15px] relative group">
+              <div class="inner-news-blog-image">
+                <img class="w-[100%] h-[353px] rounded-lg object-cover group-hover\:height-580"
+                  src="assets/image/card hover.png" alt="">
+              </div>
+              <div
+                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
+                <span class="text-sm font-inter font-medium">16 APR</span>
               </div>
               <div class="flex flex-col gap-[25px]">
                 <div class="flex items-center gap-[24px]">
                   <div class="flex items-center gap-2">
                     <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="text-sm font-medium text-[#E2941F] font-plus">Tour</span>
+                    <span class="text-sm font-medium text-[#E2941F] font-inter">Tour</span>
                   </div>
                   <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
+                  <span class="text-[#6C6C6C] text-sm font-inter font-medium">2 Comments</span>
                 </div>
                 <h3 class="font-bold font-Messiri text-xl">Journey is Measured in New Friends</h3>
                 <span
-                  class="font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
+                  class="font-inter text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
                   More
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                     <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
@@ -1327,55 +1482,24 @@
             <!--  News Blog Slider Item Start-->
             <div class="news-blog-image m-[15px] relative">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover" src="assets/image/card hover.png" alt="">
+                <img class="w-[100%] h-[353px] rounded-lg object-cover" src="assets/image/Rectangle 41.png" alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 APR</span>
+                <span class="text-sm font-inter font-medium">16 APR</span>
               </div>
               <div class="flex flex-col gap-[25px]">
                 <div class="flex items-center gap-[24px]">
                   <div class="flex items-center gap-2">
                     <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="text-sm font-medium text-[#E2941F] font-plus">Tour</span>
+                    <span class="text-sm font-medium text-[#E2941F] font-inter">Tour</span>
                   </div>
                   <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="font-bold font-Messiri text-xl">Journey is Measured in New Friends</h3>
-                <span
-                  class="font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image m-[15px] relative">
-              <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover" src="assets/image/Rectangle 41.png" alt="">
-              </div>
-              <div
-                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 APR</span>
-              </div>
-              <div class="flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
+                  <span class="text-[#6C6C6C] text-sm font-inter font-medium">2 Comments</span>
                 </div>
                 <h3 class="font-bold font-Messiri text-xl">TRAVEL WITH FRIENDS IS BEST</h3>
                 <span
-                  class="font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
+                  class="font-inter text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
                   More
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                     <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
@@ -1389,24 +1513,24 @@
             <!--  News Blog Slider Item Start-->
             <div class="news-blog-image m-[15px] relative">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
+                <img class="w-[100%] h-[353px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
-                <span class="text-sm font-plus font-medium">15 APR</span>
+                <span class="text-sm font-inter font-medium">15 APR</span>
               </div>
               <div class="flex flex-col gap-[25px]">
                 <div class="flex items-center gap-[24px]">
                   <div class="flex items-center gap-2">
                     <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="text-sm font-medium text-[#E2941F] font-plus">Tour</span>
+                    <span class="text-sm font-medium text-[#E2941F] font-inter">Tour</span>
                   </div>
                   <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
+                  <span class="text-[#6C6C6C] text-sm font-inter font-medium">2 Comments</span>
                 </div>
-                <h3 class="font-bold font-plus text-xl">Journey is Measured in New Friends</h3>
+                <h3 class="font-bold font-inter text-xl">Journey is Measured in New Friends</h3>
                 <span
-                  class="font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
+                  class="font-inter text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
                   More
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                     <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
@@ -1420,24 +1544,24 @@
             <!--  News Blog Slider Item Start-->
             <div class="news-blog-image m-[15px] relative">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
+                <img class="w-[100%] h-[353px] rounded-lg object-cover" src="assets/image/Rectangle40.png" alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 MRC</span>
+                <span class="text-sm font-inter font-medium">16 MRC</span>
               </div>
               <div class="flex flex-col gap-[25px]">
                 <div class="flex items-center gap-[24px]">
                   <div class="flex items-center gap-2">
                     <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="text-sm font-medium text-[#E2941F] font-plus">Tour</span>
+                    <span class="text-sm font-medium text-[#E2941F] font-inter">Tour</span>
                   </div>
                   <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
+                  <span class="text-[#6C6C6C] text-sm font-inter font-medium">2 Comments</span>
                 </div>
-                <h3 class="font-bold font-plus text-xl">Journey is Measured in New Friends</h3>
+                <h3 class="font-bold font-inter text-xl">Journey is Measured in New Friends</h3>
                 <span
-                  class="font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
+                  class="font-inter text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
                   More
                   <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                     <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
@@ -1457,197 +1581,6 @@
   <!--end Section-->
 
   <!-- --------------- Our Latest News and Blogs End-------------------- -->
-
-
-
-
-
-
-
-
-  <section class="mb-[100px] mt-[150px]">
-    <div class="container mx-auto">
-
-      <div class="flex  flex-col justify-center gap-[15px] text-center">
-        <span class="text-base font-plus font-medium text-[#E2941F]">NEWS & BLOGS</span>
-        <h2 class="font-Messiri text-4xl font-bold">Our Latest News and Blogs</h2>
-        <p class="w-[900px] max-w-[100%] mx-auto font-Quicksand text-base">Unwrap extraordinary journeys with our top
-          tour packages, meticulously crafted for seamless adventures. Dive into diverse cultures, captivating
-          landscapes, and hassle-free exploration, making every moment unforgettable.</p>
-      </div>
-
-      <div class="our-blog">
-        <div class="container mx-auto">
-          <div class="our-latest-news-blog-two flex gap-[40px] justify-center mt-5">
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image-two m-[10px] relative">
-              <div class="inner-news-blog-image-two">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover " src="assets/image/Rectangle6.png" alt="">
-              </div>
-              <div
-                class="blog-date-two rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[360px] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 AUG</span>
-              </div>
-              <div class="blog-details flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="blog-content border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="blog-content text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="blog-content text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="blog-content font-bold font-Messiri text-xl">Journey is Measured in New Friends</h3>
-                <span
-                  class="read-more-button blog-content font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#D78E20" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image-two m-[10px] relative">
-              <div class="inner-news-blog-image-two">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover " src="assets/image/card hover.png" alt="">
-              </div>
-              <div
-                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[360px] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 APR</span>
-              </div>
-              <div class="blog-details flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="blog-content border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="blog-content text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="blog-content text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="blog-content font-bold font-Messiri text-xl">Journey is Measured in New Friends</h3>
-                <span
-                  class="read-more-button blog-content font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#D78E20" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image-two m-[10px] relative">
-              <div class="inner-news-blog-image-two">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover " src="assets/image/Rectangle6.png" alt="">
-              </div>
-              <div
-                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[360px] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 APR</span>
-              </div>
-              <div class="blog-details flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="blog-content border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="blog-content text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="blog-content text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="blog-content font-bold font-Messiri text-xl">TRAVEL WITH FRIENDS IS BEST</h3>
-                <span
-                  class="read-more-button blog-content font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#D78E20" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image-two m-[10px] relative">
-              <div class="inner-news-blog-image-two">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover " src="assets/image/Rectangle40.png" alt="">
-              </div>
-              <div
-                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[360px] left-[75%]">
-                <span class="text-sm font-plus font-medium">15 APR</span>
-              </div>
-              <div class="blog-details flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="blog-content border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="blog-content text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="blog-content text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="blog-content font-bold font-plus text-xl">Journey is Measured in New Friends</h3>
-                <span
-                  class="read-more-button blog-content font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#D78E20" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-            <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image-two m-[10px] relative">
-              <div class="inner-news-blog-image-two">
-                <img class="w-[100%] h-[350px] rounded-lg object-cover " src="assets/image/Rectangle6.png" alt="">
-              </div>
-              <div
-                class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[360px] left-[75%]">
-                <span class="text-sm font-plus font-medium">16 MRC</span>
-              </div>
-              <div class="blog-details flex flex-col gap-[25px]">
-                <div class="flex items-center gap-[24px]">
-                  <div class="flex items-center gap-2">
-                    <span class="blog-content border-t-2 border-[#E2941F] w-[35px]"></span>
-                    <span class="blog-content text-sm font-medium text-[#E2941F] font-plus">Tour</span>
-                  </div>
-                  <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
-                  <span class="blog-content text-[#6C6C6C] text-sm font-plus font-medium">2 Comments</span>
-                </div>
-                <h3 class="blog-content font-bold font-plus text-xl">Journey is Measured in New Friends</h3>
-                <span
-                  class="read-more-button font-plus text-sm font-semibold text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20]">Read
-                  More
-                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#D78E20" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-              </div>
-            </div>
-            <!--  News Blog Slider Item End-->
-
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--end container-->
-  </section>
-  <!--end Section-->
-  </section>
-  <!--end Section-->
-
-
-
-
 
 
 
@@ -1686,7 +1619,7 @@
           <h2 class="text-white font-Messiri text-lg font-bold">CONTACT US</h2>
           <div class="flex flex-col gap-[15px]">
             <p class="font-inter text-base text-white">Feel free to contact and reach us !!</p>
-            <span class="flex gap-2 items-center text-white text-base font-plus ">
+            <span class="flex gap-2 items-center text-white text-base font-inter ">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
                 <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M17.6759 16.0949C17.1203 17.7833 14.9436 18.6253 13.3884 18.4849C11.2645 18.2929 8.95332 17.1664 7.19896 15.9256C4.62023 14.1016 2.20469 11.2803 0.797133 8.28635C-0.19764 6.1708 -0.420831 3.56976 1.05873 1.64141C1.60591 0.928628 2.1975 0.547948 3.08667 0.503549C4.32024 0.44355 4.49304 1.14925 4.91663 2.24842C5.23222 3.0704 5.6534 3.90888 5.8886 4.76086C6.32898 6.35081 4.78943 6.41727 4.59503 7.71683C4.47383 8.53641 5.46741 9.6355 5.9162 10.2199C6.79577 11.3647 7.85294 12.352 9.04571 13.1032C9.72849 13.534 10.8313 14.3103 11.6136 13.8819C12.8184 13.2219 12.7044 11.1905 14.3892 11.878C15.2615 12.2332 16.1063 12.7458 16.9391 13.1946C18.2267 13.887 18.1667 14.6046 17.6759 16.0949C18.0431 14.9814 17.3087 17.2085 17.6759 16.0949Z"
@@ -1767,11 +1700,11 @@
             <!--Footet Social Icon End-->
 
             <div class="flex gap-[10px]">
-              <span class="text-sm text-white font-plus font-medium">Privacy Policy</span>
+              <span class="text-sm text-white font-inter font-medium">Privacy Policy</span>
               <span class="border border-[#FFFFFF33]"></span>
-              <span class="text-sm text-white font-plus font-medium">Terms & Conditions</span>
+              <span class="text-sm text-white font-inter font-medium">Terms & Conditions</span>
               <span class="border border-[#FFFFFF33]"></span>
-              <span class="text-sm text-white font-plus font-medium">FAQ</span>
+              <span class="text-sm text-white font-inter font-medium">FAQ</span>
             </div>
           </div>
         </div>

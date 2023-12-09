@@ -107,8 +107,8 @@ $(document).ready(function () {
         autoplay: false,
         infinite: true,
         arrows: true,
-        prevArrow: "<div class='nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
-        nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
+        prevArrow: "<div class='inner-nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
+        nextArrow: "<div class='inner-nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
         responsive: [
             {
                 breakpoint: 1200,
@@ -179,6 +179,58 @@ $(document).ready(function () {
         nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
         responsive: [
             {
+                breakpoint: 1279,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 575,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+    // <----------Our  Blog slider  End---------->
+
+
+
+
+
+
+
+
+
+
+
+    //   <------------Our  Blog slider Start------------>
+
+    $('.our-latest-news-blog-two').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        prevArrow: "<div class='nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
+        nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
+        responsive: [
+            {
                 breakpoint: 1200,
                 settings: {
                     slidesToShow: 2,
@@ -202,51 +254,6 @@ $(document).ready(function () {
         ],
     });
     // <----------Our  Blog slider  End---------->
-
-
-
-
-
-
-
-
-
-
-
-        //   <------------Our  Blog slider Start------------>
-
-        $('.our-latest-news-blog-two').slick({
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            autoplay: false,
-            arrows: true,
-            prevArrow: "<div class='nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
-            nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
-            responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 1,
-                    },
-                },
-                {
-                    breakpoint: 1008,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-                {
-                    breakpoint: 800,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                    },
-                },
-            ],
-        });
-        // <----------Our  Blog slider  End---------->
 
 });
 
