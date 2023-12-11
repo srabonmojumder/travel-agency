@@ -37,7 +37,7 @@
       <!-- <div class="container mx-auto"> -->
       <div class="border-b border-[#1B1B1B]">
         <div class="container mx-auto flex justify-between pt-[20px] pb-[20px]">
-          <div class="text-white flex flex-wrap gap-[30px] py-[4px]">
+          <div class="text-white flex flex-wrap gap-[30px] py-[4px] ml-[10px]">
             <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
                 src="assets/image/mail-icon.svg" alt="">
               <span class="font-inter text-sm font-medium">tourer@info.com</span></a>
@@ -46,7 +46,7 @@
                 789</span></a>
           </div>
           <div></div>
-          <div class="text-white flex flex-wrap gap-[20px] py-[4px]">
+          <div class="text-white flex flex-wrap gap-[20px] py-[4px] mr-[10px]">
             <a href="#" class="flex items-center gap-[20px] font-inter text-sm font-medium"> <img
                 class="w-[16px] h-[16px]" src="assets/image/login-user-icon.svg" alt=""> Login</a>
             <span class="border-r h-[17px]"></span>
@@ -54,15 +54,23 @@
           </div>
         </div>
       </div>
+
+
       <!-- --------HEADER MENU START-------- -->
       <div class="">
-        <div class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px]">
+        <div class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] ">
           <!--Header Logo Start-->
-          <a href="#"><img class=" max-w-[150px]" src="assets/image/Travelta.png" alt=""></a>
+          <a href="#" class="ml-[10px]"><img class=" max-w-[150px]" src="assets/image/Travelta.png" alt=""></a>
           <!--Header Logo End-->
           <div class="">
+            <!-- Start Mobile button Start-->
+            <div class="mobile-menu text-4xl text-white hidden xl:block">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- End Mobile button End-->
             <!-- Navigation Menu Start-->
-            <ul class="header-list-item flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold">
+            <ul
+              class="header-list-item xl:hidden flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold">
               <li class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
                 <a class="" href="#">Home</a>
               </li>
@@ -159,7 +167,7 @@
           <!-- End Mobile button End-->
 
           <!-- Start search Bar Start-->
-          <div class="search-bar language-selact flex flex-wrap items-center gap-[16px]">
+          <div class="search-bar language-selact flex flex-wrap items-center gap-[16px] mr-[10px]">
             <div class="flex items-center flex-wrap rounded-lg relative">
 
               <div
@@ -1134,7 +1142,7 @@
 
   <!-- ---------------  Instagram Feed Start-------------------- -->
 
-  <section class="instagram-feed py-[130px] mx-[5px]">
+  <section class="instagram-feed py-[130px]">
     <div class="flex flex-col gap-[48px]">
       <div class="text-center flex flex-col gap-[12px]">
         <h3 class="font-Messiri font-bold text-4xl text-[#2B2B2B] flex pt-6 pb-6 gap-4 justify-center">
@@ -1261,7 +1269,7 @@
 
   <!-- ---------------Our Trusted Partners Start-------------------- -->
 
-  <section class="py-[140px] mx-[5px]">
+  <section class="py-[130px] mx-[5px]">
     <div class="flex flex-col gap-[48px]">
       <h2 class="text-center font-Messiri text-[40px] leading-[48px] font-bold">Our Trusted Partners</h2>
       <div class="bg-[#F4F8F9] ">
@@ -1292,97 +1300,125 @@
   <!-- --------------- TESTIMONIAL What Clients Saying start-------------------- -->
 
   <section class="py-[130px] mx-[5px]">
-    <div class="container mx-auto flex flex-col gap-[32px]">
+    <div class="container mx-auto flex flex-col gap-[48px]">
 
-      <!-- <div class="text-center flex- flex-col gap-[16px]">
-        <span class="font-plus font-medium text-base text-[#E2941F]">TESTIMONIAL</span>
-        <h2 class="text-4xl font-bold font-Messiri">What Clients Saying</h2>
-      </div> -->
+      <div class="grid grid-cols-2 gap-[145px] lg:grid-cols-1">
+        <div class="columns-6"></div>
+        <div class="columns-6 grid grid-cols-1 gap-[16px] lg:text-center">
+          <span class="font-plus font-medium text-base text-[#E2941F]">TESTIMONIAL</span>
+          <h2 class="text-4xl font-bold font-Messiri">What Clients Saying</h2>
+        </div>
+      </div>
 
-      <div class="relative grid grid-cols-2 gap-[155px]  lg:grid-cols-1">
-        <div class=" ">
+      <div class="relative grid grid-cols-2 gap-[155px]  lg:grid-cols-1 items-center">
+        <div class="mx-auto relative">
           <img class="rounded-[25px] max-w-[600px] h-[690px] w-[100%]" src="assets/image/Rectangle34.png" alt="">
           <div
-            class="testimonial-inner-image absolute bottom-[-34px] left-[351px] lg:bottom-[370px] max-w-[310px] h-[330px]">
+            class="testimonial-inner-image absolute bottom-[-34px] right-[-45px] md:right-[130px] sm:right-[30px] max-w-[310px] h-[330px]">
             <img class="rounded-[25px] border-2 border-white" src="assets/image/Rectangle35.png" alt="">
           </div>
         </div>
 
-        <div class="flex flex-col gap-[40px]">
-          <div class="text-center flex- flex-col gap-[16px]">
+        <div class="flex flex-col gap-[40px] lg:mx-auto">
+          <!-- <div class="text-center flex- flex-col gap-[16px]">
             <span class="font-inter font-medium text-base text-[#E2941F]">TESTIMONIAL</span>
             <h2 class="text-4xl font-bold font-Messiri">What Clients Saying</h2>
-          </div>
+          </div> -->
           <!--  Testimonial Slider Start-->
-          <div class="testimonial-slider mt-5">
+          <div class="testimonial-slider lg:max-w-[590px] sm:max-w-[400px]">
 
             <!--  Testimonial Slider Item Start-->
-            <div class="inner-testimonial-slider item ">
-              <span>
-                <img class="h-[30px] w-[30px] carouselImage" src="assets/image/Vector-img.svg" alt="">
-              </span>
+            <div class="inner-testimonial-slider item flex flex-col gap-[48px]">
+              <div class="flex flex-col gap-[48px]">
+                <span>
+                  <img class="h-[48px] w-[54.857px] carouselImage" src="assets/image/Vector-img.svg" alt="">
+                </span>
+                <div class="">
+                  <p class="font-medium text-2xl text-[#585858] leading-[38.4px]">“ Lorem ipsum dolor sit amet
+                    consectetur. Pulvinar quis
+                    duis morbi fames
+                    dictum. Pretium quis tincidunt
+                    eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies ”</p>
+                </div>
+              </div>
+
+
               <div class="">
-                <p class="font-medium text-2xl text-[#585858]">“Lorem ipsum dolor sit amet consectetur. Pulvinar quis
-                  duis morbi fames
-                  dictum. Pretium quis tincidunt
-                  eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies”</p>
+                <span class="font-inter text-base font-medium leading-[25.6px]">Jenifer Laurance</span>
+                <p class="font-inter text-sm font-medium leading-[22.4px]">Florida, USA</p>
               </div>
             </div>
             <!--  Testimonial Slider Item End-->
 
             <!--  Testimonial Slider Item Start-->
-            <div class="inner-testimonial-slider item ">
-              <span>
-                <img class="h-[30px] w-[30px] carouselImage" src="assets/image/Vector-img.svg" alt="">
-              </span>
-              <div class="">
-                <p class="font-medium text-2xl text-[#585858]">“Lorem ipsum dolor sit amet consectetur. Pulvinar quis
-                  duis morbi fames
-                  dictum. Pretium quis tincidunt
-                  eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies”</p>
+            <div class="inner-testimonial-slider item flex flex-col gap-[48px]">
+              <div class="flex flex-col gap-[48px]">
+                <span>
+                  <img class="h-[48px] w-[54.857px] carouselImage" src="assets/image/Vector-img.svg" alt="">
+                </span>
+                <div class="">
+                  <p class="font-medium text-2xl text-[#585858] leading-[38.4px]">“ Lorem ipsum dolor sit amet
+                    consectetur. Pulvinar quis
+                    duis morbi fames
+                    dictum. Pretium quis tincidunt
+                    eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies ”</p>
+                </div>
               </div>
+
             </div>
             <!--  Testimonial Slider Item End-->
 
             <!--  Testimonial Slider Item Start-->
-            <div class="inner-testimonial-slider item ">
-              <span>
-                <img class="h-[30px] w-[30px] carouselImage" src="assets/image/Vector-img.svg" alt="">
-              </span>
-              <div class="">
-                <p class="font-medium text-2xl text-[#585858]">“Lorem ipsum dolor sit amet consectetur. Pulvinar quis
-                  duis morbi fames
-                  dictum. Pretium quis tincidunt
-                  eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies”</p>
+            <div class="inner-testimonial-slider item flex flex-col gap-[48px]">
+              <div class="flex flex-col gap-[48px]">
+                <span>
+                  <img class="h-[48px] w-[54.857px] carouselImage" src="assets/image/Vector-img.svg" alt="">
+                </span>
+                <div class="">
+                  <p class="font-medium text-2xl text-[#585858] leading-[38.4px]">“ Lorem ipsum dolor sit amet
+                    consectetur. Pulvinar quis
+                    duis morbi fames
+                    dictum. Pretium quis tincidunt
+                    eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies ”</p>
+                </div>
               </div>
+
             </div>
             <!--  Testimonial Slider Item End-->
 
             <!--  Testimonial Slider Item Start-->
-            <div class="inner-testimonial-slider item ">
-              <span>
-                <img class="h-[30px] w-[30px] carouselImage" src="assets/image/Vector-img.svg" alt="">
-              </span>
-              <div class="">
-                <p class="font-medium text-2xl text-[#585858]">“Lorem ipsum dolor sit amet consectetur. Pulvinar quis
-                  duis morbi fames
-                  dictum. Pretium quis tincidunt
-                  eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies”</p>
+            <div class="inner-testimonial-slider item flex flex-col gap-[48px]">
+              <div class="flex flex-col gap-[48px]">
+                <span>
+                  <img class="h-[48px] w-[54.857px] carouselImage" src="assets/image/Vector-img.svg" alt="">
+                </span>
+                <div class="">
+                  <p class="font-medium text-2xl text-[#585858] leading-[38.4px]">“ Lorem ipsum dolor sit amet
+                    consectetur. Pulvinar quis
+                    duis morbi fames
+                    dictum. Pretium quis tincidunt
+                    eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies ”</p>
+                </div>
               </div>
+
             </div>
             <!--  Testimonial Slider Item End-->
 
             <!--  Testimonial Slider Item Start-->
-            <div class="inner-testimonial-slider item ">
-              <span>
-                <img class="h-[30px] w-[30px] carouselImage" src="assets/image/Vector-img.svg" alt="">
-              </span>
-              <div class="">
-                <p class="font-medium text-2xl text-[#585858]">“Lorem ipsum dolor sit amet consectetur. Pulvinar quis
-                  duis morbi fames
-                  dictum. Pretium quis tincidunt
-                  eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies”</p>
+            <div class="inner-testimonial-slider item flex flex-col gap-[48px]">
+              <div class="flex flex-col gap-[48px]">
+                <span>
+                  <img class="h-[48px] w-[54.857px] carouselImage" src="assets/image/Vector-img.svg" alt="">
+                </span>
+                <div class="">
+                  <p class="font-medium text-2xl text-[#585858] leading-[38.4px]">“ Lorem ipsum dolor sit amet
+                    consectetur. Pulvinar quis
+                    duis morbi fames
+                    dictum. Pretium quis tincidunt
+                    eget diam habitant in nulla. Augue turpis ac eleifend quisque ultricies ”</p>
+                </div>
               </div>
+
             </div>
             <!--  Testimonial Slider Item End-->
 
@@ -1450,14 +1486,15 @@
             <!--  News Blog Slider Item Start-->
             <div class="news-blog-image m-[15px] relative group">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[353px] rounded-lg object-cover group-hover\:height-580"
+                <img class="w-[100%] h-[585px] rounded-lg object-cover group-hover\:height-580"
                   src="assets/image/card hover.png" alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
                 <span class="text-sm font-inter font-medium">16 APR</span>
               </div>
-              <div class="flex flex-col gap-[25px]">
+              <div
+                class="flex flex-col gap-[25px] absolute w-[100%] bottom-[0] rounded-bl-[10px] rounded-br-[10px] p-[10px] bg-[#00000075]">
                 <div class="flex items-center gap-[24px]">
                   <div class="flex items-center gap-2">
                     <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
@@ -1480,9 +1517,10 @@
             <!--  News Blog Slider Item End-->
 
             <!--  News Blog Slider Item Start-->
-            <div class="news-blog-image m-[15px] relative">
+            <div class="news-blog-image m-[15px] relative group">
               <div class="inner-news-blog-image">
-                <img class="w-[100%] h-[353px] rounded-lg object-cover" src="assets/image/Rectangle 41.png" alt="">
+                <img class="w-[100%] h-[353px] rounded-lg object-cover group:hover-" src="assets/image/Rectangle 41.png"
+                  alt="">
               </div>
               <div
                 class="blog-date rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute top-[55%] left-[75%]">
@@ -1590,22 +1628,26 @@
 
 
 
+
+
   <!-- ----------FOOTER START------- -->
-  <footer class="bg-[#000] pt-[48px] pb-[48px] ">
-    <div class="container mx-auto">
-      <div class="main-footer flex gap-[100px] justify-between border-b border-[#fff] pt-[20px] pb-[50px] flex-wrap">
-        <div class="flex flex-col gap-[24px]">
+  <footer class="bg-[#000] pt-[130px] flex flex-col gap-[40px]">
+    <div class="container mx-auto flex flex-col gap-[40px] mx-[5px]">
+      <div
+        class="main-footer flex gap-[60px] justify-between border-b border-[#fff] pt-[20px] pb-[60px] flex-wrap mx-[5px]">
+        <div class="flex flex-col gap-[16px]">
           <!--Footet Logo Start-->
           <a href="#"><img class=" max-w-[150px]" src="assets/image/Travelta.png" alt=""></a>
           <!--Footet Logo Start-->
-          <p class="w-[300px] text-white font-inter text-base font-normal">Quisque imperdiet sapien porttito the
+          <p class="w-[300px] text-white font-inter text-base font-normal leading-[25.6px]">Quisque imperdiet sapien
+            porttito the
             bibendum
             sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
         </div>
 
         <div class="footer-menu-title flex flex-col gap-[24px]">
           <h2 class="text-white font-Messiri text-lg font-bold	">COMPANY</h2>
-          <ul class="text-white flex flex-col gap-[7px]">
+          <ul class="text-white flex flex-col gap-[8px]">
             <li class="text-white text-base font-inter font-medium"><a href="#">About Us</a></li>
             <li class="text-white text-base font-inter font-medium"><a href="#">Testimonials</a></li>
             <li class="text-white text-base font-inter font-medium"><a href="#">Rewards</a></li>
@@ -1617,7 +1659,7 @@
 
         <div class="footer-menu-title flex flex-col gap-[24px]">
           <h2 class="text-white font-Messiri text-lg font-bold">CONTACT US</h2>
-          <div class="flex flex-col gap-[15px]">
+          <div class="flex flex-col gap-[14px]">
             <p class="font-inter text-base text-white">Feel free to contact and reach us !!</p>
             <span class="flex gap-2 items-center text-white text-base font-inter ">
               <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
@@ -1669,54 +1711,71 @@
       </div>
       <!--Footet Flex End-->
 
-      <div class="wrapper-footer flex justify-between items-center">
-        <div class="flex flex-col gap-[24px] mt-5">
+      <div class="wrapper-footer flex justify-between items-start xl:flex-col xl:gap-[40px] mx-[5px]">
+        <div class="flex flex-col gap-[24px]">
           <span class="text-2xl font-medium	font-Messiri text-white">Subscribe our newsletter for more update & news
             !!</span>
-          <div class="subscribe-form flex items-center gap-[32px]">
+          <div class="subscribe-form flex items-center gap-[20px]  lg:flex-col lg:gap-[20px]">
             <input type="email" name="email"
-              class="mt-1 px-3 py-2.5 bg-[#151515] border shadow-sm border-[#FFFFFF33] placeholder-[#6C6C6C] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-[100%] rounded-md sm:text-sm focus:ring-1"
+              class="mt-1 px-[32px] py-[16px] bg-[#151515] text-white border shadow-sm border-[#FFFFFF33] placeholder-[#6C6C6C] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-[575px] md:max-w-[100%] md:w-[100%]  rounded-[10px] sm:text-sm focus:ring-1"
               placeholder="Enter Your Email" />
             <button type="button"
-              class="text-[#fff] hover:text-white border-2 border-[#FFFFFF33] hover:border-[#E2941F] hover:bg-[#E2941F] focus:ring-4 focus:outline-none focus:ring-green-300 font-medium rounded-lg text-sm px-7 py-2.5 text-center ">SUBSCRIBE</button>
+              class="text-[#fff] hover:text-white border border-[#FFF] hover:border-[#E2941F] hover:bg-[#E2941F]  focus:outline-none  font-medium rounded-[10px] text-sm px-7 py-[16px] text-center lg:w-[100%]  md:max-w-[100%] "><span
+                class="font-inter text-base leading-[22px] font-medium px-[37px] py-[16px]">SUBSCRIBE</span></button>
           </div>
         </div>
 
         <div>
-          <div class="flex flex-col gap-[20px]">
+          <div class="flex flex-col gap-[24px]">
             <!--Footet Social Icon Start-->
-            <ul class="flex gap-[16px] justify-end">
-              <li class="h-[35px] w-[35px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white"><a
-                  href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li class="h-[35px] w-[35px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white"><a
-                  href="#"><i class="fa-brands fa-twitter"></i></a></li>
-              <li class="h-[35px] w-[35px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white"><a
-                  href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li class="h-[35px] w-[35px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white"><a
-                  href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-              <li class="h-[35px] w-[35px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white"><a
-                  href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            <ul class="flex gap-[16px] justify-end xl:justify-start">
+              <li
+                class="py-[10px] px-[13.846px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                <a href="#" class="w-[8.4px] h-[16px]"><i
+                    class="fa-brands fa-facebook-f flex justify-center items-center"></i></a>
+              </li>
+              <li
+                class="py-[10px] px-[13.846px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                <a href="#" class="w-[19.689px] h-[16px]"><i
+                    class="fa-brands fa-twitter flex justify-center items-center"></i></a>
+              </li>
+              <li
+                class="py-[10px] px-[13.846px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                <a href="#" class="w-[16px] h-[16px]"><i
+                    class="fa-brands fa-instagram flex justify-center items-center"></i></a>
+              </li>
+              <li
+                class="py-[10px] px-[13.846px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                <a href="#" class="w-[16px] h-[16px]"><i
+                    class="fa-brands fa-linkedin flex justify-center items-center"></i></a>
+              </li>
+              <li
+                class="py-[10px] px-[13.846px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                <a href="#" class="w-[16px] h-[16px]"><i
+                    class="fa-brands fa-pinterest-p flex justify-center items-center"></i></a>
+              </li>
             </ul>
             <!--Footet Social Icon End-->
 
-            <div class="flex gap-[10px]">
-              <span class="text-sm text-white font-inter font-medium">Privacy Policy</span>
-              <span class="border border-[#FFFFFF33]"></span>
-              <span class="text-sm text-white font-inter font-medium">Terms & Conditions</span>
-              <span class="border border-[#FFFFFF33]"></span>
-              <span class="text-sm text-white font-inter font-medium">FAQ</span>
+            <div class="flex gap-[16px] items-center">
+              <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">Privacy Policy</span>
+              <span class="border border-[#FFF] w-[1px] h-[14px] "></span>
+              <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">Terms & Conditions</span>
+              <span class="border border-[#FFF] w-[1px] h-[14px] "></span>
+              <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">FAQ</span>
             </div>
           </div>
         </div>
       </div>
 
     </div>
-  </footer>
 
-  <div class="bg-[#0F0F0F]">
-    <p class="text-white pt-[30px] pb-[30px] pl-[10px] pr-[10px] text-center">Copyright © 2022 Traveler. All rights
-      reserved.</p>
-  </div>
+    <div class="bg-[#0F0F0F]">
+      <p class="text-white py-[40px] px-[10px] text-center text-base font-medium font-inter leading-[25.6px]">Copyright
+        © 2022 Traveler. All rights
+        reserved.</p>
+    </div>
+  </footer>
   <!------------white--------->
 
   <!-- JAVASCRIPTS START-->

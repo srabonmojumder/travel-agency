@@ -127,6 +127,14 @@ $(document).ready(function () {
             {
                 breakpoint: 800,
                 settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+
+            {
+                breakpoint: 575,
+                settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                 },
@@ -152,10 +160,10 @@ $(document).ready(function () {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
-        arrows: false,
+        arrows: true,
         dots: true,
-        // prevArrow: "<div class='instagram-left-nav'><i class='fa fa-arrow-left'></i></div>",
-        // nextArrow: "<div class='instagram-right-nav'><i class='fa fa-arrow-right'></i></div>",
+        prevArrow: "<div class='testimonial-left-nav'><i class='fa-solid fa-chevron-left'></i></div>",
+        nextArrow: "<div class='testimonial-right-nav'><i class='fa-solid fa-chevron-right'></i></div>",
         responsive: [
             {
                 breakpoint: 600,
@@ -209,13 +217,6 @@ $(document).ready(function () {
         ],
     });
     // <----------Our  Blog slider  End---------->
-
-
-
-
-
-
-
 
 
 
