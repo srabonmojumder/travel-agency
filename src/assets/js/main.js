@@ -176,57 +176,14 @@ $(document).ready(function () {
     });
     // <----------TESTIMONIAL slider End------------>
 
+
     //   <------------Our  Blog slider Start------------>
 
     $('.our-latest-news-blog').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: false,
-        arrows: true,
-        prevArrow: "<div class='nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
-        nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
-        responsive: [
-            {
-                breakpoint: 1279,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 991,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 767,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                },
-            },
-            {
-                breakpoint: 575,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                },
-            },
-        ],
-    });
-    // <----------Our  Blog slider  End---------->
-
-
-
-
-    //   <------------Our  Blog slider Start------------>
-
-    $('.our-latest-news-blog-two').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: false,
+        dots: true,
         arrows: true,
         prevArrow: "<div class='nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
         nextArrow: "<div class='nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
@@ -241,12 +198,20 @@ $(document).ready(function () {
             {
                 breakpoint: 1008,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 },
             },
             {
                 breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+
+            {
+                breakpoint: 775,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
@@ -255,6 +220,32 @@ $(document).ready(function () {
         ],
     });
     // <----------Our  Blog slider  End---------->
+
+    $(".testimonial-slider .slick-dots li").append("<div class='testimonial-title'><p class=''> Jenifer Laurance</p> <span class=''>Florida, USA</span></div>");
+
+    $(".testimonial-slider ul li div").css("display", "none");
+
+    $('.testimonial-slider ul li').click(function () {
+        if ($(this).hasClass('slick-active')) {
+            $(".testimonial-slider ul li div").css("display", "none");
+            $(this).children('div').css("display", "block");
+
+        } else {
+            $(this).children('div').css("display", "none");
+        }
+    });
+
+
+    // $(".testimonial-slider ul li:nth-child(2) div").css("display", "none");
+    // $(".testimonial-slider ul li:nth-child(3) div").css("display", "none");
+    // $(".testimonial-slider ul li:nth-child(4) div").css("display", "none");
+    // $(".testimonial-slider ul li:nth-child(5) div").css("display", "none");
+
+    $(".testimonial-slider ul li.slick-active:first-child div").css("display", "block");
+
+
+    // $(".testimonial-slider ul li span> :nth-child(2)").css("display", "block");
+
 
 });
 
