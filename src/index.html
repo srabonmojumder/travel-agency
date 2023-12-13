@@ -11,6 +11,13 @@
   <link rel="stylesheet" href="assets/fonts/fontawesome-free/css/all.min.css">
   <!-------------Font Awesome Icon Link End------------>
 
+  <!-- Pickadate.js files Start-->
+  <link rel="stylesheet" href="assets/css/default.css">
+  <link rel="stylesheet" href="assets/css/default.date.css">
+  <link rel="stylesheet" href="assets/css/default.time.css">
+  <!-- Pickadate.js files End-->
+
+
   <!-------------Google Font Link------------>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,7 +65,7 @@
 
       <!-- --------HEADER MENU START-------- -->
       <div class="">
-        <div class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] ">
+        <div class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] sm:gap-[40px]">
           <!--Header Logo Start-->
           <a href="#" class="ml-[10px]"><img class=" max-w-[150px]" src="assets/image/Travelta.png" alt=""></a>
           <!--Header Logo End-->
@@ -254,10 +261,13 @@
       <div
         class="inner-hero-section flex justify-center flex-col gap-[49px]  h-[600px]  max-w-[750px] p-5 relative lg:max-w-[100%]">
         <div class="hero-section-content leading-relaxed	">
-          <h2 class="text-7xl text-white font-Messiri font-bold leading-tight lg:text-[50px]">Discover. Stay. Enjoy.
+          <h2 class="text-7xl text-white font-Messiri font-bold leading-tight lg:text-[50px] sm:text-[35px] ">
+            Discover.
+            Stay. Enjoy.
             Your World, Your
             Way</h2>
-          <p class="text-2xl font-inter font-normal text-white leading-relaxed mt-5 mb-3 font-light lg:text-[20px]">
+          <p
+            class="text-2xl font-inter font-normal text-white leading-relaxed mt-5 mb-3 font-light lg:text-[20px] sm:text-[15px]">
             Unlock
             Extraordinary Adventures
             and Unparalleled Comfort with travelta. Discover the world's wonders through curated journeys, and indulge
@@ -284,105 +294,125 @@
 
   <!-- -------PLAN YOUR TRIP CHECK IN CHECK OUT SECTION START----- -->
 
-  <section class="lg:hidden relative mx-[5px]">
+  <!----DESKTOP DEVICE START---->
+
+  <section class="lg:py-[130px] relative mx-[5px]">
     <div class="container relative mx-auto  flex items-center justify-center">
       <form
-        class="bg-white rounded-[10px] shadow-md flex xl:gap-[20px] gap-[33px] py-[32px] px-[40px] absolute bottom-auto flex-wrap">
-        <div class="flex gap-[138px] flex-wrap xl:gap-[40px]">
-          <div class="mb-6">
+        class="mobile-trip-plan bg-white rounded-[10px] shadow-md lg:shadow-none flex  xl:gap-[40px] gap-[33px] py-[32px] px-[40px] absolute lg:static bottom-auto flex-wrap lg:w-[100%]">
+        <div class="flex gap-[80px] flex-wrap xl:gap-[55px] items-center lg:w-[100%]">
+          <div class="flex-col flex gap-[10px] md:w-[100%]">
             <label for="location"
-              class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
-                class=" flex items-center gap-[7px]"><img class="w-[11.524px]  h-[14px]"
-                  src="assets/image/locatiion.svg" alt=""> Location </span><img
-                src="assets/image/vectore-image-icon.svg" alt=""></label>
+              class="block text-sm font-semibold text-gray-600  flex items-center justify-between"><span
+                class=" flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[11.524px]  h-[14px]" src="assets/image/locatiion.svg" alt=""> Location </span><img
+                class="w-[14px] h-[6.983px]" src="assets/image/vectore-image-icon.svg" alt=""></label>
             <input type="text" id="location" name="location" placeholder="Where are you going"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+              class="w-full p-2  rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-[#666]">
           </div>
 
-          <div class="mb-6">
-            <label for="checkIn" class="block text-sm font-semibold text-gray-600 mb-2"><span
-                class="flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
-                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-in Date</span></label>
-            <input type="date" id="checkIn" name="checkIn"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+          <span class="border-r-[0.5px] h-[48px] border-[#A9A9A9] md:hidden"></span>
+
+          <div class="flex-col flex gap-[10px] md:w-[100%]">
+            <label for="checkIn" class="block text-sm font-semibold text-gray-600"><span
+                class="flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[14.52px]  h-[14px]" src="assets/image/check-in-check-out-time.svg" alt=""> Check in - Check
+                out </span></label>
+
+            <div class="flex items-center gap-[5px]">
+              <input type="text" id="checkin"
+                class=" rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-center text-[#666]"
+                placeholder="Check-in">
+              -
+              <input type="text" id="checkout"
+                class=" rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-center text-[#666]"
+                placeholder="Check-out">
+            </div>
+
           </div>
 
-          <div class="mb-6">
-            <label for="checkOut" class="block text-sm font-semibold text-gray-600 mb-2 "><span
-                class=" flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
-                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-out Date </span></label>
-            <input type="date" id="checkOut" name="checkOut"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
-          </div>
+          <span class="border-r-[0.5px] h-[48px] border-[#A9A9A9] md:hidden"></span>
 
-          <div class="mb-6">
+          <div class=" flex-col flex gap-[10px] md:w-[100%]">
             <label for="people"
-              class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
-                class="flex items-center gap-[7px]"><img class="w-[5.456px]  h-[12.3px]" src="assets/image/preson.svg"
-                  alt=""> Number of People </span><img src="assets/image/vectore-image-icon.svg" alt=""></label>
-            <input type="number" id="people" name="people" min="1" placeholder="1"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+              class="block text-sm font-semibold text-gray-600 flex items-center justify-between"><span
+                class="flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[5.456px]  h-[12.3px]" src="assets/image/preson.svg" alt=""> Number of People </span><img
+                class="w-[14px] h-[6.983px]" src="assets/image/vectore-image-icon.svg" alt=""></label>
+            <input type="number" id="people" name="people" min="1" placeholder="No. of people"
+              class="w-full p-2 rounded focus:outline-none  text-[12px] font-medium font-inter leading-[19.2px] text-[#666]">
           </div>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center lg:w-[100%]">
           <button type="submit"
-            class="bg-[#E2941F] hover:bg-[#E2941F] text-white font-bold py-[12px] px-[38px] rounded-[5px] focus:outline-none focus:shadow-outline transition duration-300">Search</button>
+            class=" lg:w-[100%] bg-[#E2941F] hover:bg-[#E2941F] text-white font-bold py-[12px] px-[38px] rounded-[5px] focus:outline-none focus:shadow-outline transition duration-300">Search
+            Now</button>
         </div>
       </form>
     </div>
   </section>
+  <!----DESKTOP DEVICE END---->
 
 
-  <section class="relative lg:block hidden py-[130px] mx-[5px]">
+  <!----MOBILE DEVICE START---->
+
+  <!-- <section class="relative lg:block hidden lg:py-[130px] mx-[5px]">
     <div class="container relative mx-auto  flex items-center justify-center">
       <form
-        class="ceck-in-check-out bg-white rounded-[10px] shadow-sm flex xl:gap-[20px] gap-[33px] py-[32px] px-[40px] justify-center sm:flex-col flex-wrap">
-        <div class="flex gap-[138px] flex-wrap xl:gap-[40px] lg:gap-[20px] justify-center sm:flex-col">
-          <div class="mb-6">
+        class="mobile-trip-plan bg-white rounded-[10px] shadow-md flex xl:gap-[40px] gap-[33px] py-[32px] px-[40px] lg:flex-col lg:items-start">
+        <div class="flex lg:items-start	 gap-[80px] flex-wrap xl:gap-[55px] items-center lg:gap-[20px] sm:flex-col">
+          <div class="flex-col flex gap-[10px]">
             <label for="location"
               class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
-                class=" flex items-center gap-[7px]"><img class="w-[11.524px]  h-[14px]"
-                  src="assets/image/locatiion.svg" alt=""> Location </span><img
+                class=" flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[11.524px]  h-[14px]" src="assets/image/locatiion.svg" alt=""> Location </span><img
                 src="assets/image/vectore-image-icon.svg" alt=""></label>
             <input type="text" id="location" name="location" placeholder="Where are you going"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+              class="w-full p-3  rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-[#666]">
           </div>
 
-          <div class="mb-6">
+          <span class=" border-r h-[48px] border-[#A9A9A9] md:hidden"></span>
+
+          <div class="flex-col flex">
             <label for="checkIn" class="block text-sm font-semibold text-gray-600 mb-2"><span
-                class="flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
-                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-in Date</span></label>
-            <input type="date" id="checkIn" name="checkIn"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+                class="flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[14.52px]  h-[14px]" src="assets/image/check-in-check-out-time.svg" alt=""> Check in - Check
+                out </span></label>
+
+            <div class="flex items-center gap-[5px]">
+              <input type="text" id="checkin"
+                class=" rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-center text-[#666]"
+                placeholder="Check-in">
+              -
+              <input type="text" id="checkout"
+                class=" rounded focus:outline-none text-[12px] font-medium font-inter leading-[19.2px] text-center text-[#666]"
+                placeholder="Check-out">
+            </div>
+
           </div>
 
-          <div class="mb-6">
-            <label for="checkOut" class="block text-sm font-semibold text-gray-600 mb-2 "><span
-                class=" flex items-center gap-[7px]"><img class="w-[14.52px]  h-[14px]"
-                  src="assets/image/check-in-check-out-time.svg" alt=""> Check-out Date </span></label>
-            <input type="date" id="checkOut" name="checkOut"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
-          </div>
+          <span class="border-r h-[48px] border-[#A9A9A9] md:hidden"></span>
 
-          <div class="mb-6">
+          <div class=" flex-col flex gap-[10px]">
             <label for="people"
               class="block text-sm font-semibold text-gray-600 mb-2 flex items-center justify-between"><span
-                class="flex items-center gap-[7px]"><img class="w-[5.456px]  h-[12.3px]" src="assets/image/preson.svg"
-                  alt=""> Number of People </span><img src="assets/image/vectore-image-icon.svg" alt=""></label>
-            <input type="number" id="people" name="people" min="1" placeholder="1"
-              class="w-full p-3 border rounded focus:outline-none focus:border-blue-500">
+                class="flex items-center gap-[7px] text-[16px] font-inter font-medium"><img
+                  class="w-[5.456px]  h-[12.3px]" src="assets/image/preson.svg" alt=""> Number of People </span><img
+                src="assets/image/vectore-image-icon.svg" alt=""></label>
+            <input type="number" id="people" name="people" min="1" placeholder="No. of people"
+              class="w-full p-3 rounded focus:outline-none  text-[12px] font-medium font-inter leading-[19.2px] text-[#666]">
           </div>
         </div>
 
-        <div class="flex items-center justify-center">
+        <div class="flex items-center justify-center lg:w-[100%]">
           <button type="submit"
-            class="bg-[#E2941F] w-[100%] hover:bg-[#E2941F] text-white font-bold py-[12px] px-[38px] rounded-[5px] focus:outline-none focus:shadow-outline transition duration-300">Search</button>
+            class="lg:w-[100%] bg-[#E2941F] hover:bg-[#E2941F] text-white font-bold py-[12px] px-[38px] rounded-[5px] focus:outline-none focus:shadow-outline transition duration-300">Search</button>
         </div>
       </form>
     </div>
-  </section>
-
+  </section> -->
+  <!----MOBILE DEVICE END---->
 
   <!-- ------- PLAN YOUR TRIP CHECK IN CHECK OUT SECTION END----- -->
 
@@ -512,7 +542,7 @@
                   <div
                     class="seemore-button absolute top-[43%] left-[31%]  lg:right-[30%] flex items-center justify-center">
                     <button
-                      class="seemore-icon bg-[#e2941f] flex items-center gap-[9px] p-[20px] lg:p-[15px] rounded-md text-white font-inter text-2xl font-semibold">See
+                      class="seemore-icon bg-[#e2941f] flex items-center gap-[9px] p-[20px] lg:p-[15px] rounded-md text-white font-inter text-2xl font-semibold lg:py-[14px] lg:px-[9px]">See
                       More
                       <svg class="h-[14px] w-[13px]" xmlns="http://www.w3.org/2000/svg" width="14" height="15"
                         viewBox="0 0 14 15" fill="none">
@@ -901,7 +931,7 @@
           <div class="special-packages-slider item relative mx-[20px]">
             <img class="special-packages-image h-[517px] w-[100%] rounded-[15px]" src="assets/image/card1.png" alt="">
             <div
-              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] sm:px-[15px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
               <div class=" flex gap-[12px] items-center">
                 <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
                   <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -970,7 +1000,7 @@
           <div class="special-packages-slider item relative mx-[20px]">
             <img class="special-packages-image  rounded-[15px] h-[517px] w-[100%]" src="assets/image/card2.png" alt="">
             <div
-              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] sm:px-[15px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
               <div class=" flex gap-[12px] items-center">
                 <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
                   <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -1039,7 +1069,7 @@
           <div class="special-packages-slider item relative mx-[20px]">
             <img class="special-packages-image h-[517px] w-[100%] rounded-[15px]" src="assets/image/card2.png" alt="">
             <div
-              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
+              class="inner-special-packages-slider h-[282px] max-w-[360px] py-[8px] px-[24px] sm:px-[15px] bg-[#000000CC] rounded-lg absolute bottom-[20px] left-[20px] special-packages-deatailes flex flex-col justify-center gap-[16px]">
               <div class=" flex gap-[12px] items-center">
                 <span class="flex gap-[6px] items-center text-[#A9A9A9] font-normal	text-sm font-inter">
                   <svg class='h-[14px] w-[14px]' xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -1441,8 +1471,9 @@
                   class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">16
                   AUG</span>
               </div>
+
               <div
-                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-t  group-hover:from-[#0000005e]  group-hover:via-[#0000005e]  group-hover:to-[#0000005e] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
                 <div class="flex  flex-col gap-[12px]">
                   <div class="items-center gap-[24px] flex">
                     <div class="flex items-center gap-2">
@@ -1456,10 +1487,10 @@
                     Friends</h3>
                 </div>
                 <span
-                  class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] ingroup">Read
+                  class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
                   More
                   <svg
-                    class="ingroup-hover:transform ingroup-hover:-rotate-45 ingroup-hover:transition-all ingroup-hover:ease-in-out ingroup-hover:duration-300"
+                    class="ingroup-hover:transform group-hover:-rotate-45 ingroup-hover:transition-all ingroup-hover:ease-in-out ingroup-hover:duration-300"
                     xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                     <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F" class="h-[10px] w-[10px]"
                       stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
@@ -1480,7 +1511,7 @@
                   APR</span>
               </div>
               <div
-                class="blog-daitales group-hover:h-[230px] group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-r  group-hover:from-[#0000005e]  group-hover:via-[#0000005e]  group-hover:to-[#0000005e] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
                 <div class="flex  flex-col gap-[12px]">
                   <div class="items-center gap-[24px] flex">
                     <div class="flex items-center gap-2">
@@ -1518,7 +1549,7 @@
                   APR</span>
               </div>
               <div
-                class="blog-daitales group-hover:h-[230px] group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-r  group-hover:from-[#0000005e]  group-hover:via-[#0000005e]  group-hover:to-[#0000005e] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
                 <div class="flex  flex-col gap-[12px]">
                   <div class="items-center gap-[24px] flex">
                     <div class="flex items-center gap-2">
@@ -1555,7 +1586,7 @@
                   APR</span>
               </div>
               <div
-                class="blog-daitales group-hover:h-[230px] group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-r  group-hover:from-[#0000005e]  group-hover:via-[#0000005e]  group-hover:to-[#0000005e] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
                 <div class="flex  flex-col gap-[12px]">
                   <div class="items-center gap-[24px] flex">
                     <div class="flex items-center gap-2">
@@ -1592,7 +1623,7 @@
                   MRC</span>
               </div>
               <div
-                class="blog-daitales group-hover:h-[230px] group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-r  group-hover:from-[#0000005e]  group-hover:via-[#0000005e]  group-hover:to-[#0000005e] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
                 <div class="flex  flex-col gap-[12px]">
                   <div class="items-center gap-[24px] flex">
                     <div class="flex items-center gap-2">
@@ -1627,13 +1658,6 @@
   <!--end Section-->
 
   <!-- --------------- Our Latest News and Blogs End-------------------- -->
-
-
-
-
-
-
-
 
 
 
@@ -1788,6 +1812,11 @@
 
   <!-- JAVASCRIPTS START-->
   <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <!-- Pickadate.js files Start-->
+  <script src="assets/js/picker.js"></script>
+  <script src="assets/js/picker.date.js"></script>
+  <script src="assets/js/picker.time.js"></script>
+  <!-- Pickadate.js files End-->
   <script src="assets/js/slick-main.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/script.js"></script>

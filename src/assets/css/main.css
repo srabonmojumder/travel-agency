@@ -58,10 +58,28 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* -------HEADER DROPDOWN MENU END----- */
 
+/* // Initialize Pickadate.js Start-------- */
+
+.picker__select--month, .picker__select--year{
+  padding: 0;
+}
 
 .ceck-in-check-out{
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
 }
+
+.picker__input{
+  padding: 9px 0px;
+  max-width: 36%;
+}
+
+.picker__box{
+  padding-top: 20px;
+}
+
+
+/* // Initialize Pickadate.js End-------- */
+
 
 /* -----Best Tour Packages START---- */
 .main-slider .slick-list.draggable{
@@ -193,17 +211,18 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* -------DOTS END---------- */
 
-
-
 /* -----TESTIMONIAL What Clients Saying Start---- */
 
 .testimonial-slider .slick-dots{
   bottom: -100px;
   display: flex;
   justify-content: center;
-  gap: 70px;
+  gap: 49px;
 }
 
+.testimonial-slider .slick-dots li{
+  margin: auto 10px;
+}
 
 .testimonial-slider .slick-dots li button:hover, .slick-dots li button:focus{
   transform: none;
@@ -283,7 +302,6 @@ input[type="search"]::-webkit-search-cancel-button {
   transform: scale(1.4);
 }
 
-
 .testimonial-title {
   position: absolute;
   width: 200px;
@@ -309,15 +327,9 @@ input[type="search"]::-webkit-search-cancel-button {
   color: #6C6C6C;
 }
 
-
-
 /* -----TESTIMONIAL What Clients Saying End---- */
 
- 
-
-
-
-/* <!-- ---------------Instagram slider Start------------> */
+/* <!---------------Instagram slider Start------------> */
 .inner-nav-bar-left-arrow{
   position: relative;
 }
@@ -364,7 +376,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /* <!-- --------------- Our Latest News and Blogs Start-------------------- --> */
 .blog-daitales{
   border-radius: 0px 0px 9px 9px;
-  background: rgba(255, 255, 255, 0.20);
+  background: rgb(0 0 0 / 31%);
   box-shadow: 6px 6px 20px 0px rgba(255, 255, 255, 0.30) inset;
   backdrop-filter: blur(3px);
   display: flex;
@@ -377,7 +389,6 @@ input[type="search"]::-webkit-search-cancel-button {
 .our-latest-news-blog ul.slick-dots{
   bottom: -32px;
 }
-
+/* box-shadow: inset 0 0 25px #470405,
+3px 3px 5px 0 #ccc; */
 /* <!-- --------------- Our Latest News and Blogs End-------------------- --> */
-
-

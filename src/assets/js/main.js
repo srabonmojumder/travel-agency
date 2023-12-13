@@ -235,16 +235,41 @@ $(document).ready(function () {
         }
     });
 
-
-    // $(".testimonial-slider ul li:nth-child(2) div").css("display", "none");
-    // $(".testimonial-slider ul li:nth-child(3) div").css("display", "none");
-    // $(".testimonial-slider ul li:nth-child(4) div").css("display", "none");
-    // $(".testimonial-slider ul li:nth-child(5) div").css("display", "none");
-
     $(".testimonial-slider ul li.slick-active:first-child div").css("display", "block");
 
 
-    // $(".testimonial-slider ul li span> :nth-child(2)").css("display", "block");
+    // <--------Initialize Pickadate.js Start-------->
+
+    // Initialize Pickadate.js for Check-in
+    var checkinPicker = $('#checkin').pickadate({
+        selectYears: true,
+        selectMonths: true,
+        selectTime: false,
+        onClose: function () {
+            var selectedDate = this.get();
+            console.log("Check-in Date:", selectedDate);
+        }
+    }).pickadate('picker');
+
+    // Set default Check-in time to 09:00 AM
+    checkinPicker.set('select', '09:00', { format: 'HH:i' });
+
+    // Initialize Pickadate.js for Check-out
+    var checkoutPicker = $('#checkout').pickadate({
+        selectYears: true,
+        selectMonths: true,
+        selectTime: false,
+        onClose: function () {
+            var selectedDate = this.get();
+            console.log("Check-out Date:", selectedDate);
+        }
+    }).pickadate('picker');
+
+    // Set default Check-out time to 05:00 PM
+    checkoutPicker.set('select', '17:00', { format: 'HH:i' });
+
+
+    // <--------Initialize Pickadate.js Start-------->
 
 
 });
