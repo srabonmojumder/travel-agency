@@ -83,7 +83,7 @@ $(document).ready(function () {
             {
                 breakpoint: 1008,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                     slidesToScroll: 1,
                 },
             },
@@ -156,12 +156,49 @@ $(document).ready(function () {
 
     //   <-----------TESTIMONIAL slider Start-------->
 
+    // $('.testimonial-slider').slick({
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //     autoplay: false,
+    //     arrows: true,
+    //     dots: true,
+    //     prevArrow: "<div class='testimonial-left-nav'><i class='fa-solid fa-chevron-left'></i></div>",
+    //     nextArrow: "<div class='testimonial-right-nav'><i class='fa-solid fa-chevron-right'></i></div>",
+    //     responsive: [
+    //         {
+    //             breakpoint: 600,
+    //             settings: {
+    //                 slidesToShow: 1,
+    //                 slidesToScroll: 1
+    //             }
+    //         },
+    //     ]
+    // });
+
+
+    // $(".testimonial-slider .slick-dots li").append("<div class='testimonial-title'><p class=''> Jenifer Laurance</p> <span class=''>Florida, USA</span></div>");
+
+    // $(".testimonial-slider ul li div").css("display", "none");
+
+    // $('.testimonial-slider ul li').click(function () {
+    //     if ($(this).hasClass('slick-active')) {
+    //         $(".testimonial-slider ul li div").css("display", "none");
+    //         $(this).children('div').css("display", "block");
+
+    //     } else {
+    //         $(this).children('div').css("display", "none");
+    //     }
+    // });
+
+    // $(".testimonial-slider ul li.slick-active:first-child div").css("display", "block");
+
+
     $('.testimonial-slider').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: false,
         arrows: true,
-        dots: true,
+        dots: false,
         prevArrow: "<div class='testimonial-left-nav'><i class='fa-solid fa-chevron-left'></i></div>",
         nextArrow: "<div class='testimonial-right-nav'><i class='fa-solid fa-chevron-right'></i></div>",
         responsive: [
@@ -220,22 +257,6 @@ $(document).ready(function () {
         ],
     });
     // <----------Our  Blog slider  End---------->
-
-    $(".testimonial-slider .slick-dots li").append("<div class='testimonial-title'><p class=''> Jenifer Laurance</p> <span class=''>Florida, USA</span></div>");
-
-    $(".testimonial-slider ul li div").css("display", "none");
-
-    $('.testimonial-slider ul li').click(function () {
-        if ($(this).hasClass('slick-active')) {
-            $(".testimonial-slider ul li div").css("display", "none");
-            $(this).children('div').css("display", "block");
-
-        } else {
-            $(this).children('div').css("display", "none");
-        }
-    });
-
-    $(".testimonial-slider ul li.slick-active:first-child div").css("display", "block");
 
 
     // <--------Initialize Pickadate.js Start-------->

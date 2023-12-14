@@ -5,18 +5,13 @@
 @media screen and (max-width: 1199px) {}
 
 @media screen and (max-width: 991px) {
-    .mobile-trip-plan{
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px !important;
-      }
+  .mobile-trip-plan {
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px !important;
+  }
 
-      .testimonial-left-nav.slick-arrow{
-          right: 50%;
-          bottom: -265px;
-      }
-
-      .testimonial-right-nav.slick-arrow{
-        bottom: -265px;
-      }
+  .testimonial-left-nav.slick-arrow {
+    right: 50%;
+  }
 }
 
 @media screen and (max-width: 767px) {}
@@ -26,29 +21,29 @@
 
 
 @media screen and (max-width: 480px) {
-    
-.testimonial-slider .slick-dots  li:nth-child(1) button{
-    transform: scale(1.1);
-  }
-  
-  .testimonial-slider .slick-dots  li:nth-child(2) button{
-    transform: scale(1.5);
-  }
-  
-  .testimonial-slider .slick-dots  li:nth-child(3) button{
-    transform: scale(2);
-  }
-  
-  .testimonial-slider .slick-dots  li:nth-child(4) button{
-    transform: scale(1.5);
-  }
-  
-  .testimonial-slider .slick-dots  li:nth-child(5) button{
+
+  .testimonial-slider .slick-dots li:nth-child(1) button {
     transform: scale(1.1);
   }
 
-  .testimonial-slider .slick-dots{
-      justify-content: start;
-      gap: 55px;
+  .testimonial-slider .slick-dots li:nth-child(2) button {
+    transform: scale(1.5);
+  }
+
+  .testimonial-slider .slick-dots li:nth-child(3) button {
+    transform: scale(2);
+  }
+
+  .testimonial-slider .slick-dots li:nth-child(4) button {
+    transform: scale(1.5);
+  }
+
+  .testimonial-slider .slick-dots li:nth-child(5) button {
+    transform: scale(1.1);
+  }
+
+  .testimonial-slider .slick-dots {
+    justify-content: start;
+    gap: 55px;
   }
 }
