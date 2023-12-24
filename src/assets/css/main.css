@@ -357,3 +357,89 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 /* <!-- --------------- Our Latest News and Blogs End-------------------- --> */
+
+
+/* <!-- ---------------Explore the World by Region Start---------- --> */
+.packages-card-item{
+  padding: 6px 6px 8px 6px;
+  box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  border-radius: 5px;
+}
+
+.box-shadow-custom{
+  background: var(--Primary-Soft, #FFF6EA);
+  box-shadow: 1px 2px 4px -1px rgba(0, 0, 0, 0.04);
+}
+
+/* <!-- ---------------Explore the World by Region End---------- --> */
+
+
+
+/* --------Island Paradise Getaways Start--------*/
+
+.island-paradise-getaways-slider .slick-list.draggable{
+  height: 450px !important;
+}
+
+
+.island-paradise-getaways-slider-item{
+  transition: all ease 0.3s;
+}
+
+.island-paradise-getaways-slider-item.item:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.island-paradise-nav-bar-left-arrow.slick-arrow:hover {
+  background-color: #ffeed5;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.island-paradise-nav-bar-left-arrow.slick-arrow {
+  height: 40px;
+  position: absolute;
+  top: 42%;
+  width: 40px;
+  background-color: #E2E2E2;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: #616161;
+  cursor: pointer;
+  left: 10px;
+  z-index: 9;
+}
+
+.island-paradise-nav-bar-left-arrow {
+  position: relative;
+}
+
+
+.island-paradise-nav-bar-right-arrow.slick-arrow:hover {
+  background-color: #ffeed5;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.island-paradise-nav-bar-right-arrow.slick-arrow {
+  height: 40px;
+  position: absolute;
+  top: 42%;
+  width: 40px;
+  background-color: #E2E2E2;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 10px;
+  color: #616161;
+  cursor: pointer;
+  right: 9px;
+}
+
+.island-paradise-getaways-slider .slick-dots li.slick-active button:before {
+  transform: scale(1.4);
+}
+
+.island-paradise-getaways-slider .slick-dots{
+  bottom: 0;
+}
+
+/* --------Island Paradise Getaways End--------*/
