@@ -541,6 +541,23 @@ li.catefories-menu:hover .catefories-submenu {
 .trending-news-image {
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
   border-radius: 10px;
+  transition: all ease 0.3s;
+}
+.trending-news-image:hover .tranding-svg{
+  color: #E2941F;
+  
+}
+
+.trending-news-image:hover .tranding-svg svg{
+  transform: rotate(-45deg);
+}
+
+.tranding-svg svg{
+  transition: all ease 0.3s;
+}
+
+.tranding-svg{
+  transition: all ease 0.3s;
 }
 
 .trending-news .slick-dots li.slick-active button:before {
@@ -595,3 +612,11 @@ li.catefories-menu:hover .catefories-submenu {
   right: 9px;
 }
 /* <!-- --------------- Trending News End-------------------- --> */
+
+/* <!------ News About Upcoming Tours and Packages  Start------> */
+
+.view-post:hover p svg{
+  color: white !important;
+}
+
+/* <!------ News About Upcoming Tours and Packages  End------> */
