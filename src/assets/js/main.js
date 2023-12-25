@@ -343,3 +343,104 @@ $(document).ready(function () {
 
 
 //------------Island Paradise Getaways slider End----------->
+
+
+
+
+    //   <------------our-blog-page-latest-news-blog Start------------>
+
+    $('.our-blog-page-latest-news-blog').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        dots: true,
+        arrows: true,
+        prevArrow: "<div class='our-blog-page-nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
+        nextArrow: "<div class='our-blog-page-nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
+        responsive: [
+            {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 1008,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+            {
+                breakpoint: 800,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+
+            {
+                breakpoint: 775,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                },
+            },
+        ],
+    });
+    // <----------our-blog-page-latest-news-blog  End---------->
+
+
+
+
+
+
+
+
+
+
+
+        //       <!-- --------------- Trending News Start-------------------- -->
+
+        $('.trending-news').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: false,
+            dots: true,
+            arrows: true,
+            prevArrow: "<div class='trending-news-nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
+            nextArrow: "<div class='trending-news-nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 1008,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+                {
+                    breakpoint: 800,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                    },
+                },
+    
+                {
+                    breakpoint: 775,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    },
+                },
+            ],
+        });
+        //    <!-- --------------- Trending News End-------------------- -->

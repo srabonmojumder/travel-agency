@@ -1,0 +1,1181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Basic HTML/Tailwind starter</title>
+    <meta name="description" content="Basic HTML/Tailwind starter" />
+    <meta name="author" content="Daily Dev Tips" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-------------Font Awesome Icon Link Start------------>
+    <link rel="stylesheet" href="assets/fonts/fontawesome-free/css/all.min.css">
+    <!-------------Font Awesome Icon Link End------------>
+
+    <!-- Pickadate.js files Start-->
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/default.date.css">
+    <link rel="stylesheet" href="assets/css/default.time.css">
+    <!-- Pickadate.js files End-->
+
+
+    <!-------------Google Font Link------------>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-------------Google Font Link End------------>
+
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-------------Slick Slider Link------------>
+    <link rel="stylesheet" href="assets/css/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/slick/slick.css">
+    <!-------------Slick Slider Link End------------>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+    <!--------HEADER  START -------->
+    <header class="bg-[#000]">
+        <nav>
+            <!-- <div class="container mx-auto"> -->
+            <div class="border-b border-[#1B1B1B]">
+                <div class="container mx-auto flex justify-between pt-[20px] pb-[20px]">
+                    <div class="text-white flex flex-wrap gap-[30px] py-[4px] ml-[10px]">
+                        <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
+                                src="assets/image/mail-icon.svg" alt="">
+                            <span class="font-inter text-sm font-medium">tourer@info.com</span></a>
+                        <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
+                                src="assets/image/phone-icon.svg" alt=""> <span
+                                class="font-inter text-sm font-medium">0123 456
+                                789</span></a>
+                    </div>
+                    <div></div>
+                    <div class="text-white flex flex-wrap gap-[20px] py-[4px] mr-[10px]">
+                        <a href="#" class="flex items-center gap-[20px] font-inter text-sm font-medium"> <img
+                                class="w-[16px] h-[16px]" src="assets/image/login-user-icon.svg" alt=""> Login</a>
+                        <span class="border-r h-[17px]"></span>
+                        <a href="#" class=" font-inter text-sm font-medium">Register</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- --------HEADER MENU START-------- -->
+            <div class="">
+                <div
+                    class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] sm:gap-[40px]">
+                    <!--Header Logo Start-->
+                    <a href="index.html" class="ml-[10px]"><img class=" max-w-[150px]" src="assets/image/Travelta.png"
+                            alt=""></a>
+                    <!--Header Logo End-->
+                    <div class="">
+                        <!-- Start Mobile button Start-->
+                        <div class="mobile-menu text-4xl text-white hidden xl:block">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                        <!-- End Mobile button End-->
+                        <!-- Navigation Menu Start-->
+                        <ul
+                            class="header-list-item xl:hidden flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold">
+                            <li
+                                class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                <a class="" href="index.html">Home</a>
+                            </li>
+
+                            <li
+                                class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                <a class="" href="#">About Us </a>
+                            </li>
+
+                            <div class="dropdown">
+                                <li
+                                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                    <a class="flex gap-[8px] items-center relative" href="#">Destinations <img
+                                            src="assets/image/Vector.svg" alt=""></a>
+                                </li>
+                                <div
+                                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                </div>
+                            </div>
+
+
+                            <div class="dropdown">
+                                <li
+                                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer  font-inter text-[16px] font-semibold">
+                                    <a class="flex gap-[8px] items-center relative" href="#">Packages <img
+                                            src="assets/image/Vector.svg" alt=""></a>
+                                </li>
+                                <div
+                                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                </div>
+                            </div>
+
+                            <div class="dropdown">
+                                <li
+                                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                    <a class="flex  gap-[8px] items-center relative" href="#">Pages <img
+                                            src="assets/image/Vector.svg" alt=""></a>
+                                </li>
+                                <div
+                                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
+                                        3</a>
+                                </div>
+                            </div>
+                            <li
+                                class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                <a href="Blog-page.html">Blog & News</a>
+                            </li>
+
+                            <li
+                                class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
+                                <a href="#">Contact</a>
+                            </li>
+
+                        </ul>
+                        <!-- Navigation Menu End-->
+                    </div>
+
+                    <!-- Start Mobile button Start-->
+                    <div class="mobile-menu text-4xl text-white hidden">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                    <!-- End Mobile button End-->
+
+                    <!-- Start search Bar Start-->
+                    <div class="search-bar language-selact flex flex-wrap items-center gap-[16px] mr-[10px]">
+                        <div class="flex items-center flex-wrap rounded-lg relative">
+
+                            <div
+                                class="search-icon bg-[#000]  hover:bg-[#000] text-white px-[10px] py-[10px] rounded-lg relative z-10 shadow-md left-[14px]">
+                                <img class="h-[24px] w-[24px]" src="assets/image/search-icon.svg" alt="">
+                            </div>
+
+                            <input
+                                class="absolute search-input rounded-md bg-black  text-lg	text-white outline-none focus:outline-none:focus w-[250px] top-[86px] z-[9999] left-[17px]"
+                                type="search" autocomplete="off" spellcheck="false" aria-live="polite"
+                                placeholder="Search.....">
+                        </div>
+                        <!-- End search Bar End-->
+
+                        <!----USD SELACT START ---->
+                        <div class="flex gap-[16px] ml-[10px]">
+
+                            <div class="dropdown">
+                                <!-- Trigger button for the dropdown -->
+                                <button
+                                    class="usd-button text-base font-semibold relative flex items-center gap-2 rounded-lg  px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]">USD
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-[6.5px] w-[13.5px]" width="14"
+                                        height="8" viewBox="0 0 14 8" fill="none">
+                                        <path d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
+                                            fill="white" />
+                                    </svg></button>
+
+                                <!-- Dropdown content -->
+                                <div
+                                    class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f]  w-[150px]">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        3</a>
+                                </div>
+                            </div>
+                            <!----USD Selact end ---->
+
+                            <!---- LANGUAGE SELACT END ----->
+
+                            <div class="dropdown">
+                                <!-- Trigger button for the dropdown -->
+                                <button
+                                    class="language-selacted text-base font-semibold relative flex items-center gap-2 rounded-lg px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]">ENG
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"
+                                        fill="none">
+                                        <path d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
+                                            fill="white" />
+                                    </svg></button>
+
+                                <!-- Dropdown content -->
+                                <div
+                                    class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f] w-[150px]">
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        1</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        2</a>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
+                                        3</a>
+                                </div>
+                            </div>
+                            <!---- LANGUAGE SELACT END ----->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- --------HEADER MENU END-------- -->
+            <!-- </div> -->
+        </nav>
+        <!--end container-->
+    </header>
+    <!-- ------HEADER  END -------->
+
+    <!-- -------HERO SECTION START----- -->
+    <section
+        class="relative Packages-hero-section bg-image-container bg-cover bg-center bg-no-repeat bg-[url('../assets/image/blog-hero.jpeg')] h-[694px] w-[100%]">
+        <div class="bg-gradient-to-r from-[#0000009c] to-[#0000009c] via-[#0000009c] h-[100%] w-[100%] absolute">
+        </div>
+        <div class="container mx-auto h-[100%] flex text-center justify-center">
+            <div class="inner-hero-section flex justify-center flex-col gap-[49px]  p-5 relative ">
+                <div class="hero-section-content leading-relaxed	">
+                    <p
+                        class="text-[32px] font-inter font-semibold  text-[#E2941F] leading-[51.2px] mt-5 mb-3 lg:text-[20px] sm:text-[15px]">
+                        Blog & News</p>
+                    <h2
+                        class="text-[64px] text-white font-Messiri font-bold leading-[76.8px] lg:text-[50px] sm:text-[35px] ">
+                        Explore the World Through Our Blog</h2>
+                </div>
+
+            </div>
+            <!--end Flex-->
+        </div>
+        <!--end container-->
+    </section>
+    <!--end section-->
+
+    <!-- -------HERO SECTION END----- -->
+
+    <!--------- Journey is Measured in New Friends Start--------->
+    <section class="py-[130px] mx-[5px]">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-2 lg:grid-cols-1 gap-[183px] items-center">
+                <div class="flex flex-col gap-[48px]">
+                    <div class="flex flex-col gap-[24px]">
+                        <h2 class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B]">Search</h2>
+                        <div class="font-sans text-black  bg-white flex items-center">
+                            <div class="border border-[#6C6C6C] overflow-hidden flex rounded-[8px] w-[100%]">
+                                <input type="search" class="measured-search outline-none px-[30px] py-[20px] w-[100%]"
+                                    placeholder="Keywords...">
+                                <button class="flex items-center justify-center px-[20px] ">
+                                    <svg class="w-[27px] h-[34px] text-grey-dark" fill="currentColor"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path
+                                            d="M16.32 14.9l5.39 5.4a1 1 0 0 1-1.42 1.4l-5.38-5.38a8 8 0 1 1 1.41-1.41zM10 16a6 6 0 1 0 0-12 6 6 0 0 0 0 12z" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-[24px]">
+                        <h2 class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B]">Categories</h2>
+                        <div>
+                            <ul class="flex gap-[16px] flex-col ">
+                                <li class="catefories-menu group relative">
+                                    <a href="#"
+                                        class="group border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">
+                                        Destination Guides
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div
+                                        class="catefories-submenu opacity-0 invisible absolute top-[70px] bg-white shadow-md border border-[#928c8c98] mt-[6px] p-[10px] rounded-md w-[100%]">
+                                        <!-- Your submenu content goes here -->
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 1</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <!-- Add more submenu items as needed -->
+                                    </div>
+                                </li>
+
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Destination
+                                        Guides
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Destination
+                                        Guides
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Travel
+                                        Stories
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Travel
+                                        Tips
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Cultural
+                                        Experiences
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="catefories-menu group relative">
+                                    <a href="#"
+                                        class="group border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">
+                                        Adventure Travel
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                    <div
+                                        class="catefories-submenu opacity-0 invisible absolute top-[70px] bg-white shadow-md border border-[#928c8c98] mt-[6px] p-[10px] rounded-md w-[100%]">
+                                        <!-- Your submenu content goes here -->
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 1</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <a href="#"
+                                            class=" font-inter text-[20px] font-normal leading-[32px] mt-[3px] text-[#585858] block py-3 px-3">Submenu
+                                            Item 2</a>
+                                        <!-- Add more submenu items as needed -->
+                                    </div>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Honeymoon
+                                        Escapes
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+
+                                <li class="group">
+                                    <a href="#"
+                                        class=" border-b-[0.5px] border-b-[#6C6C6C] py-[10px] gap-[96px] flex items-center justify-between font-inter text-[20px] font-normal leading-[32px] text-[#585858]">Family-Friendly
+                                        Travel
+                                        <span class="mr-[20px] group-hover:mr-0 transition-all duration-300">
+                                            <svg class="w-[16px]" xmlns="http://www.w3.org/2000/svg" width="17"
+                                                height="16" viewBox="0 0 17 16" fill="none">
+                                                <path
+                                                    d="M16.7071 8.70711C17.0976 8.31658 17.0976 7.68342 16.7071 7.29289L10.3431 0.928932C9.95262 0.538408 9.31946 0.538408 8.92893 0.928932C8.53841 1.31946 8.53841 1.95262 8.92893 2.34315L14.5858 8L8.92893 13.6569C8.53841 14.0474 8.53841 14.6805 8.92893 15.0711C9.31946 15.4616 9.95262 15.4616 10.3431 15.0711L16.7071 8.70711ZM-4.38577e-09 9L16 9L16 7L4.38577e-09 7L-4.38577e-09 9Z"
+                                                    fill="#585858" />
+                                            </svg>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="">
+                        <div class="relative flex flex-col gap-[32px]">
+                            <h2 class="text-[#2B2B2B] font-Messiri text-[40px] font-bold leading-[48px]">Todays Update
+                            </h2>
+                            <img class="h-[457px] w-[100%] rounded-[10px]" src="assets/image/journey-measured.jpeg"
+                                alt="">
+                            <span
+                                class="font-inter leading-[16.8px] font-semibold text-[14px] text-white py-[10px] px-[20px] bg-[#E2941F] rounded-[3px] absolute bottom-[50px] right-[21px]">August
+                                16, 2023</span>
+                        </div>
+                        <div class="flex flex-col gap-[25px] py-[20px]">
+                            <div class="flex items-center gap-[24px]">
+                                <div class="flex items-center gap-2">
+                                    <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                    <span
+                                        class="text-[20px] font-medium text-[#E2941F] font-inter leading-[32px]">Tour</span>
+                                </div>
+                                <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                <span class="text-[#6C6C6C] text-[20px] font-inter font-medium leading-[32px]">2
+                                    Comments</span>
+                            </div>
+                            <h3 class="font-semibold leading-[38.4px] font-Messiri text-[32px]">Journey is Measured in
+                                New Friends</h3>
+                            <span
+                                class="font-inter text-[20px] font-medium leading-[32px] text-[#6C6C6C] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                More
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                    fill="none">
+                                    <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!--------- Journey is Measured in New Friends End--------->
+
+
+
+
+    <!-- --------------- our-blog-page-latest-news-blog Start-------------------- -->
+
+    <section class="py-[130px]  mx-[5px]">
+        <div class="container mx-auto flex flex-col gap-[48px]">
+
+            <div class="flex  flex-col justify-center gap-[12px] text-center">
+                <span class="text-[18px] font-inter font-medium text-[#E2941F] leading-[28.8px]">NEWS & BLOGS</span>
+                <h2 class="font-Messiri text-[48px] leading-[57.6px] font-bold">Our Latest News and Blogs</h2>
+                <p class="w-[900px] max-w-[100%] mx-auto font-inter text-base leading-[25.6px]">Unwrap extraordinary
+                    journeys
+                    with our top
+                    tour packages, meticulously crafted for seamless adventures. Dive into diverse cultures, captivating
+                    landscapes, and hassle-free exploration, making every moment unforgettable.</p>
+            </div>
+
+            <div class="our-blog">
+                <div class="container mx-auto">
+                    <div class="our-blog-page-latest-news-blog flex gap-[40px] justify-center mt-5">
+
+                        <!--  News Blog Slider Item Start-->
+                        <div class="news-blog-image mx-[15px] relative group">
+                            <div class="inner-news-blog-image">
+                                <img class="w-[100%] h-[583px] rounded-lg object-cover"
+                                    src="assets/image/our-blog-page-latest-news-blog1.jpeg" alt="">
+                            </div>
+                            <div class="blog-date relative">
+                                <span
+                                    class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">16
+                                    AUG</span>
+                            </div>
+
+                            <div
+                                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                                <div class="flex  flex-col gap-[12px]">
+                                    <div class="items-center gap-[24px] flex">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-sm font-medium text-[#E2941F] font-inter leading-[22.4px]">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#fff] rounded-full"></span>
+                                        <span class="text-[#fff] text-sm font-inter font-medium leading-[22.4px]">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-bold font-Messiri text-2xl leading-[28.8px] text-white">Journey is
+                                        Measured in New
+                                        Friends</h3>
+                                </div>
+                                <span
+                                    class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
+                                    More
+                                    <svg class="ingroup-hover:transform group-hover:-rotate-45 ingroup-hover:transition-all ingroup-hover:ease-in-out ingroup-hover:duration-300"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none">
+                                        <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F"
+                                            class="h-[10px] w-[10px]" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!--  News Blog Slider Item End-->
+
+                        <!--  News Blog Slider Item Start-->
+                        <div class="news-blog-image mx-[15px] relative group">
+                            <div class="inner-news-blog-image">
+                                <img class="w-[100%] h-[583px] rounded-lg object-cover"
+                                    src="assets/image/our-blog-page-latest-news-blog2.jpeg" alt="">
+                            </div>
+                            <div class="blog-date relative">
+                                <span
+                                    class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">16
+                                    AUG</span>
+                            </div>
+
+                            <div
+                                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                                <div class="flex  flex-col gap-[12px]">
+                                    <div class="items-center gap-[24px] flex">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-sm font-medium text-[#E2941F] font-inter leading-[22.4px]">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#fff] rounded-full"></span>
+                                        <span class="text-[#fff] text-sm font-inter font-medium leading-[22.4px]">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-bold font-Messiri text-2xl leading-[28.8px] text-white">Journey is
+                                        Measured in New
+                                        Friends</h3>
+                                </div>
+                                <span
+                                    class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
+                                    More
+                                    <svg class="ingroup-hover:transform group-hover:-rotate-45 ingroup-hover:transition-all ingroup-hover:ease-in-out ingroup-hover:duration-300"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none">
+                                        <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F"
+                                            class="h-[10px] w-[10px]" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!--  News Blog Slider Item End-->
+
+                        <!--  News Blog Slider Item Start-->
+                        <div class="news-blog-image mx-[15px] relative group">
+                            <div class="inner-news-blog-image">
+                                <img class="w-[100%] h-[583px] rounded-lg object-cover"
+                                    src="assets/image/our-blog-page-latest-news-blog3.jpeg" alt="">
+                            </div>
+                            <div class="blog-date relative">
+                                <span
+                                    class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">16
+                                    AUG</span>
+                            </div>
+
+                            <div
+                                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                                <div class="flex  flex-col gap-[12px]">
+                                    <div class="items-center gap-[24px] flex">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-sm font-medium text-[#E2941F] font-inter leading-[22.4px]">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#fff] rounded-full"></span>
+                                        <span class="text-[#fff] text-sm font-inter font-medium leading-[22.4px]">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-bold font-Messiri text-2xl leading-[28.8px] text-white">Journey is
+                                        Measured in New
+                                        Friends</h3>
+                                </div>
+                                <span
+                                    class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
+                                    More
+                                    <svg class="ingroup-hover:transform group-hover:-rotate-45 ingroup-hover:transition-all ingroup-hover:ease-in-out ingroup-hover:duration-300"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none">
+                                        <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F"
+                                            class="h-[10px] w-[10px]" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!--  News Blog Slider Item End-->
+
+                        <!--  News Blog Slider Item Start-->
+                        <div class="news-blog-image mx-[15px] relative group">
+                            <div class="inner-news-blog-image">
+                                <img class="w-[100%] h-[585px] rounded-lg object-cover"
+                                    src="assets/image/Rectangle40.png" alt="">
+                            </div>
+                            <div class="blog-date relative">
+                                <span
+                                    class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">15
+                                    APR</span>
+                            </div>
+                            <div
+                                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                                <div class="flex  flex-col gap-[12px]">
+                                    <div class="items-center gap-[24px] flex">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-sm font-medium text-[#E2941F] font-inter leading-[22.4px]">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#fff] rounded-full"></span>
+                                        <span class="text-[#fff] text-sm font-inter font-medium leading-[22.4px]">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-bold font-Messiri text-2xl leading-[28.8px] text-white">Journey is
+                                        Measured in New
+                                        Friends</h3>
+                                </div>
+                                <span
+                                    class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
+                                    More
+                                    <svg class="group-hover:transform group-hover:-rotate-45 transition-all ease-in-out duration-300"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none">
+                                        <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F"
+                                            class="h-[10px] w-[10px]" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!--  News Blog Slider Item End-->
+
+                        <!--  News Blog Slider Item Start-->
+                        <div class="news-blog-image mx-[15px] relative group">
+                            <div class="inner-news-blog-image">
+                                <img class="w-[100%] h-[585px] rounded-lg object-cover"
+                                    src="assets/image/Rectangle40.png" alt="">
+                            </div>
+                            <div class="blog-date relative">
+                                <span
+                                    class="text-sm font-inter font-medium  rounded-full p-[20px] pt-[4px] pb-[4px] bg-[#E2941F] text-white absolute right-[19.667px] bottom-[257px]">16
+                                    MRC</span>
+                            </div>
+                            <div
+                                class="blog-daitales group-hover:h-[230px]  group-hover:backdrop-opacity-0 group-hover:shadow-none	  group-hover:bg-gradient-to-b  group-hover:from-[#00000000]  group-hover:via-[#000000ad]  group-hover:to-[#000000ad] group-hover:shadow-md group-hover:bg-opacity-80 flex flex-col gap-[40px] absolute w-[100%] bottom-[0] rounded-bl-[7px] rounded-br-[7px] p-[20px] group-hover:bg-transparent">
+                                <div class="flex  flex-col gap-[12px]">
+                                    <div class="items-center gap-[24px] flex">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-sm font-medium text-[#E2941F] font-inter leading-[22.4px]">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#fff] rounded-full"></span>
+                                        <span class="text-[#fff] text-sm font-inter font-medium leading-[22.4px]">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-bold font-Messiri text-2xl leading-[28.8px] text-white">Journey is
+                                        Measured in New
+                                        Friends</h3>
+                                </div>
+                                <span
+                                    class="font-inter text-sm font-semibold text-[#fff] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9] hover:text-[#D78E20] group">Read
+                                    More
+                                    <svg class="group-hover:transform group-hover:-rotate-45 transition-all ease-in-out duration-300"
+                                        xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13"
+                                        fill="none">
+                                        <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#E2941F"
+                                            class="h-[10px] w-[10px]" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+                        <!--  News Blog Slider Item End-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end container-->
+    </section>
+    <!--end Section-->
+
+    <!-- --------------- our-blog-page-latest-news-blog End-------------------- -->
+
+
+    <!-- --------------- Trending News Start-------------------- -->
+
+    <section class="py-[130px]">
+        <div class="container mx-auto">
+            <div class="flex flex-col gap-[60px]">
+                <div class="flex  flex-col justify-center gap-[15px] text-center">
+                    <h2 class="font-Messiri text-[48px] font-bold leading-[57.6px]">Trending News </h2>
+                </div>
+
+                <div class="our-blog">
+                    <div class="container mx-auto">
+                        <div class="trending-news flex gap-[40px] justify-center mt-5">
+                            <div class="trending-news-image mx-[15px] my-[15px] relative">
+                                <div class="inner-news-blog-image">
+                                    <img class="w-[100%] h-[350px] rounded-tr-[10px] rounded-tl-[10px]"
+                                        src="assets/image/trending-news1.jpeg" alt="">
+                                </div>
+                                <div
+                                    class="blog-date rounded-md p-[20px] pt-[6px] pb-[6px] bg-[#E2941F] text-white absolute top-[55%] left-[75%] exsm:left-[70%] exsm:top-[40%]">
+                                    <span class="text-sm font-plus font-medium">16 AUG</span>
+                                </div>
+                                <div class="flex flex-col gap-[25px] p-[20px]">
+                                    <div class="flex items-center gap-[24px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-[14px] leading-[16.8px] font-medium text-[#E2941F] font-inter">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                        <span
+                                            class="text-[#585858] text-[14px] font-inter leading-[16.8px] font-medium">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-semibold leading-[28.8px] font-Messiri text-[24px]">Journey is
+                                        Measured in New Friends</h3>
+                                    <span
+                                        class="font-inter text-[14px] font-medium text-[#585858] leading-[22px] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                        More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                            viewBox="0 0 12 13" fill="none">
+                                            <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="trending-news-image mx-[15px] my-[15px] relative">
+                                <div class="inner-news-blog-image">
+                                    <img class="w-[100%] h-[350px] rounded-tr-[10px] rounded-tl-[10px]"
+                                        src="assets/image/trending-news2.jpeg" alt="">
+                                </div>
+                                <div
+                                    class="blog-date rounded-md p-[20px] pt-[6px] pb-[6px] bg-[#E2941F] text-white absolute top-[55%] left-[75%] exsm:left-[70%] exsm:top-[40%]">
+                                    <span class="text-sm font-plus font-medium">16 APR</span>
+                                </div>
+                                <div class="flex flex-col gap-[25px] p-[20px]">
+                                    <div class="flex items-center gap-[24px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-[14px] leading-[16.8px] font-medium text-[#E2941F] font-inter">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                        <span
+                                            class="text-[#585858] text-[14px] font-inter leading-[16.8px] font-medium">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-semibold leading-[28.8px] font-Messiri text-[24px]">Journey is
+                                        Measured in New Friends</h3>
+                                    <span
+                                        class="font-inter text-[14px] font-medium text-[#585858] leading-[22px] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                        More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                            viewBox="0 0 12 13" fill="none">
+                                            <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="trending-news-image mx-[15px] my-[15px] relative">
+                                <div class="inner-news-blog-image">
+                                    <img class="w-[100%] h-[350px] rounded-tr-[10px] rounded-tl-[10px]"
+                                        src="assets/image/trending-news3.jpeg" alt="">
+                                </div>
+                                <div
+                                    class="blog-date rounded-md p-[20px] pt-[6px] pb-[6px] bg-[#E2941F] text-white absolute top-[55%] left-[75%] exsm:left-[70%] exsm:top-[40%]">
+                                    <span class="text-sm font-plus font-medium">16 APR</span>
+                                </div>
+                                <div class="flex flex-col gap-[25px] p-[20px]">
+                                    <div class="flex items-center gap-[24px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-[14px] leading-[16.8px] font-medium text-[#E2941F] font-inter">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                        <span
+                                            class="text-[#585858] text-[14px] font-inter leading-[16.8px] font-medium">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-semibold leading-[28.8px] font-Messiri text-[24px]">Journey is
+                                        Measured in New Friends</h3>
+                                    <span
+                                        class="font-inter text-[14px] font-medium text-[#585858] leading-[22px] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                        More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                            viewBox="0 0 12 13" fill="none">
+                                            <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="trending-news-image mx-[15px] my-[15px] relative">
+                                <div class="inner-news-blog-image">
+                                    <img class="w-[100%] h-[350px] rounded-tr-[10px] rounded-tl-[10px]"
+                                        src="assets/image/Rectangle40.png" alt="">
+                                </div>
+                                <div
+                                    class="blog-date rounded-md p-[20px] pt-[6px] pb-[6px] bg-[#E2941F] text-white absolute top-[55%] left-[75%] exsm:left-[70%] exsm:top-[40%]">
+                                    <span class="text-sm font-plus font-medium">15 APR</span>
+                                </div>
+                                <div class="flex flex-col gap-[25px] p-[20px]">
+                                    <div class="flex items-center gap-[24px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-[14px] leading-[16.8px] font-medium text-[#E2941F] font-inter">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                        <span
+                                            class="text-[#585858] text-[14px] font-inter leading-[16.8px] font-medium">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-semibold leading-[28.8px] font-Messiri text-[24px]">Journey is
+                                        Measured in New Friends</h3>
+                                    <span
+                                        class="font-inter text-[14px] font-medium text-[#585858] leading-[22px] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                        More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                            viewBox="0 0 12 13" fill="none">
+                                            <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="trending-news-image mx-[15px] my-[15px] relative">
+                                <div class="inner-news-blog-image">
+                                    <img class="w-[100%] h-[350px] rounded-tr-[10px] rounded-tl-[10px]"
+                                        src="assets/image/Rectangle40.png" alt="">
+                                </div>
+                                <div
+                                    class="blog-date rounded-md p-[20px] pt-[6px] pb-[6px] bg-[#E2941F] text-white absolute top-[55%] left-[75%] exsm:left-[70%] exsm:top-[40%]">
+                                    <span class="text-sm font-plus font-medium">16 MRC</span>
+                                </div>
+                                <div class="flex flex-col gap-[25px] p-[20px]">
+                                    <div class="flex items-center gap-[24px]">
+                                        <div class="flex items-center gap-2">
+                                            <span class="border-t-2 border-[#E2941F] w-[35px]"></span>
+                                            <span
+                                                class="text-[14px] leading-[16.8px] font-medium text-[#E2941F] font-inter">Tour</span>
+                                        </div>
+                                        <span class="h-[5px] w-[5px] bg-[#A9A9A9] rounded-full"></span>
+                                        <span
+                                            class="text-[#585858] text-[14px] font-inter leading-[16.8px] font-medium">2
+                                            Comments</span>
+                                    </div>
+                                    <h3 class="font-semibold leading-[28.8px] font-Messiri text-[24px]">Journey is
+                                        Measured in New Friends</h3>
+                                    <span
+                                        class="font-inter text-[14px] font-medium text-[#585858] leading-[22px] flex gap-[20px] items-center pt-[15px] pb-[15px] border-t border-t-[#A9A9A9]">Read
+                                        More
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="13"
+                                            viewBox="0 0 12 13" fill="none">
+                                            <path d="M1 1.5L11 11.5M11 11.5V1.9M11 11.5H1.4" stroke="#6C6C6C"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --------------- Trending News End-------------------- -->
+
+    <!------ News About Upcoming Tours and Packages  Start------>
+    <section>
+        <div class="container mx-auto">
+
+        </div>
+    </section>
+
+    <!------ News About Upcoming Tours and Packages  End------>
+
+
+
+
+    <!-- ----------FOOTER START------- -->
+    <footer class="bg-[#000] pt-[130px] flex flex-col gap-[40px]">
+        <div class="container mx-auto flex flex-col gap-[40px] mx-[5px]">
+            <div
+                class="main-footer flex gap-[60px] justify-between border-b border-[#fff] pt-[20px] pb-[60px] flex-wrap mx-[5px]">
+                <div class="flex flex-col gap-[16px]">
+                    <!--Footet Logo Start-->
+                    <a href="#"><img class=" max-w-[150px]" src="assets/image/Travelta.png" alt=""></a>
+                    <!--Footet Logo Start-->
+                    <p class="w-[300px] text-white font-inter text-base font-normal leading-[25.6px]">Quisque imperdiet
+                        sapien
+                        porttito the
+                        bibendum
+                        sellentesque the commodo erat acar accumsa lobortis, enim diam the nesuen.</p>
+                </div>
+
+                <div class="footer-menu-title flex flex-col gap-[24px] relative">
+                    <h2
+                        class="text-white font-Messiri text-lg font-bold	before:absolute before:h-[2px] hover:before:w-[65px] hover:before:transition-all before:transition-all hover:before:duration-300 before:duration-300 before:w-[40px] before:bg-[#E2941F] before:content-[''] before:top-[28px]">
+                        COMPANY</h2>
+                    <ul class="text-white flex flex-col gap-[8px]">
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">About
+                                Us</a></li>
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">Testimonials</a></li>
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">Rewards</a></li>
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">Work
+                                with Us</a></li>
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">Meet
+                                the Team</a></li>
+                        <li class="text-white text-base font-inter font-medium hover:text-[#E2941F] duration-300 "><a
+                                href="#">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-title flex flex-col gap-[24px] relative">
+                    <h2
+                        class="text-white font-Messiri text-lg font-bold before:absolute before:h-[2px] hover:before:w-[65px] hover:before:transition-all before:transition-all hover:before:duration-300 before:duration-300 before:w-[40px] before:bg-[#E2941F] before:content-[''] before:top-[28px]">
+                        CONTACT US</h2>
+                    <div class="flex flex-col gap-[14px]">
+                        <p class="font-inter text-base text-white">Feel free to contact and reach us !!</p>
+                        <span class="flex gap-2 items-center text-white text-base font-inter ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M17.6759 16.0949C17.1203 17.7833 14.9436 18.6253 13.3884 18.4849C11.2645 18.2929 8.95332 17.1664 7.19896 15.9256C4.62023 14.1016 2.20469 11.2803 0.797133 8.28635C-0.19764 6.1708 -0.420831 3.56976 1.05873 1.64141C1.60591 0.928628 2.1975 0.547948 3.08667 0.503549C4.32024 0.44355 4.49304 1.14925 4.91663 2.24842C5.23222 3.0704 5.6534 3.90888 5.8886 4.76086C6.32898 6.35081 4.78943 6.41727 4.59503 7.71683C4.47383 8.53641 5.46741 9.6355 5.9162 10.2199C6.79577 11.3647 7.85294 12.352 9.04571 13.1032C9.72849 13.534 10.8313 14.3103 11.6136 13.8819C12.8184 13.2219 12.7044 11.1905 14.3892 11.878C15.2615 12.2332 16.1063 12.7458 16.9391 13.1946C18.2267 13.887 18.1667 14.6046 17.6759 16.0949C18.0431 14.9814 17.3087 17.2085 17.6759 16.0949Z"
+                                    fill="white" />
+                            </svg>
+                            +012 345 6789
+                        </span>
+                        <span class="flex gap-2 items-center text-white text-base font-inter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="19" viewBox="0 0 24 19"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M22.5 15.5C22.5 15.6522 22.4707 15.7963 22.4287 15.9335L15.75 8.75L22.5 3.5V15.5ZM2.667 16.9595L9.43499 9.74749L12 11.6863L14.454 9.7355L21.333 16.9595C21.2257 16.9843 2.77425 16.9843 2.667 16.9595ZM1.5 15.5V3.5L8.25 8.75L1.57125 15.9335C1.52925 15.7963 1.5 15.6522 1.5 15.5ZM21.75 2L12 9.5L2.25 2H21.75ZM21 0.5H3C1.34325 0.5 0 1.84325 0 3.5V15.5C0 17.1567 1.34325 18.5 3 18.5H21C22.6567 18.5 24 17.1567 24 15.5V3.5C24 1.84325 22.6567 0.5 21 0.5Z"
+                                    fill="white" />
+                            </svg>
+                            travelta.mail@info.com
+                        </span>
+                        <span class="flex gap-2 items-center text-white text-base font-inter">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="18" viewBox="0 0 14 18"
+                                fill="none">
+                                <path
+                                    d="M6.75 0C3.02231 0 0 3.02231 0 6.75C0 8.21784 0.481219 9.56475 1.28109 10.6678C1.29544 10.6943 1.29769 10.7238 1.314 10.7491L5.814 17.4991C6.02269 17.8121 6.37425 18 6.75 18C7.12575 18 7.47731 17.8121 7.686 17.4991L12.186 10.7491C12.2026 10.7238 12.2046 10.6943 12.2189 10.6678C13.0188 9.56475 13.5 8.21784 13.5 6.75C13.5 3.02231 10.4777 0 6.75 0ZM6.75 9C5.50744 9 4.5 7.99256 4.5 6.75C4.5 5.50744 5.50744 4.5 6.75 4.5C7.99256 4.5 9 5.50744 9 6.75C9 7.99256 7.99256 9 6.75 9Z"
+                                    fill="white" />
+                            </svg>
+                            USA, FLORIDA
+                        </span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-[24px] relative">
+                    <h2
+                        class="text-white font-Messiri text-lg font-bold	before:absolute before:h-[2px] hover:before:w-[65px] hover:before:transition-all before:transition-all hover:before:duration-300 before:duration-300 before:w-[40px] before:bg-[#E2941F] before:content-[''] before:top-[28px]">
+                        RECENT POST</h2>
+                    <div class="flex gap-3 items-center overflow-hidden hover:rounded-lg rounded-lg">
+                        <img class="w-[70px] h-[65px] rounded-lg hover:scale-110  transform transition-transform duration-300"
+                            src="assets/image/Footer-Rectangle (1).png" alt="">
+                        <p class="flex flex-col text-white text-base font-semibold font-Messiri gap-[10px]">Journey is
+                            Measured in
+                            New Friends
+                            <span class="text-xs text-white">August 16, 2023</span>
+                        </p>
+                    </div>
+
+                    <div class="flex gap-3 items-center overflow-hidden hover:rounded-lg rounded-lg">
+                        <img class="w-[70px] h-[65px] rounded-lg hover:scale-110 transform transition-transform duration-300"
+                            src="assets/image/Footer-Rectangle (2).png" alt="">
+                        <p class="flex flex-col text-white text-base font-semibold font-Messiri gap-[10px]">Travel With
+                            Friends is
+                            Best
+                            <span class="text-xs text-white">August 16, 2023</span>
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+            <!--Footet Flex End-->
+
+            <div class="wrapper-footer flex justify-between items-start xl:flex-col xl:gap-[40px] mx-[5px]">
+                <div class="flex flex-col gap-[24px]">
+                    <span class="text-2xl font-medium	font-Messiri text-white">Subscribe our newsletter for more update
+                        & news
+                        !!</span>
+                    <div class="subscribe-form flex items-center gap-[20px]  lg:flex-col lg:gap-[20px]">
+                        <input type="email" name="email"
+                            class="mt-1 px-[32px] py-[16px] bg-[#151515] text-white border shadow-sm border-[#FFFFFF33] placeholder-[#6C6C6C] focus:outline-none focus:border-sky-500 focus:ring-sky-500 block w-[575px] md:max-w-[100%] md:w-[100%]  rounded-[10px] sm:text-sm focus:ring-1"
+                            placeholder="Enter Your Email" />
+                        <button type="button"
+                            class="text-[#fff] hover:text-white border border-[#FFF] hover:border-[#E2941F] hover:bg-[#E2941F]  focus:outline-none  font-medium rounded-[10px] text-sm px-7 py-[16px] text-center lg:w-[100%]  md:max-w-[100%] "><span
+                                class="font-inter text-base leading-[22px] font-medium px-[37px] py-[16px]">SUBSCRIBE</span></button>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex flex-col gap-[24px]">
+                        <!--Footet Social Icon Start-->
+                        <ul class="flex gap-[16px] justify-end xl:justify-start">
+                            <li
+                                class="w-[40px] h-[40px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                                <a href="#" class=""><i
+                                        class="fa-brands fa-facebook-f flex justify-center items-center"></i></a>
+                            </li>
+                            <li
+                                class="w-[40px] h-[40px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                                <a href="#" class=""><i
+                                        class="fa-brands fa-twitter flex justify-center items-center"></i></a>
+                            </li>
+                            <li
+                                class="w-[40px] h-[40px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                                <a href="#" class=""><i
+                                        class="fa-brands fa-instagram flex justify-center items-center"></i></a>
+                            </li>
+                            <li
+                                class="w-[40px] h-[40px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                                <a href="#" class=""><i
+                                        class="fa-brands fa-linkedin flex justify-center items-center"></i></a>
+                            </li>
+                            <li
+                                class="w-[40px] h-[40px] bg-[#FFFFFF33] flex justify-center items-center rounded-full text-white">
+                                <a href="#" class=""><i
+                                        class="fa-brands fa-pinterest-p flex justify-center items-center"></i></a>
+                            </li>
+                        </ul>
+                        <!--Footet Social Icon End-->
+
+                        <div class="flex gap-[16px] items-center">
+                            <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">Privacy
+                                Policy</span>
+                            <span class="border border-[#FFF] w-[1px] h-[14px] "></span>
+                            <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">Terms &
+                                Conditions</span>
+                            <span class="border border-[#FFF] w-[1px] h-[14px] "></span>
+                            <span class="text-sm text-white font-inter font-semibold leading-[22.4px]">FAQ</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-[#0F0F0F]">
+            <p class="text-white py-[40px] px-[10px] text-center text-base font-medium font-inter leading-[25.6px]">
+                Copyright
+                © 2022 Traveler. All rights
+                reserved.</p>
+        </div>
+    </footer>
+    <!------------white--------->
+
+    <!-- JAVASCRIPTS START-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <!-- Pickadate.js files Start-->
+    <script src="assets/js/picker.js"></script>
+    <script src="assets/js/picker.date.js"></script>
+    <script src="assets/js/picker.time.js"></script>
+    <!-- Pickadate.js files End-->
+    <script src="assets/js/slick-main.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!-- JAVASCRIPTS END-->
+
+</body>
+
+</html>
