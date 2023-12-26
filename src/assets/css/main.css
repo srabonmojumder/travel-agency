@@ -620,3 +620,29 @@ li.catefories-menu:hover .catefories-submenu {
 }
 
 /* <!------ News About Upcoming Tours and Packages  End------> */
+
+
+/* <!------ Santorini Start ------> */
+
+.santorini-box{
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+}
+
+/* <!------ Santorini End ------> */
+
+/* <!---------Package Details Start---------> */
+
+.package-details{
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.15);
+
+}
+
+/* <!---------Package Details End---------> */
+
+/* <!-----Offer Packages Start-----> */
+.offer-packages-slider .slick-list.draggable{
+  height: 420px;
+}
+
+/* <!-----Offer Packages End-----> */
+

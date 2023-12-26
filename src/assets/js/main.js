@@ -392,15 +392,6 @@ $(document).ready(function () {
     // <----------our-blog-page-latest-news-blog  End---------->
 
 
-
-
-
-
-
-
-
-
-
         //       <!-- --------------- Trending News Start-------------------- -->
 
         $('.trending-news').slick({
@@ -444,3 +435,52 @@ $(document).ready(function () {
             ],
         });
         //    <!-- --------------- Trending News End-------------------- -->
+
+
+
+ //------------Island Paradise Getaways slider Start---------- 
+
+ $('.offer-packages-slider').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    margin: 10,
+    autoplay: false,
+    margin: '10px',
+    dots: true,
+    arrows: true,
+    prevArrow: "<div class='island-paradise-nav-bar-left-arrow'><i class='fa-solid fa-chevron-left'></i></div>",
+    nextArrow: "<div class='island-paradise-nav-bar-right-arrow'><i class='fa-solid fa-chevron-right'></i></div>",
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 1008,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 800,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+            },
+        },
+        {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+            },
+        },
+    ],
+});
+
+
+//------------Island Paradise Getaways slider End----------->
