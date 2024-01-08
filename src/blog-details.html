@@ -412,14 +412,14 @@
     <!-- Beyond Borders: A Travel Odyssey with Travelta Worldwide Section -->
     <section class="mt-[98px]">
       <div class="container mx-auto">
-        <div class="flex gap-12 md:flex-col lg:flex-col">
+        <div class="flex gap-12 md:flex-col lg:flex-col mx-[5px] px-3">
           <!-- Left -->
           <div
             class="flex flex-col gap-[60px]  col-span-1"
           >
           <!-- Search Div -->
             <div
-              class="flex flex-col gap-[32px] px-[32px] py-[30px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full w-[594px]"
+              class="flex flex-col gap-[32px] px-[32px] py-[30px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full 2xl:w-[394px] w-[594px]"
             >
               <h2
                 class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] md:text-center lg:text-center"
@@ -459,7 +459,7 @@
          <!-- Search Div End-->
          <!-- Category Div -->
             <div
-              class="flex flex-col gap-[24px] px-[32px] py-[23px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full w-[594px]"
+              class="flex flex-col gap-[24px] px-[32px] py-[23px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full 2xl:w-[394px] w-[594px]"
             >
               <h2
                 class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] md:text-center lg:text-center"
@@ -767,7 +767,7 @@
             </div>
           <!-- Category Div End--> 
            <!-- Recent Post Div -->
-           <div class="flex flex-col md:w-full lg:w-full w-[594px] px-[24px] py-[20px]
+           <div class="flex flex-col md:w-full lg:w-full 2xl:w-[394px] w-[594px] px-[24px] py-[20px]
            rounded-[8px] bg-[#FFF6EA]">
            <!-- heading -->
              <h2 class="font-inter font-semibold text-[32px] mb-[32px] md:text-center lg:text-center"> Recent Posts</h2>
@@ -776,7 +776,7 @@
              border-b border-solid border-[#A9A9A9] items-center
              ">
               <!-- image div -->
-                 <div class="h-[144px] w-[164px]  overflow-hidden rounded-md">
+                 <div class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md">
                      <img src="./assets/image/RecetPost1.jpg" class="w-full h-full rounded-md" alt="image">
                  </div>
                 <!-- image div End-->
@@ -799,7 +799,7 @@
              border-b border-solid border-[#A9A9A9] items-center  mt-[24px]
              ">
               <!-- image div -->
-                 <div class="h-[144px] w-[164px]  overflow-hidden rounded-md">
+                 <div class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px]  overflow-hidden rounded-md">
                      <img src="./assets/image/RecentPost2.jpg" class="w-full h-full rounded-md" alt="image">
                  </div>
                 <!-- image div End-->
@@ -822,7 +822,7 @@
              items-center  mt-[24px]
              ">
               <!-- image div -->
-                 <div class="h-[144px] w-[164px]  overflow-hidden rounded-md">
+                 <div class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px]  overflow-hidden rounded-md">
                      <img src="./assets/image/RecentPost3.jpg" class="w-full h-full rounded-md" alt="image">
                  </div>
                 <!-- image div End-->
@@ -844,7 +844,7 @@
            <!-- Recent Post Div End-->
 
            <!-- Tag Div Start -->
-           <div class="md:w-full lg:w-full w-[594px] px-[32px] py-[20px] rounded-lg bg-[#FFF6EA]">
+           <div class="md:w-full lg:w-full w-[594px] 2xl:w-[394px] px-[32px] py-[20px] rounded-lg bg-[#FFF6EA]">
                 <h2 class="text-[32px] font-inter font-semibold text-[#2B2B2B] md:text-center lg:text-center">Tags</h2>
                 <div class="mt-[32px] flex flex-col gap-3">
                    <!-- row-1 -->
@@ -889,7 +889,7 @@
            <!-- Gallary Div Start -->
            <div class="flex md:items-center lg:items-center flex-col gap-[32px]">
               <h2 class="font-inter font-semibold text-[32px]">Gallery</h2>
-              <div class=" grid md:grid-cols-2 grid-cols-4 gap-1">
+              <div class=" grid md:grid-cols-2 2xl:grid-cols-2 grid-cols-4 gap-1">
                 <!-- Image 1 -->
                <div class="h-[100px] w-[145px] overflow-hidden rounded">
                    <img src="./assets/image/Gallary1.jpg" class="h-full w-full object-cover rounded" alt="image">
@@ -965,10 +965,10 @@
               <!-- image end -->
 
               <!-- Details -->
-              <div class="flex md:flex-wrap md:gap-[25px] gap-[254px] mb-5">
+              <div class="flex 2xl:justify-between md:flex-wrap md:gap-[25px] 2xl:gap-[25px] gap-[254px] mb-5">
                 <!-- left -->
                 <div class="flex items-center gap-[16px]">
-                  <!-- Left -->
+                  <!-- Button -->
                   <button
                     class="px-6 py-1 rounded-md bg-[#E2941F] text-[14px] font-inter font-medium flex text-[#FFFFFF] gap-1"
                   >
@@ -1015,7 +1015,7 @@
                     />
                   </svg>
 
-                  <!--Right-->
+                  <!--Comment-->
                   <div class="flex gap-[8px]">
                     <svg
                       width="20"
@@ -1045,7 +1045,7 @@
                   </div>
                 </div>
                 <!-- Right -->
-                <div class="flex gap-8 items-center">
+                <div class="flex gap-[16px] items-center">
                   <!-- left -->
                   <div class="flex justify-between items-center gap-2">
                     <svg
@@ -1761,7 +1761,7 @@
             <!-- Comment Div 4 End -->
             <!-- Leave A comment Div -->
             <div
-              class="px-[32px] pt-[26px] pb-[40px] flex flex-col gap-[24px] mt-[180px] bg-[#FFF6EA] rounded-[10px]"
+              class="px-[32px] pt-[26px] pb-[40px] flex flex-col gap-[24px] mt-[180px] 2xl:mt-[150px] bg-[#FFF6EA] rounded-[10px]"
             >
               <div class="flex flex-col gap-2 mb-[42px]">
                 <h1 class="flex text-[32px] font-inter font-semibold text-[#2B2B2B] lg:text-center">

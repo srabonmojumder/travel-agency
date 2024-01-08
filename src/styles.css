@@ -1258,9 +1258,6 @@ video {
 .gap-6 {
   gap: 1.5rem;
 }
-.gap-8 {
-  gap: 2rem;
-}
 .gap-\[100px\] {
   gap: 100px;
 }
@@ -2526,6 +2523,36 @@ video {
 .group:focus .group-focus\:text-\[\#DEDEDE\] {
   --tw-text-opacity: 1;
   color: rgb(222 222 222 / var(--tw-text-opacity));
+}
+@media (max-width: 1535px) {
+
+  .\32xl\:mt-\[150px\] {
+    margin-top: 150px;
+  }
+
+  .\32xl\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .\32xl\:w-\[120px\] {
+    width: 120px;
+  }
+
+  .\32xl\:w-\[394px\] {
+    width: 394px;
+  }
+
+  .\32xl\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .\32xl\:justify-between {
+    justify-content: space-between;
+  }
+
+  .\32xl\:gap-\[25px\] {
+    gap: 25px;
+  }
 }
 @media (max-width: 1279px) {
 
