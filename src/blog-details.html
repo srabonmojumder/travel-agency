@@ -275,6 +275,13 @@
               </ul>
               <!-- Navigation Menu End-->
             </div>
+            <!-- Start Mobile button Start-->
+            <div
+              class="mobile-menu text-4xl text-white hidden xl:block relative mr-5"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- End Mobile button End-->
             <!-- Start search Bar Start-->
             <div
               class="search-bar language-selact flex flex-wrap items-center gap-[16px] mr-[10px]"
@@ -394,13 +401,6 @@
               </div>
             </div>
             <!-- End search Bar Start-->
-            <!-- Start Mobile button Start-->
-            <div
-              class="mobile-menu text-4xl text-white hidden xl:block relative mr-5"
-            >
-              <i class="fa-solid fa-bars"></i>
-            </div>
-            <!-- End Mobile button End-->
           </div>
         </div>
         <!-- --------HEADER MENU END-------- -->
@@ -409,18 +409,18 @@
       <!--end container-->
     </header>
     <div
-      class="header-sidebar bg-black w-[30%] xl:w-[50%] h-screen p-4 hidden fixed top-0 right-0 z-30"
+      class="header-sidebar transition-transform duration-500 bg-black w-[50%] md:w-[100%] h-screen p-4 hidden fixed top-0 right-0 z-30"
     >
       <div class="flex justify-end">
         <i
-          class="fa-solid fa-xmark text-white text-2xl absolute left-[95%]"
+          class="fa-solid fa-xmark text-white text-2xl absolute left-[90%] h-[40px] w-[40px] leading-[40px] text-center bg-[#8c937f52] rounded-full top-[20px]"
           id="closeButton"
         ></i>
       </div>
       <div>
-        <ul class="text-white pt-[40%] px-[40%]">
+        <ul class="text-white pt-[10%]">
           <li
-            class="px-6 hover:px-7 py-3 text-2xl font-inter font-medium hover:text-yellow-300 hover:transition-transform duration-300 border-b border-solid border-slate-400"
+            class="px-6 hover:px-7 py-3 text-2xl font-inter font-medium hover:text-yellow-300 transition-transform duration-300 hover:transition-transform hover:duration-300 border-b border-solid border-slate-400"
           >
             <a href="#">Home</a>
           </li>
