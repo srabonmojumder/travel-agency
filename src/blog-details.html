@@ -13,6 +13,12 @@
     />
     <!-------------Font Awesome Icon Link End------------>
 
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
     <!-- Pickadate.js files Start-->
     <link rel="stylesheet" href="assets/css/default.css" />
     <link rel="stylesheet" href="assets/css/default.date.css" />
@@ -42,256 +48,409 @@
     <!--------HEADER  START -------->
     <header class="bg-[#000]">
       <nav>
-          <!-- <div class="container mx-auto"> -->
-          <div class="border-b border-[#1B1B1B]">
-              <div class="container mx-auto flex justify-between pt-[20px] pb-[20px]">
-                  <div class="text-white flex flex-wrap gap-[30px] py-[4px] ml-[10px]">
-                      <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
-                              src="assets/image/mail-icon.svg" alt="">
-                          <span class="font-inter text-sm font-medium">tourer@info.com</span></a>
-                      <a href="#" class="flex items-center gap-[8px]"><img class="w-[16px] h-[16px]"
-                              src="assets/image/phone-icon.svg" alt=""> <span
-                              class="font-inter text-sm font-medium">0123 456
-                              789</span></a>
-                  </div>
-                  <div></div>
-                  <div class="text-white flex flex-wrap gap-[20px] py-[4px] mr-[10px]">
-                      <a href="#" class="flex items-center gap-[20px] font-inter text-sm font-medium"> <img
-                              class="w-[16px] h-[16px]" src="assets/image/login-user-icon.svg" alt=""> Login</a>
-                      <span class="border-r h-[17px]"></span>
-                      <a href="#" class=" font-inter text-sm font-medium">Register</a>
-                  </div>
-              </div>
+        <!-- <div class="container mx-auto"> -->
+        <div class="border-b border-[#1B1B1B]">
+          <div
+            class="container mx-auto flex justify-between pt-[20px] pb-[20px]"
+          >
+            <div
+              class="text-white flex flex-wrap gap-[30px] py-[4px] ml-[10px]"
+            >
+              <a href="#" class="flex items-center gap-[8px]"
+                ><img
+                  class="w-[16px] h-[16px]"
+                  src="assets/image/mail-icon.svg"
+                  alt=""
+                />
+                <span class="font-inter text-sm font-medium"
+                  >tourer@info.com</span
+                ></a
+              >
+              <a href="#" class="flex items-center gap-[8px]"
+                ><img
+                  class="w-[16px] h-[16px]"
+                  src="assets/image/phone-icon.svg"
+                  alt=""
+                />
+                <span class="font-inter text-sm font-medium"
+                  >0123 456 789</span
+                ></a
+              >
+            </div>
+            <div
+              class="text-white flex flex-wrap gap-[20px] py-[4px] mr-[10px]"
+            >
+              <a
+                href="#"
+                class="flex items-center gap-[20px] font-inter text-sm font-medium"
+              >
+                <img
+                  class="w-[16px] h-[16px]"
+                  src="assets/image/login-user-icon.svg"
+                  alt=""
+                />
+                Login</a
+              >
+              <span class="border-r h-[17px]"></span>
+              <a href="#" class="font-inter text-sm font-medium">Register</a>
+            </div>
           </div>
+        </div>
 
+        <!-- --------HEADER MENU START-------- -->
+        <div class="">
+          <div
+            class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] sm:gap-[40px]"
+          >
+            <!--Header Logo Start-->
+            <a href="index.html" class="ml-[10px]"
+              ><img
+                class="max-w-[150px]"
+                src="assets/image/Travelta.png"
+                alt=""
+            /></a>
+            <!--Header Logo End-->
+            <div class="relative">
+              <!-- Navigation Menu Start-->
+              <ul
+                class="header-list-item xl:hidden flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold"
+              >
+                <li
+                  class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                >
+                  <a class="" href="index.html">Home</a>
+                </li>
 
-          <!-- --------HEADER MENU START-------- -->
-          <div class="">
-              <div
-                  class="flex justify-between items-center flex-wrap container mx-auto pt-[20px] pb-[40px] sm:gap-[40px]">
-                  <!--Header Logo Start-->
-                  <a href="index.html" class="ml-[10px]"><img class=" max-w-[150px]" src="assets/image/Travelta.png"
-                          alt=""></a>
-                  <!--Header Logo End-->
-                  <div class="">
-                      <!-- Start Mobile button Start-->
-                      <div class="mobile-menu text-4xl text-white hidden xl:block">
-                          <i class="fa-solid fa-bars"></i>
-                      </div>
-                      <!-- End Mobile button End-->
-                      <!-- Navigation Menu Start-->
-                      <ul
-                          class="header-list-item xl:hidden flex flex-wrap gap-[40px] text-white font-inter text-[16px] font-semibold">
-                          <li
-                              class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                              <a class="" href="index.html">Home</a>
-                          </li>
+                <li
+                  class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                >
+                  <a class="" href="#">About Us </a>
+                </li>
 
-                          <li
-                              class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                              <a class="" href="#">About Us </a>
-                          </li>
-
-                          <div class="dropdown">
-                              <li
-                                  class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                                  <a class="flex gap-[8px] items-center relative" href="#">Destinations <img
-                                          src="assets/image/Vector.svg" alt=""></a>
-                              </li>
-                              <div
-                                  class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      1</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      2</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                              </div>
-                          </div>
-
-
-                          <div class="dropdown">
-                              <li
-                                  class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer  font-inter text-[16px] font-semibold">
-                                  <a class="flex gap-[8px] items-center relative" href="Packages.html">Packages <img
-                                          src="assets/image/Vector.svg" alt=""></a>
-                              </li>
-                              <div
-                                  class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
-                                  <a href="Packages Details.html"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Packages Details</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      2</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                              </div>
-                          </div>
-
-                          <div class="dropdown">
-                              <li
-                                  class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                                  <a class="flex  gap-[8px] items-center relative" href="#">Pages <img
-                                          src="assets/image/Vector.svg" alt=""></a>
-                              </li>
-                              <div
-                                  class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      1</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      2</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                              </div>
-                          </div>
-                          
-                          <div class="dropdown">
-                              <li
-                                  class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer  font-inter text-[16px] font-semibold">
-                                  <a class="flex gap-[8px] items-center relative" href="Blog-page.html">Blog <img
-                                          src="assets/image/Vector.svg" alt=""></a>
-                              </li>
-                              <div
-                                  class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md">
-                                  <a href="blog-details.html"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Blog Details</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Blog </a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200">Item
-                                      3</a>
-                              </div>
-                          </div>
-
-                          <li
-                              class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold">
-                              <a href="#">Contact</a>
-                          </li>
-
-                      </ul>
-                      <!-- Navigation Menu End-->
+                <div class="dropdown">
+                  <li
+                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                  >
+                    <a class="flex gap-[8px] items-center relative" href="#"
+                      >Destinations <img src="assets/image/Vector.svg" alt=""
+                    /></a>
+                  </li>
+                  <div
+                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
                   </div>
+                </div>
 
-                  <!-- Start Mobile button Start-->
-                  <div class="mobile-menu text-4xl text-white hidden">
-                      <i class="fa-solid fa-bars"></i>
+                <div class="dropdown">
+                  <li
+                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                  >
+                    <a
+                      class="flex gap-[8px] items-center relative"
+                      href="Packages.html"
+                      >Packages <img src="assets/image/Vector.svg" alt=""
+                    /></a>
+                  </li>
+                  <div
+                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md"
+                  >
+                    <a
+                      href="Packages Details.html"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Packages Details</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
                   </div>
-                  <!-- End Mobile button End-->
+                </div>
 
-                  <!-- Start search Bar Start-->
-                  <div class="search-bar language-selact flex flex-wrap items-center gap-[16px] mr-[10px]">
-                      <div class="flex items-center flex-wrap rounded-lg relative">
-
-                          <div
-                              class="search-icon bg-[#000]  hover:bg-[#000] text-white px-[10px] py-[10px] rounded-lg relative z-10 shadow-md left-[14px]">
-                              <img class="h-[24px] w-[24px]" src="assets/image/search-icon.svg" alt="">
-                          </div>
-
-                          <input
-                              class="absolute search-input rounded-md bg-black  text-lg	text-white outline-none focus:outline-none:focus w-[250px] top-[86px] z-[9999] left-[17px]"
-                              type="search" autocomplete="off" spellcheck="false" aria-live="polite"
-                              placeholder="Search.....">
-                      </div>
-                      <!-- End search Bar End-->
-
-                      <!----USD SELACT START ---->
-                      <div class="flex gap-[16px] ml-[10px]">
-
-                          <div class="dropdown">
-                              <!-- Trigger button for the dropdown -->
-                              <button
-                                  class="usd-button text-base font-semibold relative flex items-center gap-2 rounded-lg  px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]">USD
-                                  <svg xmlns="http://www.w3.org/2000/svg" class="h-[6.5px] w-[13.5px]" width="14"
-                                      height="8" viewBox="0 0 14 8" fill="none">
-                                      <path d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
-                                          fill="white" />
-                                  </svg></button>
-
-                              <!-- Dropdown content -->
-                              <div
-                                  class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f]  w-[150px]">
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      1</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      2</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      3</a>
-                              </div>
-                          </div>
-                          <!----USD Selact end ---->
-
-                          <!---- LANGUAGE SELACT END ----->
-
-                          <div class="dropdown">
-                              <!-- Trigger button for the dropdown -->
-                              <button
-                                  class="language-selacted text-base font-semibold relative flex items-center gap-2 rounded-lg px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]">ENG
-                                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="8" viewBox="0 0 14 8"
-                                      fill="none">
-                                      <path d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
-                                          fill="white" />
-                                  </svg></button>
-
-                              <!-- Dropdown content -->
-                              <div
-                                  class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f] w-[150px]">
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      1</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      2</a>
-                                  <a href="#"
-                                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200  cursor-pointer font-inter text-[16px] font-semibold">Item
-                                      3</a>
-                              </div>
-                          </div>
-                          <!---- LANGUAGE SELACT END ----->
-                      </div>
+                <div class="dropdown">
+                  <li
+                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                  >
+                    <a class="flex gap-[8px] items-center relative" href="#"
+                      >Pages <img src="assets/image/Vector.svg" alt=""
+                    /></a>
+                  </li>
+                  <div
+                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
                   </div>
+                </div>
+
+                <div class="dropdown">
+                  <li
+                    class="hover:text-[#e2941f] navbar-submenu pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                  >
+                    <a
+                      class="flex gap-[8px] items-center relative"
+                      href="Blog-page.html"
+                      >Blog <img src="assets/image/Vector.svg" alt=""
+                    /></a>
+                  </li>
+                  <div
+                    class="dropdown-content border-t-4 border-t-[#e2941f] w-[220px] bg-white rounded shadow-md"
+                  >
+                    <a
+                      href="blog-details.html"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Blog Details</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Blog
+                    </a>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:text-[#e2941f] hover:rounded-[4px] hover:bg-gray-200"
+                      >Item 3</a
+                    >
+                  </div>
+                </div>
+
+                <li
+                  class="hover:text-[#e2941f] pt-[11px] pb-[11px] cursor-pointer font-inter text-[16px] font-semibold"
+                >
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+              <!-- Navigation Menu End-->
+            </div>
+            <!-- Start search Bar Start-->
+            <div
+              class="search-bar language-selact flex flex-wrap items-center gap-[16px] mr-[10px]"
+            >
+              <div class="flex items-center flex-wrap rounded-lg relative">
+                <div
+                  class="search-icon bg-[#000] hover:bg-[#000] text-white px-[10px] py-[10px] rounded-lg relative z-10 shadow-md left-[14px]"
+                >
+                  <img
+                    class="h-[24px] w-[24px]"
+                    src="assets/image/search-icon.svg"
+                    alt=""
+                  />
+                </div>
+
+                <input
+                  class="absolute search-input rounded-md bg-black text-lg text-white outline-none focus:outline-none:focus w-[250px] top-[86px] z-[9999] left-[17px]"
+                  type="search"
+                  autocomplete="off"
+                  spellcheck="false"
+                  aria-live="polite"
+                  placeholder="Search....."
+                />
               </div>
+              <!-- End search Bar End-->
+
+              <!----USD SELACT START ---->
+              <div class="flex gap-[16px] ml-[10px]">
+                <div class="dropdown">
+                  <!-- Trigger button for the dropdown -->
+                  <button
+                    class="usd-button text-base font-semibold relative flex items-center gap-2 rounded-lg px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]"
+                  >
+                    USD
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-[6.5px] w-[13.5px]"
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown content -->
+                  <div
+                    class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f] w-[150px]"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 3</a
+                    >
+                  </div>
+                </div>
+                <!----USD Selact end ---->
+
+                <!---- LANGUAGE SELACT END ----->
+
+                <div class="dropdown">
+                  <!-- Trigger button for the dropdown -->
+                  <button
+                    class="language-selacted text-base font-semibold relative flex items-center gap-2 rounded-lg px-[16px] py-[8px] bg-[#1B1B1B] text-white border border-[#303030]"
+                  >
+                    ENG
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="14"
+                      height="8"
+                      viewBox="0 0 14 8"
+                      fill="none"
+                    >
+                      <path
+                        d="M6.59836 7.49136L-0.000488281 0.508667H13.3328L6.59836 7.49136Z"
+                        fill="white"
+                      />
+                    </svg>
+                  </button>
+
+                  <!-- Dropdown content -->
+                  <div
+                    class="dropdown-content mt-2 bg-white border rounded shadow-md border-t-4 border-t-[#e2941f] w-[150px]"
+                  >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 1</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 2</a
+                    >
+                    <a
+                      href="#"
+                      class="block px-4 py-2 text-gray-800 hover:bg-gray-200 cursor-pointer font-inter text-[16px] font-semibold"
+                      >Item 3</a
+                    >
+                  </div>
+                </div>
+                <!---- LANGUAGE SELACT END ----->
+              </div>
+            </div>
+            <!-- End search Bar Start-->
+            <!-- Start Mobile button Start-->
+            <div
+              class="mobile-menu text-4xl text-white hidden xl:block relative mr-5"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- End Mobile button End-->
           </div>
-          <!-- --------HEADER MENU END-------- -->
-          <!-- </div> -->
+        </div>
+        <!-- --------HEADER MENU END-------- -->
+        <!-- </div> -->
       </nav>
       <!--end container-->
-  </header>
-  <!-- ------HEADER  END -------->
+    </header>
+    <div
+      class="header-sidebar bg-black w-[30%] xl:w-[50%] h-screen p-4 hidden fixed top-0 right-0 z-30"
+    >
+      <i
+        class="fa-solid fa-xmark text-white text-2xl absolute left-[95%]"
+        id="closeIcon"
+      ></i>
+      <div>
+        <ul class="text-white pt-[40%] px-[40%]">
+          <li
+            class="px-6 hover:px-7 py-3 text-2xl font-inter font-medium hover:text-yellow-300 hover:transition-transform duration-300 border-b border-solid border-slate-400"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="px-6 hover:px-7 py-3 text-2xl font-inter font-medium hover:text-yellow-300 hover:transition-transform duration-300 border-b border-solid border-slate-400"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li
+            class="px-6 hover:px-7 py-3 text-2xl font-inter font-medium hover:text-yellow-300 hover:transition-transform duration-300 border-b border-solid border-slate-400"
+          >
+            <a href="#">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- ------HEADER  END -------->
 
     <!-- Beyond Borders: A Travel Odyssey with Travelta Worldwide Section -->
     <section class="lg:mt-[30px] mt-[98px]">
       <div class="container mx-auto">
-        <div class="flex xl:gap-6 gap-12 md:flex-col lg:flex-col mx-[5px] px-3">
+        <div
+          class="grid grid-cols-3 gap-[48px] xl:gap-[0] xl:grid-cols-1 px-3 xl:px-5"
+        >
           <!-- Left -->
-          <div class="flex flex-col lg:gap-[30px] gap-[60px] col-span-1">
+          <div class="flex flex-col lg:gap-[30px] gap-[60px]">
             <!-- Search Div -->
             <div
-              class="flex flex-col xl:gap-[16px] gap-[32px] px-[32px] py-[30px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full 2xl:w-[240px] w-[594px]"
+              class="flex flex-col xl:gap-[16px] gap-[32px] px-[32px] py-[30px] bg-[#FFF6EA] rounded-[8px]"
             >
               <h2
-                class="font-inter 2xl:text-[20px] text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] lg:text-center"
+                class="font-inter 2xl:text-[20px] text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] xl:text-center"
               >
                 Search
               </h2>
@@ -328,10 +487,10 @@
             <!-- Search Div End-->
             <!-- Category Div -->
             <div
-              class="flex flex-col 2xl:gap-[16px] gap-[24px] px-[32px] py-[23px] bg-[#FFF6EA] rounded-[8px] md:w-full lg:w-full 2xl:w-[240px] w-[594px]"
+              class="flex flex-col 2xl:gap-[16px] gap-[24px] px-[32px] py-[23px] bg-[#FFF6EA] rounded-[8px]"
             >
               <h2
-                class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] 2xl:text-[20px] md:text-center lg:text-center"
+                class="font-inter text-[32px] font-semibold leading-[51.2px] text-[#2B2B2B] 2xl:text-[20px] md:text-center xl:text-center"
               >
                 Categories
               </h2>
@@ -695,7 +854,7 @@
             <!-- Category Div End-->
             <!-- Recent Post Div -->
             <div
-              class="flex flex-col md:w-full lg:w-full 2xl:w-[240px] w-[594px] px-[24px] py-[20px] rounded-[8px] bg-[#FFF6EA]"
+              class="flex flex-col px-[24px] py-[20px] rounded-[8px] bg-[#FFF6EA]"
             >
               <!-- heading -->
               <h2
@@ -709,17 +868,19 @@
               >
                 <!-- image div -->
                 <div
-                  class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
+                  class="h-[100px] w-[200px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
                 >
                   <img
                     src="./assets/image/RecetPost1.jpg"
-                    class="w-full h-full rounded-md"
+                    class="w-full h-full rounded-md object-cover"
                     alt="image"
                   />
                 </div>
                 <!-- image div End-->
                 <!-- Info Div Start -->
-                <div class="flex md:text-center flex-col gap-[13px]">
+                <div
+                  class="flex md:text-center xl:items-center flex-col gap-[13px]"
+                >
                   <p class="font-Messiri font-bold text-base">
                     Unveiling Uncharted Paradigms: Our Top Picks for 2024
                   </p>
@@ -757,17 +918,19 @@
               >
                 <!-- image div -->
                 <div
-                  class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
+                  class="h-[100px] w-[200px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
                 >
                   <img
                     src="./assets/image/RecentPost2.jpg"
-                    class="w-full h-full rounded-md"
+                    class="w-full h-full rounded-md object-cover"
                     alt="image"
                   />
                 </div>
                 <!-- image div End-->
                 <!-- Info Div Start -->
-                <div class="flex md:text-center flex-col gap-[13px]">
+                <div
+                  class="flex md:text-center xl:items-center flex-col gap-[13px]"
+                >
                   <p class="font-Messiri font-bold text-base">
                     Unveiling Uncharted Paradigms: Our Top Picks for 2024
                   </p>
@@ -805,17 +968,19 @@
               >
                 <!-- image div -->
                 <div
-                  class="h-[144px] w-[164px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
+                  class="h-[100px] w-[200px] 2xl:h-[100px] 2xl:w-[120px] overflow-hidden rounded-md"
                 >
                   <img
                     src="./assets/image/RecentPost3.jpg"
-                    class="w-full h-full rounded-md"
+                    class="w-full h-full rounded-md object-cover"
                     alt="image"
                   />
                 </div>
                 <!-- image div End-->
                 <!-- Info Div Start -->
-                <div class="flex md:text-center flex-col gap-[13px]">
+                <div
+                  class="flex md:text-center xl:items-center flex-col gap-[13px]"
+                >
                   <p class="font-Messiri font-bold text-base">
                     Unveiling Uncharted Paradigms: Our Top Picks for 2024
                   </p>
@@ -851,18 +1016,16 @@
             <!-- Recent Post Div End-->
 
             <!-- Tag Div Start -->
-            <div
-              class="md:w-full lg:w-full w-[594px] 2xl:w-[240px] px-[32px] py-[20px] rounded-lg bg-[#FFF6EA]"
-            >
+            <div class="px-[32px] py-[20px] rounded-lg bg-[#FFF6EA]">
               <h2
-                class="text-[32px] font-inter font-semibold text-[#2B2B2B] md:text-center lg:text-center 2xl:text-[20px]"
+                class="text-[32px] font-inter font-semibold text-[#2B2B2B] xl:text-center 2xl:text-[20px]"
               >
                 Tags
               </h2>
               <div class="mt-[32px] flex 2xl:flex-wrap flex-col gap-3">
                 <!-- row-1 -->
                 <div
-                  class="flex lg:justify-center 2xl:flex-wrap 2xl:gap-[8px] gap-3"
+                  class="flex xl:justify-center 2xl:flex-wrap 2xl:gap-[8px] gap-3"
                 >
                   <button
                     class="px-3 py-[2px] rounded-md bg-[#FFF6E8] text-base font-semibold font-inter border border-solid border-[#E2941F]"
@@ -881,7 +1044,7 @@
                   </button>
                 </div>
                 <!-- row-2 -->
-                <div class="flex 2xl:flex-wrap gap-3 lg:justify-center">
+                <div class="flex 2xl:flex-wrap gap-3 xl:justify-center">
                   <button
                     class="px-3 py-[2px] rounded-md bg-[#FFF6E8] text-base font-semibold font-inter border border-solid border-[#E2941F]"
                   >
@@ -894,7 +1057,7 @@
                   </button>
                 </div>
                 <!-- row-3 -->
-                <div class="flex 2xl:flex-wrap gap-3 lg:justify-center">
+                <div class="flex 2xl:flex-wrap gap-3 xl:justify-center">
                   <button
                     class="px-3 py-[2px] rounded-md bg-[#FFF6E8] text-base font-semibold font-inter border border-solid border-[#E2941F]"
                   >
@@ -907,7 +1070,7 @@
                   </button>
                 </div>
                 <!-- row-4 -->
-                <div class="flex 2xl:flex-wrap gap-3 lg:justify-center">
+                <div class="flex 2xl:flex-wrap gap-3 xl:justify-center">
                   <button
                     class="px-3 py-[2px] rounded-md bg-[#FFF6E8] text-base font-semibold font-inter border border-solid border-[#E2941F]"
                   >
@@ -918,15 +1081,15 @@
             </div>
             <!-- Tag Div End -->
             <!-- Gallary Div Start -->
-            <div class="flex lg:items-center flex-col xl:gap-[10px] gap-[32px]">
+            <div class="flex xl:items-center flex-col xl:gap-[10px] gap-[32px]">
               <h2 class="font-inter font-semibold text-[32px] 2xl:text-[20px]">
                 Gallery
               </h2>
               <div
-                class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-1 grid-cols-4 gap-1"
+                class="grid sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-2 grid-cols-4 gap-1"
               >
                 <!-- Image 1 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary1.jpg"
                     class="h-full w-full object-cover rounded"
@@ -934,7 +1097,7 @@
                   />
                 </div>
                 <!-- Image 2 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary2.png"
                     class="h-full w-full object-cover rounded"
@@ -942,7 +1105,7 @@
                   />
                 </div>
                 <!-- Image 3-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary3.png"
                     class="h-full w-full object-cover rounded"
@@ -950,7 +1113,7 @@
                   />
                 </div>
                 <!-- Image 4-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary4.jpg"
                     class="h-full w-full object-cover rounded"
@@ -958,7 +1121,7 @@
                   />
                 </div>
                 <!-- Image 5 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary5.jpg"
                     class="h-full w-full object-cover rounded"
@@ -966,7 +1129,7 @@
                   />
                 </div>
                 <!-- Image 6 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary6.jpg"
                     class="h-full w-full object-cover rounded"
@@ -974,7 +1137,7 @@
                   />
                 </div>
                 <!-- Image 7-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary7.jpg"
                     class="h-full w-full object-cover rounded"
@@ -982,7 +1145,7 @@
                   />
                 </div>
                 <!-- Image 8-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary8.png"
                     class="h-full w-full object-cover rounded"
@@ -990,7 +1153,7 @@
                   />
                 </div>
                 <!-- Image 9 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary9.jpg"
                     class="h-full w-full object-cover rounded"
@@ -998,7 +1161,7 @@
                   />
                 </div>
                 <!-- Image 10 -->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary10.png"
                     class="h-full w-full object-cover rounded"
@@ -1006,7 +1169,7 @@
                   />
                 </div>
                 <!-- Image 11-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary11.jpg"
                     class="h-full w-full object-cover rounded"
@@ -1014,7 +1177,7 @@
                   />
                 </div>
                 <!-- Image 12-->
-                <div class="h-[100px] w-[145px] overflow-hidden rounded">
+                <div class="rounded">
                   <img
                     src="./assets/image/Gallary12.png"
                     class="h-full w-full object-cover rounded"
@@ -1028,7 +1191,7 @@
           <!-- Left End -->
 
           <!-- Right -->
-          <div class="col-span-2">
+          <div class="col-span-2 xl:mt-10">
             <h1
               class="font-Messiri text-[32px] leading-[38.4px] font-bold mb-8 lg:text-center"
             >
@@ -1047,9 +1210,7 @@
               <!-- image end -->
 
               <!-- Details -->
-              <div
-                class="flex 2xl:justify-between md:flex-wrap md:gap-[25px] 2xl:gap-[25px] gap-[254px] mb-5"
-              >
+              <div class="flex justify-between md:flex-wrap mb-5">
                 <!-- left -->
                 <div class="flex items-center md:gap-[8px] gap-[16px]">
                   <!-- Button -->
@@ -1428,161 +1589,266 @@
             <!-- John Rechard Div End-->
 
             <!-- Unveiling Uncharted Div start -->
-            <div class="overflow-hidden slider-container">
-              <div
-                class="flex transition-transform duration-500 ease-in-out slider-content"
-              >
-                <!-- Slide 1 -->
-                <div class="flex justify-between w-full">
-                  <!-- Left -->
-                  <div
-                    class="flex md:hidden flex-row rounded-[10px] gap-[19px] shadow-2xl"
-                  >
-                    <img
-                      src="./assets/image/blogDetailsLittle.jpg"
-                      alt="image"
-                      class="w-[160px] rounded-bl-[10px] rounded-tl-[10px]"
-                    />
-                    <div class="flex flex-col gap-[10px] px-[19px] py-[12px]">
-                      <p
-                        class="text-base font-Messiri font-bold leading-[25.6px]"
+            <div class="py-14">
+              <!-- Swiper -->
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="flex justify-between">
+                      <!-- Right Slide -->
+                      <div
+                        class="flex flex-row rounded-[10px] gap-[19px] shadow-2xl"
                       >
-                        Unveiling Uncharted Paradigms: Our Top Picks
-                      </p>
-                      <div class="flex gap-1 items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle.jpg"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex text-start flex-col gap-[10px] px-[19px] py-[12px]"
                         >
-                          <path
-                            d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
-                            fill="#6C6C6C"
-                          />
-                          <path
-                            d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
-                            fill="#6C6C6C"
-                          />
-                        </svg>
-                        <p>June 12, 2024</p>
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <!-- Right -->
-                  <div
-                    class="flex md:flex-col rounded-[10px] gap-[19px] shadow-2xl"
-                  >
-                    <img
-                      src="./assets/image/blogDetailsLittle2.png"
-                      alt="image"
-                      class="md:w-full w-[160px] md:rounded-bl-[0px] rounded-bl-[10px] md:rounded-tl-[0px] rounded-tl-[10px]"
-                    />
-                    <div class="flex flex-col gap-[10px] px-[19px] py-[12px]">
-                      <p
-                        class="text-base font-Messiri font-bold leading-[25.6px]"
-                      >
-                        Unveiling Uncharted Paradigms: Our Top Picks
-                      </p>
-                      <div class="flex gap-1 items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
-                        >
-                          <path
-                            d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
-                            fill="#6C6C6C"
-                          />
-                          <path
-                            d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
-                            fill="#6C6C6C"
-                          />
-                        </svg>
-                        <p>June 12, 2024</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                      <!-- Right Slide End -->
 
-                <!-- Slide 2  -->
-                <div class="flex justify-between w-full">
-                  <!-- Left -->
-                  <div
-                    class="flex md:hidden flex-row rounded-[10px] gap-[19px] shadow-2xl"
-                  >
-                    <img
-                      src="./assets/image/blogDetailsLittle.jpg"
-                      alt="image"
-                      class="w-[160px] rounded-bl-[10px] rounded-tl-[10px]"
-                    />
-                    <div class="flex flex-col gap-[10px] px-[19px] py-[12px]">
-                      <p
-                        class="text-base font-Messiri font-bold leading-[25.6px]"
-                      >
-                        Unveiling Uncharted Paradigms: Our Top Picks
-                      </p>
-                      <div class="flex gap-1 items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
+                      <!-- Left Slide -->
+                      <div class="flex rounded-[10px] gap-[19px] shadow-2xl">
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle2.png"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex flex-col text-start gap-[10px] px-[19px] py-[12px]"
                         >
-                          <path
-                            d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
-                            fill="#6C6C6C"
-                          />
-                          <path
-                            d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
-                            fill="#6C6C6C"
-                          />
-                        </svg>
-                        <p>June 12, 2024</p>
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
                       </div>
+                      <!-- Left Slide End-->
                     </div>
                   </div>
-                  <!-- Right -->
-                  <div
-                    class="flex md:flex-col rounded-[10px] gap-[19px] shadow-2xl"
-                  >
-                    <img
-                      src="./assets/image/blogDetailsLittle2.png"
-                      alt="image"
-                      class="md:w-full w-[160px] md:rounded-bl-[0px] rounded-bl-[10px] md:rounded-tl-[0px] rounded-tl-[10px]"
-                    />
-                    <div class="flex flex-col gap-[10px] px-[19px] py-[12px]">
-                      <p
-                        class="text-base font-Messiri font-bold leading-[25.6px]"
+                  <div class="swiper-slide">
+                    <div class="flex justify-between">
+                      <!-- Right Slide -->
+                      <div
+                        class="flex flex-row rounded-[10px] gap-[19px] shadow-2xl"
                       >
-                        Unveiling Uncharted Paradigms: Our Top Picks
-                      </p>
-                      <div class="flex gap-1 items-center">
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="15"
-                          height="14"
-                          viewBox="0 0 15 14"
-                          fill="none"
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle.jpg"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex flex-col gap-[10px] px-[19px] py-[12px]"
                         >
-                          <path
-                            d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
-                            fill="#6C6C6C"
-                          />
-                          <path
-                            d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
-                            fill="#6C6C6C"
-                          />
-                        </svg>
-                        <p>June 12, 2024</p>
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
                       </div>
+                      <!-- Right Slide End -->
+                      <!-- Left Slide -->
+                      <div class="flex rounded-[10px] gap-[19px] shadow-2xl">
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle2.png"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex flex-col gap-[10px] px-[19px] py-[12px]"
+                        >
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Left Slide End-->
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="flex justify-between">
+                      <!-- Right Slide -->
+                      <div
+                        class="flex flex-row rounded-[10px] gap-[19px] shadow-2xl"
+                      >
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle.jpg"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex flex-col gap-[10px] px-[19px] py-[12px]"
+                        >
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Right Slide End -->
+
+                      <!-- Left Slide -->
+                      <div class="flex rounded-[10px] gap-[19px] shadow-2xl">
+                        <div class="w-[160px]">
+                          <img
+                            src="./assets/image/blogDetailsLittle2.png"
+                            alt="image"
+                            class="rounded-bl-[10px] rounded-tl-[10px]"
+                          />
+                        </div>
+                        <div
+                          class="flex flex-col gap-[10px] px-[19px] py-[12px]"
+                        >
+                          <p
+                            class="text-base font-Messiri font-bold leading-[25.6px]"
+                          >
+                            Unveiling Uncharted Paradigms: Our Top Picks
+                          </p>
+                          <div class="flex gap-1 items-center">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="15"
+                              height="14"
+                              viewBox="0 0 15 14"
+                              fill="none"
+                            >
+                              <path
+                                d="M11.9162 1.52727H9.63449V0H8.80477V1.52727H3.82649V0H2.99677V1.52727H0.715059C0.550078 1.52747 0.391909 1.5965 0.275249 1.71921C0.158589 1.84192 0.0929656 2.00828 0.0927734 2.18182V11.3455C0.0929656 11.519 0.158589 11.6854 0.275249 11.8081C0.391909 11.9308 0.550078 11.9998 0.715059 12H11.9162C12.0812 11.9998 12.2394 11.9308 12.356 11.8081C12.4727 11.6854 12.5383 11.519 12.5385 11.3455V2.18182C12.5383 2.00828 12.4727 1.84192 12.356 1.71921C12.2394 1.5965 12.0812 1.52747 11.9162 1.52727ZM11.7088 11.1273H0.922488V2.4H2.99677V3.49091H3.82649V2.4H8.80477V3.49091H9.63449V2.4H11.7088V11.1273Z"
+                                fill="#6C6C6C"
+                              />
+                              <path
+                                d="M2.58192 5.01818H3.41163V5.89091H2.58192V5.01818ZM4.86363 5.01818H5.69335V5.89091H4.86363V5.01818ZM6.93792 5.01818H7.76763V5.89091H6.93792V5.01818ZM9.21963 5.01818H10.0493V5.89091H9.21963V5.01818ZM2.58192 6.98182H3.41163V7.85455H2.58192V6.98182ZM4.86363 6.98182H5.69335V7.85455H4.86363V6.98182ZM6.93792 6.98182H7.76763V7.85455H6.93792V6.98182ZM9.21963 6.98182H10.0493V7.85455H9.21963V6.98182ZM2.58192 8.94545H3.41163V9.81818H2.58192V8.94545ZM4.86363 8.94545H5.69335V9.81818H4.86363V8.94545ZM6.93792 8.94545H7.76763V9.81818H6.93792V8.94545ZM9.21963 8.94545H10.0493V9.81818H9.21963V8.94545Z"
+                                fill="#6C6C6C"
+                              />
+                            </svg>
+                            <p>June 12, 2024</p>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Left Slide End-->
                     </div>
                   </div>
                 </div>
+                <div class="swiper-pagination"></div>
               </div>
             </div>
             <!-- Unveiling Uncharted Div End -->
@@ -1590,7 +1856,7 @@
             <!-- Previous Post And Next Post -->
             <div class="mt-[12px] flex items-center justify-between mb-[60px]">
               <!-- Previous Button -->
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 prevButton">
                 <svg
                   width="14"
                   height="14"
@@ -1614,7 +1880,7 @@
                 </button>
               </div>
               <!-- Next Button -->
-              <div class="flex items-center gap-2">
+              <div class="flex items-center gap-2 nextButton">
                 <button
                   onclick="nextSlide()"
                   class="font-inter font-semibold text-base text-[#E2941F]"
@@ -2606,10 +2872,23 @@
     <script src="assets/js/picker.js"></script>
     <script src="assets/js/picker.date.js"></script>
     <script src="assets/js/picker.time.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- Pickadate.js files End-->
     <script src="assets/js/slick-main.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/script.js"></script>
     <!-- JAVASCRIPTS END-->
+
+    <script>
+      $(".mobile-menu").on("click", function () {
+        $(".header-sidebar").toggleClass("hidden");
+      });
+      // Close Button
+      $(document).ready(function () {
+        // Attach a click event listener to the close icon
+        $("#closeIcon").on("click", function () {});
+      });
+    </script>
   </body>
 </html>
