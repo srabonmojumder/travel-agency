@@ -481,3 +481,22 @@ $(".offer-packages-slider").slick({
 });
 
 //------------Island Paradise Getaways slider End----------->
+
+// This Code Is For OffCanvus Open AND Close
+$(".mobile-menu").on("click", function () {
+  var $headerSidebar = $(".header-sidebar");
+
+  // Check the current display property
+  if ($headerSidebar.css("display") === "none") {
+    // If it's currently hidden, show it
+    $headerSidebar.css("display", "block");
+  } else {
+    // If it's currently visible, hide it
+    $headerSidebar.css("display", "none");
+  }
+});
+
+// For Close Button
+$("#closeButton").on("click", function () {
+  $(".header-sidebar").css("display", "none");
+});
